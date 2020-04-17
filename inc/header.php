@@ -24,6 +24,7 @@
     <link href="css/system.css?v=<?php echo $parametro['webversion']; ?>" rel="stylesheet" type="text/css"/>
     <link href="img/system/favicon.ico?v=<?php echo $parametro['webversion']; ?>" rel="icon" type="image/x-icon"/>
     <link href="css/system.css?v=<?php echo $pagina; ?>" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Medios | M&R Consultores</title>
 </head>
 <body>
@@ -98,7 +99,7 @@ for($f = 0; $f<count($vectorMenu); $f++){
     $listaMenuInt ='<ul class="navbar-nav mr-auto">';
     $listaMenuInt .='</ul>';
     $listaMenu .='<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ';
-    $listaMenu .='<span class="glyphicon'.$vectorMenu[$f]['icono'].'">'.$vectorMenu[$f]['nombre'].'</span>';
+    $listaMenu .='<i class="fas '.$vectorMenu[$f]['icono'].'"></i>'.$vectorMenu[$f]['nombre'].'</span>';
     $listaMenu .=' </a>';
     $listaMenu .='</li >';
 
@@ -112,11 +113,13 @@ for($f = 0; $f<count($vectorMenu); $f++){
     </ul>
     <ul class="navbar-nav">
   
-    <li class="nav-item far fa-camera">
-        <a class="nav-link ">Bienvenido: <b><?php echo $_SESSION['nombre'];?></b></a>
+    <li class="nav-item ">
+  
+ <a class="nav-link"> Bienvenido: <b><?php echo $_SESSION['nombre'];?></b></a>
+
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="util/system/logout.php">Cerrar Sesion</a>
+        <a class="nav-link " href="util/system/logout.php">Cerrar Sesion <i class="fas fa-sign-out-alt"></i></a>
       </li>
     </ul>
   </div>
