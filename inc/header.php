@@ -96,11 +96,38 @@ $listaMenu = "";
 for($f = 0; $f<count($vectorMenu); $f++){
    if( $vectorMenu [$f] ['es_menu']== 'SI'){
 
-    $listaMenuInt ='<ul class="navbar-nav mr-auto">';
+    $menuAbierto ='';
+    $listaMenuInt ='<ul >';
+    for($i = 0; $i<count($vectorMenu); $i++){
+
+        if( $vectorMenu [$i] ['es_menu']== 'NO' && 
+            $vectorMenu [$i] ['idpadre']== $vectorMenu[$f]['idmenu']
+        ){
+
+            if($pagina == $vectorMenu[$i]['ventana']){
+
+                $menuAbierto ='class ="active"';
+            }
+
+
+
+            $listaMenuInt .='<div class="dropdown-menu" aria-labelledby="navbarDropdown">';
+            $listaMenuInt .='<a class="dropdown-item" href="index.php?pagina='.$vectorMenu[$i]['ventana'].'">';  
+            $listaMenuInt .='<i class="fas '.$vectorMenu[$i]['icono'].'"></i>';       
+            $listaMenuInt .=$vectorMenu [$i] ['nombre'];
+            $listaMenuInt .='</a>';
+            $listaMenuInt .='</div>';
+        }
+
+    }
+
+
+
     $listaMenuInt .='</ul>';
     $listaMenu .='<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ';
-    $listaMenu .='<i class="fas '.$vectorMenu[$f]['icono'].'"></i>'.$vectorMenu[$f]['nombre'].'</span>';
+    $listaMenu .='<i class="fas '.$vectorMenu[$f]['icono'].'"></i>'.$vectorMenu[$f]['nombre'];
     $listaMenu .=' </a>';
+    $listaMenu .= $listaMenuInt;
     $listaMenu .='</li >';
 
    }
