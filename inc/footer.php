@@ -21,15 +21,16 @@
              echo '<script type="text/javascript" language="javascript" src="lib/js/jquery/jquery-3.4.1.min.js"></script>';
                  
               break;
- 
-
-        }
+              
+              case 'highcharts';
+             echo '<script type="text/javascript" language="javascript" src="lib/js/Highcharts-8.0.4/code/highcharts.js"></script>';
+                 
+              break;
+         }
 
 
     }
     ?>
-
-
 
 <script type="text/javascript" language="javascript" src="js/system.js?v=<?php echo $parametro['webversion']; ?>"></script>
     <script type="text/javascript" language="javascript" src="js/<?php echo $pagina; ?>.js?v=<?php echo $parametro['webversion']; ?>"></script>

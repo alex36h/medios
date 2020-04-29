@@ -1,0 +1,10 @@
+2020-04-28 21:37:35 >>> Error en el query: ( You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) AS total, date(fecha) AS fecha
+    FROM log_menu
+    GROUP BY date(fecha)
+' at line 1 ) 
+    SELECT COUNT (*) AS total, date(fecha) AS fecha
+    FROM log_menu
+    GROUP BY date(fecha)
+    ORDER BY fecha DESC
+    LIMIT 10
+
