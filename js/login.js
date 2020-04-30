@@ -52,14 +52,15 @@ svgStates.forEach(function(el) {
   });
 });
  */
+
 $(document).ready(function() {
+
     $("#formLogin").submit(function() {
 
         var usuario = $("#usuario").val().toLowerCase();
         var clave = $("#clave").val();
 
-        //console.log(usuario + '-' + clave);
-
+        //console.log(usuario+' - '+clave);
 
         $.ajax({
             async: true,
@@ -77,28 +78,24 @@ $(document).ready(function() {
             error: function(request, status, error) {
                 alert(request.responseText);
             },
-
-            succes: function(respuesta) {
+            success: function(respuesta) {
                 switch (respuesta.estado) {
                     case 1:
                         document.location = '';
                         break;
                     case 2:
-                        $('#myModalWarning').html("respuesta.mensaje");
+                        $('#myModalWarningBody').html(respuesta.mensaje);
                         $('#myModalWarning').modal('show');
-                        $('#clave').val('');
+                        $("#clave").val('');
                         break;
                     default:
                         alert("Se ha producido un error");
                         break;
-
                 }
             },
-
             complete: function() {
                 $('#btn_submit').prop("disabled", false);
                 $('#btn_submit').html("Acceder");
-
             }
         });
 

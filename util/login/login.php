@@ -1,4 +1,4 @@
-d<?php
+<?php
 
 include("../system/funciones.php");
 include("../system/session.php");
