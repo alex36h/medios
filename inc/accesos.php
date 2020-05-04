@@ -20,7 +20,7 @@
 
 <div class="form-group  ">
 
-    <div class="col-md-4 offset-md-4"">
+    <div class="col-md-4 offset-md-4">
        <button type="submit" class="btn btn-block btn-info">Consultar</button>
     </div>
 </div>
