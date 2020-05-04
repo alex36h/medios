@@ -14,6 +14,18 @@
                 
              break;
 
+             case 'treeview';
+             echo '<link href="lib/js/jquery-treeview/jquery.alerttreeview.css" rel="stylesheet" type="text/css"/>';
+                 
+              break;
+
+              case 'choosenjs';
+              echo '<link href="lib/js/chosen_v1.8.7/chosen.min.css" rel="stylesheet" type="text/css"/>';
+                  
+               break;
+  
+ 
+
         }
 
 

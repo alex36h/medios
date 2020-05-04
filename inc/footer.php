@@ -3,7 +3,7 @@
 </div>
 <footer class="text-right" >
 <hr>
-<p>Desarrollado Por M&R Consultores &copy;  2020</p>
+<p> Desarrollado Por M&R Consultores &copy; 2020</p>
 </footer>
 </body>
 
@@ -26,6 +26,17 @@
              echo '<script type="text/javascript" language="javascript" src="lib/js/Highcharts-8.0.4/code/highcharts.js"></script>';
                  
               break;
+
+              case 'treeview';
+              echo '<script type="text/javascript" language="javascript" src="lib/js/jquery-treeview/jquery.treeview.js"></script>';
+                  
+               break;
+
+
+              case 'choosenjs';
+              echo '<script type="text/javascript" language="javascript" src="lib/js/chosen_v1.8.7/chosen.jquery.min.js"></script>';
+                  
+               break;
          }
 
 
