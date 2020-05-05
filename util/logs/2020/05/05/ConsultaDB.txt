@@ -1,0 +1,8 @@
+2020-05-05 00:08:55 >>> Error en el query: ( Table 'pedidos.usuarios_accesos' doesn't exist ) 
+SELECT a.idmenu, b.nombre, b.ventana, b.framework
+FROM usuarios_accesos AS a
+INNER JOIN menu AS b ON ( a.idmenu = b.idmenu )
+WHERE a.usuario = 'admin'
+AND b.ventana = ''
+AND b.estado = 'ACTIVO'
+
