@@ -15,7 +15,7 @@
              break;
 
              case 'treeview';
-             echo '<link href="lib/js/jquery-treeview/jquery.alerttreeview.css" rel="stylesheet" type="text/css"/>';
+             echo '<link href="lib/js/jquery-treeview/jquery.treeview.css" rel="stylesheet" type="text/css"/>';
                  
               break;
 

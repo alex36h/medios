@@ -6,3 +6,11 @@ WHERE a.usuario = 'admin'
 AND b.ventana = ''
 AND b.estado = 'ACTIVO'
 
+2020-05-05 21:42:39 >>> Error en el query: ( You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' 
+        AND  estado =  'ACTIVO'
+        ORDER BY  orden' at line 2 ) 
+        SELECT idmenu,nombre FROM menu
+        WHERE = '1' 
+        AND  estado =  'ACTIVO'
+        ORDER BY  orden
+    
