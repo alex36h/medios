@@ -21,13 +21,13 @@
 <div class="form-group  ">
 
     <div class="col-md-4 offset-md-4">
-       <button type="submit" class="btn btn-block btn-info">Consultar</button>
+       <button type="submit" class="btn btn-block btn-info"><strong><i class="fas fa-search"></i> Consultar </strong></button>
     </div>
 </div>
 
 </form>
 <hr>
-<form role "form" class="form-horizontal " id="formGuardar">
+<form role "form" class="form-horizontal " id="formGuardarPermisos">
 <div class="form-group row">
     <label for="usuarios" class="col-md-1 control-label">Usuario</label>
     <div class="col-md-11">
@@ -41,13 +41,18 @@
     </div>
 </div>
 
-<div class="form-group  ">
+<div class="form-group row ">
 
-    <div class="col-md-4 offset-md-4">
-       <button type="submit" id="submitFormGuardarPermisos" class="btn btn-block btn-danger">Guardar</button>
+    <div class="col-md-3 offset-md-3">
+       <button type="reset" id="submitFormGuardarPermisos" class="btn btn-block btn-danger"> <strong><i class="fas fa-save"></i> Guardar</strong></button>
+       </div>
+       <div class="col-md-3 ">
+    <button type="reset" id="limpiarFormGuardarPermisos" class="btn btn-block btn-secondary"> <strong><i class="fas fa-sync-alt"></i> Limpiar</strong></button>
     </div>
+   
+   
+
 </div>
-</form>
 
 <div id= "sys_menu" class="col-md-9 offset-md-3">
 
@@ -55,8 +60,7 @@
 
 
 </div>
-
-
+</form>
 
 
 </div>

@@ -22,6 +22,7 @@ function cargarOptionUsuarios() {
                         var opcSelect = '';
 
                         for (var f = 0; f < opciones.length; f++) {
+
                             opcSelect += '<option ';
                             opcSelect += ' data-nombre="' + opciones[f]['nombre'] + '" ';
                             opcSelect += ' value="' + opciones[f]['usuario'] + '" >';
@@ -107,7 +108,7 @@ function cargarMenu() {
         },
 
         complete: function() {
-
+            chekear();
             $("#myMenuPermisos").treeview({
                 animated: "normal",
                 collapsed: true,
@@ -121,11 +122,82 @@ function cargarMenu() {
 }
 
 
+function chekear() {
+
+    $('input[type="checkbox"]').change(function(e) {
+        var checked = $(this).prop("checked"),
+            container = $(this).parent(),
+            siblings = container.siblings();
+
+        container.find('input[type="checkbox"]').prop({
+            indeterminate: false,
+            checked: checked
+        });
+
+        function checkSiblings(el) {
+            var parent = el.parent().parent(),
+                all = true;
+
+            el.siblings().each(function() {
+                return all = ($(this).children('input[type="checkbox"]').prop("checked") === checked);
+            });
+
+            if (all && checked) {
+                parent.children('input[type="checkbox"]').prop({
+                    indeterminate: false,
+                    checked: checked
+                });
+                checkSiblings(parent);
+            } else if (all && !checked) {
+                parent.children('input[type="checkbox"]').prop("checked", checked);
+                parent.children('input[type="checkbox"]').prop("indeterminate", (parent.find('input[type="checkbox"]:checked').length > 0));
+                checkSiblings(parent);
+            } else {
+                el.parents("li").children('input[type="checkbox"]').prop({
+                    indeterminate: true,
+                    checked: true
+                });
+            }
+        }
+
+        checkSiblings(container);
+    });
+}
+
+function limpiarFormPermisos() {
+
+    $("#formGuardarPermisos").trigger("reset");
+
+    $('input [type="checkbox"]').each(function() {
+
+        $(this).prop({ checked: false });
+        $(this).prop({ indeterminate: false });
+    });
+
+}
+
+
 $(document).ready(function() {
 
     cargarMenu();
     cargarOptionUsuarios();
     $("#usuarios").chosen({ width: "100%" });
+
+    $("limpiarFormGuardarPermisos").click(function() {
+        limpiarFormPermisos();
+    });
+
+    $("#formUsuarios").submit(function() {
+        limpiarFormPermisos();
+        var usuario = $("#usuarios option:selected").val();
+        $("#usuario").val(usuario);
+        $("#nombre").val($("#usuarios option:selected").data("nombre"));
+
+        return false;
+    });
+
+
+
 
 
 });
