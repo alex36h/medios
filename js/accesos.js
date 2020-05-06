@@ -64,7 +64,36 @@ function cargarMenu() {
             switch (respuesta.estado) {
                 case 1:
 
-                    console.log(respuesta);
+                    //console.log(respuesta);
+
+                    var menu = respuesta.data;
+                    var sys_menu = '<ul id="myMenuPermisos">';
+
+
+                    for (var f = 0; f < menu.length; f++) {
+                        sys_menu += '<li class="open">';
+
+                        sys_menu += '<input type="checkbox" id ="menu_' + (f + 1) + '" value="' + menu[f]['idmenu'] + '"+ class=" menu_sys>" ';
+                        sys_menu += '<label for= "menu_' + (f + 1) + ' class="form-check-label"">' + menu[f]['nombre'] + '</label>';
+
+                        sys_menu += '<ul>';
+                        var submenu = menu[f]['submenu'];
+                        for (var i = 0; i < submenu.length; i++) {
+
+                            sys_menu += '<li>';
+                            sys_menu += '<input type="checkbox" id ="menu_' + (f + 1) + '_' + (i + 1) + ' " value="' + submenu[i]['idmenu'] + '"+ class=" menu_sys>" ';
+                            sys_menu += '<label for= "menu_' + (f + 1) + '_' + (i + 1) + ' class="form-check-label"">' + submenu[i]['nombre'] + '</label>';
+
+                            sys_menu += '</li>';
+
+
+
+                        }
+                        sys_menu += '</ul>';
+                        sys_menu += '</li>';
+                    }
+                    sys_menu += '</ul>';
+                    $("#sys_menu").html(sys_menu);
 
                     break;
                 case 2:
@@ -78,6 +107,13 @@ function cargarMenu() {
         },
 
         complete: function() {
+
+            $("#myMenuPermisos").treeview({
+                animated: "normal",
+                collapsed: true,
+                unique: false,
+                persist: "location"
+            });
 
         }
     });
