@@ -176,6 +176,78 @@ function limpiarFormPermisos() {
 
 }
 
+function mostrarMenuUsuario(usuario) {
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/accesos/queryMenuUsuario.php",
+        data: {
+            usuario: usuario,
+
+        },
+        dataType: 'json',
+        beforeSend: function() {
+            $('input [type="checkbox"]').each(function() {
+
+                $(this).prop({ checked: false });
+                $(this).prop({ indeterminate: false });
+            });
+        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+            switch (respuesta.estado) {
+                case 1:
+
+
+                    //console.log(respuesta);
+                    var menu = respuesta.data;
+                    if (menu.length > 0) {
+
+                        $(".menu_sys").each(function() {
+                            var este_menu = this;
+                            var valor = este_menu.value;
+
+
+                            for (var f = 0; f < menu.length; f++) {
+                                if (valor == menu[f]) {
+                                    $(este_menu).prop({ checked: true });
+                                    break;
+
+
+                                }
+
+                            }
+
+                        });
+
+                    } else {
+                        $('#myModalWarningBody').html("El Usuario no tiene Permisos");
+                        $('#myModalWarning').modal('show')
+
+                    }
+
+
+
+
+                    break;
+
+
+                case 2:
+                    $('#myModalWarningBody').html(respuesta.mensaje);
+                    $('#myModalWarning').modal('show');
+                    break;
+                default:
+                    alert("Se ha producido un error");
+                    break;
+            }
+        }
+    });
+
+
+}
 
 $(document).ready(function() {
 
@@ -192,6 +264,8 @@ $(document).ready(function() {
         var usuario = $("#usuarios option:selected").val();
         $("#usuario").val(usuario);
         $("#nombre").val($("#usuarios option:selected").data("nombre"));
+
+        mostrarMenuUsuario(usuario);
 
         return false;
     });
