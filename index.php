@@ -96,7 +96,7 @@ foreach($resultadoAccpagina as $fila){
 
 if( $flagAccPagina == false ){
     $session->endSession();
-    echo "Estimado, usted no tiene modulos asignados en el aplicativo, favor contactar con el administrador del sistema";
+    echo "Estimado Usuario, usted no tiene modulos asignados en el aplicativo, favor contactar con el administrador del sistema";
     header("Refresh:10");
     exit;
 }else{

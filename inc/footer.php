@@ -3,7 +3,7 @@
 </div>
 <footer class="text-right" >
 <hr>
-<p> Desarrollado Por M&R Consultores &copy; 2020</p>
+<p> <strong> Desarrollado Por M&R Consultores &copy; 2020 </strong></p>
 </footer>
 </body>
 

@@ -1,5 +1,6 @@
 <h1> <?php echo $varAcceso['nombre'] ;?></h1>
 
+<hr>
 
 <div class="row">
 <div class="col-md-12">
@@ -10,6 +11,10 @@
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
+
+</div>
+</div>
+
 
 <form role "form" class="form-horizontal " id="formUsuarios">
 <div class="form-group row">
@@ -27,7 +32,7 @@
 </div>
 
 </form>
-<hr>
+
 <form role "form" class="form-horizontal " id="formGuardarPermisos">
 <div class="form-group row">
     <label for="usuarios" class="col-md-1 control-label">Usuario</label>
@@ -45,7 +50,7 @@
 <div class="form-group row ">
 
     <div class="col-md-3 offset-md-3">
-       <button type="reset" id="submitFormGuardarPermisos" class="btn btn-block btn-danger"> <strong><i class="fas fa-save"></i> Guardar</strong></button>
+       <button type="submit" id="submitFormGuardarPermisos" class="btn btn-block btn-danger"> <strong><i class="fas fa-save"></i> Guardar</strong></button>
        </div>
        <div class="col-md-3 ">
     <button type="reset" id="limpiarFormGuardarPermisos" class="btn btn-block btn-secondary"> <strong><i class="fas fa-sync-alt"></i> Limpiar</strong></button>
@@ -63,6 +68,3 @@
 </div>
 </form>
 
-
-</div>
-</div>

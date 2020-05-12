@@ -22,7 +22,6 @@ function cargarOptionUsuarios() {
                         var opcSelect = '';
 
                         for (var f = 0; f < opciones.length; f++) {
-
                             opcSelect += '<option ';
                             opcSelect += ' data-nombre="' + opciones[f]['nombre'] + '" ';
                             opcSelect += ' value="' + opciones[f]['usuario'] + '" >';
@@ -50,6 +49,7 @@ function cargarOptionUsuarios() {
 }
 
 function cargarMenu() {
+
     $.ajax({
         type: "POST",
         url: "util/accesos/queryMenu.php",
@@ -66,34 +66,31 @@ function cargarMenu() {
                 case 1:
 
                     //console.log(respuesta);
-
                     var menu = respuesta.data;
                     var sys_menu = '<ul id="myMenuPermisos">';
 
-
                     for (var f = 0; f < menu.length; f++) {
                         sys_menu += '<li class="open">';
-
-                        sys_menu += '<input type="checkbox" id ="menu_' + (f + 1) + '" value="' + menu[f]['idmenu'] + '"+ class=" menu_sys>" ';
-                        sys_menu += '<label for= "menu_' + (f + 1) + ' class="form-check-label"">' + menu[f]['nombre'] + '</label>';
+                        sys_menu += '<input type="checkbox" id="menu_' + (f + 1) + '" value="' + menu[f]['idmenu'] + '" class="menu_sys">';
+                        sys_menu += '<label for="menu_' + (f + 1) + '">' + menu[f]['nombre'] + '</label>';
 
                         sys_menu += '<ul>';
                         var submenu = menu[f]['submenu'];
+
                         for (var i = 0; i < submenu.length; i++) {
-
                             sys_menu += '<li>';
-                            sys_menu += '<input type="checkbox" id ="menu_' + (f + 1) + '_' + (i + 1) + ' " value="' + submenu[i]['idmenu'] + '"+ class=" menu_sys>" ';
-                            sys_menu += '<label for= "menu_' + (f + 1) + '_' + (i + 1) + ' class="form-check-label"">' + submenu[i]['nombre'] + '</label>';
-
+                            sys_menu += '<input type="checkbox" id="menu_' + (f + 1) + '_' + (i + 1) + '" value="' + submenu[i]['idmenu'] + '" class="menu_sys">';
+                            sys_menu += '<label for="menu_' + (f + 1) + '_' + (i + 1) + '">' + submenu[i]['nombre'] + '</label>';
                             sys_menu += '</li>';
-
-
-
                         }
+
                         sys_menu += '</ul>';
+
                         sys_menu += '</li>';
                     }
+
                     sys_menu += '</ul>';
+
                     $("#sys_menu").html(sys_menu);
 
                     break;
@@ -106,21 +103,19 @@ function cargarMenu() {
                     break;
             }
         },
-
         complete: function() {
             chekear();
+
             $("#myMenuPermisos").treeview({
                 animated: "normal",
                 collapsed: true,
                 unique: false,
                 persist: "location"
             });
-
         }
     });
 
 }
-
 
 function chekear() {
 
@@ -165,15 +160,12 @@ function chekear() {
 }
 
 function limpiarFormPermisos() {
-
     $("#formGuardarPermisos").trigger("reset");
 
-    $('input [type="checkbox"]').each(function() {
-
+    $('input[type="checkbox"]').each(function() {
         $(this).prop({ checked: false });
         $(this).prop({ indeterminate: false });
     });
-
 }
 
 function mostrarMenuUsuario(usuario) {
@@ -183,13 +175,11 @@ function mostrarMenuUsuario(usuario) {
         type: "POST",
         url: "util/accesos/queryMenuUsuario.php",
         data: {
-            usuario: usuario,
-
+            usuario: usuario
         },
         dataType: 'json',
         beforeSend: function() {
-            $('input [type="checkbox"]').each(function() {
-
+            $('input[type="checkbox"]').each(function() {
                 $(this).prop({ checked: false });
                 $(this).prop({ indeterminate: false });
             });
@@ -201,40 +191,29 @@ function mostrarMenuUsuario(usuario) {
             switch (respuesta.estado) {
                 case 1:
 
-
                     //console.log(respuesta);
                     var menu = respuesta.data;
+
                     if (menu.length > 0) {
 
                         $(".menu_sys").each(function() {
                             var este_menu = this;
                             var valor = este_menu.value;
 
-
                             for (var f = 0; f < menu.length; f++) {
                                 if (valor == menu[f]) {
                                     $(este_menu).prop({ checked: true });
                                     break;
-
-
                                 }
-
                             }
-
                         });
 
                     } else {
-                        $('#myModalWarningBody').html("El Usuario no tiene Permisos");
-                        $('#myModalWarning').modal('show')
-
+                        $('#myModalWarningBody').html("El usuario no tiene permisos asignados");
+                        $('#myModalWarning').modal('show');
                     }
 
-
-
-
                     break;
-
-
                 case 2:
                     $('#myModalWarningBody').html(respuesta.mensaje);
                     $('#myModalWarning').modal('show');
@@ -246,21 +225,22 @@ function mostrarMenuUsuario(usuario) {
         }
     });
 
-
 }
 
 $(document).ready(function() {
 
     cargarMenu();
+
     cargarOptionUsuarios();
     $("#usuarios").chosen({ width: "100%" });
 
-    $("limpiarFormGuardarPermisos").click(function() {
+    $("#limpiarFormGuardarPermisos").click(function() {
         limpiarFormPermisos();
     });
 
     $("#formUsuarios").submit(function() {
         limpiarFormPermisos();
+
         var usuario = $("#usuarios option:selected").val();
         $("#usuario").val(usuario);
         $("#nombre").val($("#usuarios option:selected").data("nombre"));
@@ -270,8 +250,44 @@ $(document).ready(function() {
         return false;
     });
 
+    $("#formGuardarPermisos").submit(function() {
+        var usuario = $("#usuario").val();
+
+        if (usuario != '') {
+
+            var menuChekeado = [];
+            var existeMenu = false;
+
+            $(".menu_sys").each(function() {
+                existeMenu = true;
+                var este_menu = this;
+                var valor = este_menu.value;
+
+                var checkeado = ($(este_menu).is(":checked") || $(este_menu).prop("indeterminate") ? 1 : 0);
+
+                if (checkeado == 1) {
+                    menuChekeado.push(valor);
+                }
+
+            });
+
+            console.log(menuChekeado);
+
+            if (existeMenu) {
 
 
 
+            } else {
+                $('#myModalWarningBody').html("No se cargo el menú");
+                $('#myModalWarning').modal('show');
+            }
+
+        } else {
+            $('#myModalWarningBody').html("Debe seleccionar un usuario");
+            $('#myModalWarning').modal('show');
+        }
+
+        return false;
+    });
 
 });
