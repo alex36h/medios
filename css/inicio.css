@@ -1,4 +1,4 @@
-.highcharts-figure,
+/*.highcharts-figure,
 .highcharts-data-table table {
     min-width: 310px;
     max-width: 800px;
@@ -43,4 +43,37 @@
 
 .highcharts-data-table tr:hover {
     background: #f1f7ff;
+}*/
+
+
+/*
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+html {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+}
+*/
+
+#states *.on {
+    fill: red;
+}
+
+.list-of-states {
+    margin: 0;
+    padding: 0;
+    columns: 100px auto;
+    column-gap: 8px;
+    list-style: none;
+}
+
+.list-of-states li {
+    padding: 2px 4px;
+    display: inline-block;
+    width: 100%;
+}
+
+.list-of-states li.on {
+    background: red;
+    color: white;
+    font-weight: bold;
 }
