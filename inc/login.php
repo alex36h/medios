@@ -31,47 +31,32 @@
 
 <div class="container">
 
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
 
-
-
-
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-            <div class="page-header text-center">
-                <h1>Acceso al  sistema</h1>
-            </div>
-            <div class="alert alert-info text-center">
-                Bienvenidos al sistema de pedidos web
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    Ingrese sus datos para acceder al sistema
-                </div>
-                <div class="panel-body">
-                    <form role="form" id="formLogin" class="form-horizontal">
-                        <div class="form-group">
-                            <label for="usuario" class="col-md-2 control-label">Usuario</label>
-                            <div class="col-md-10">
-                                <input type="text" id="usuario" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="clave" class="col-md-2 control-label">Clave</label>
-                            <div class="col-md-10">
-                                <input type="password" id="clave" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-offset-2 col-md-10 text-right">
-                                <button type="submit" id="btn_submit" class="btn btn-info">Acceder</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="https://www.myrconsultores.com/wp-content/uploads/2020/02/myrthumb-1.png" id="icon" alt="Responsive image" />
     </div>
+
+    <!-- Login Form -->
+    <form role="form" id="formLogin">
+      <input type="text" id="usuario" class="fadeIn second" name="user" placeholder="Usuario">
+      <input type="password" id="clave" class="fadeIn third" name="login" placeholder="Contraseña">
+      <input type="submit" class="fadeIn fourth" value="Acceder">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Olvido su Contraseña?</a>
+    </div>
+
+  </div>
 </div>
+
+
+
 
 <!-- 
 <div class="container-fluid">

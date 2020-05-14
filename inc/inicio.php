@@ -1,13 +1,49 @@
+<h1 class="text-center"><span><?php echo $varAcceso['nombre'] ;?></span></h1>
+<hr>
 
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Example #1</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Example #2</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Example #3</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
+  <div class="row">
+      <div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet magna diam, a gravida lacus hendrerit at. Nullam maximus urna arcu, eget tempor leo blandit non. Proin luctus, tortor non molestie ullamcorper, lacus sem imperdiet nibh, sed egestas tortor leo at nunc. Nunc condimentum iaculis elit sed efficitur. Integer pretium ullamcorper metus, nec maximus odio lacinia maximus. Sed id tempus orci. Praesent commodo eget massa congue rhoncus. Nulla et eros eget nibh porttitor porttitor nec vitae enim. Morbi eros libero, pellentesque sed odio nec, gravida cursus magna. Ut eu libero sed dui hendrerit bibendum et sed ante. Morbi et eros at quam finibus hendrerit vitae et augue. Maecenas auctor quam lorem, ac dictum odio ullamcorper in. Donec pretium urna vitae est convallis semper ut in sem.
 
-<div class="row">
-<!-- <div id="grafico_inicio" class="col-md-12"> </div> -->
+Sed vulputate tincidunt pellentesque. Etiam et rutrum ipsum. Phasellus malesuada interdum varius. Curabitur quis molestie magna. Cras ut porta magna. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis blandit dui, nec condimentum arcu. Integer nec purus eu orci malesuada molestie. Aliquam ante velit, mollis vel ultrices eget, imperdiet vel erat. Nulla facilisi. Donec sed justo eu ex tincidunt faucibus sit amet at libero. Maecenas porta, sapien non fringilla vestibulum, felis ipsum sodales felis, nec interdum sapien ligula quis erat. Sed ultrices eget est sit amet pretium. Nam aliquet non urna ut dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
 
+Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed metus vitae ligula accumsan consectetur quis quis lacus. Maecenas ac tortor eu eros mattis fringilla. Cras tempor sed lacus quis volutpat. Sed bibendum, ipsum id viverra rhoncus, risus quam pulvinar tortor, at commodo enim felis tempor sapien. Curabitur vel rhoncus nulla. Maecenas varius ac risus nec pellentesque. In scelerisque semper ante, ac posuere urna. In bibendum est id facilisis lobortis. Etiam a quam finibus, suscipit magna non, rutrum orci. Quisque at arcu id quam tempor pretium nec ac dolor. Aenean ullamcorper est nec diam iaculis accumsan.
 
-<div class="col-md-9">
-<div class="text-center">
-    <svg width="560pt" height="380.20945pt" viewBox="0 0 720 463.20945" class="svg-states" enable-background="new 0 0 720 463.20945 "  class="img-fluid" alt="Responsive image"
+Morbi ultrices leo eget varius ornare. Nulla facilisi. Vivamus vehicula lectus ipsum, sit amet posuere turpis consectetur in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras in feugiat tortor. Mauris semper orci sit amet ipsum blandit condimentum. Nullam non velit lobortis nisl porta porttitor scelerisque molestie ligula. Vestibulum tempus libero massa, eu pellentesque mauris congue sed. Proin sit amet nibh porta, varius nulla nec, fermentum nibh. Aliquam placerat cursus ipsum, ut efficitur nisl efficitur id.
+
+Aliquam eros ante, iaculis sed lectus non, mollis consequat lorem. Praesent vitae nulla a risus imperdiet pharetra. Praesent dapibus nisi eget sapien interdum posuere. In sodales dictum dui, sed vehicula libero suscipit et. Nunc bibendum, arcu sed feugiat hendrerit, diam turpis vestibulum turpis, et vestibulum arcu arcu non enim. Morbi faucibus et erat non ornare. In sapien diam, suscipit id tincidunt sit amet, consequat vitae ligula.</div>
+
+<div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet magna diam, a gravida lacus hendrerit at. Nullam maximus urna arcu, eget tempor leo blandit non. Proin luctus, tortor non molestie ullamcorper, lacus sem imperdiet nibh, sed egestas tortor leo at nunc. Nunc condimentum iaculis elit sed efficitur. Integer pretium ullamcorper metus, nec maximus odio lacinia maximus. Sed id tempus orci. Praesent commodo eget massa congue rhoncus. Nulla et eros eget nibh porttitor porttitor nec vitae enim. Morbi eros libero, pellentesque sed odio nec, gravida cursus magna. Ut eu libero sed dui hendrerit bibendum et sed ante. Morbi et eros at quam finibus hendrerit vitae et augue. Maecenas auctor quam lorem, ac dictum odio ullamcorper in. Donec pretium urna vitae est convallis semper ut in sem.
+
+Sed vulputate tincidunt pellentesque. Etiam et rutrum ipsum. Phasellus malesuada interdum varius. Curabitur quis molestie magna. Cras ut porta magna. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis blandit dui, nec condimentum arcu. Integer nec purus eu orci malesuada molestie. Aliquam ante velit, mollis vel ultrices eget, imperdiet vel erat. Nulla facilisi. Donec sed justo eu ex tincidunt faucibus sit amet at libero. Maecenas porta, sapien non fringilla vestibulum, felis ipsum sodales felis, nec interdum sapien ligula quis erat. Sed ultrices eget est sit amet pretium. Nam aliquet non urna ut dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed metus vitae ligula accumsan consectetur quis quis lacus. Maecenas ac tortor eu eros mattis fringilla. Cras tempor sed lacus quis volutpat. Sed bibendum, ipsum id viverra rhoncus, risus quam pulvinar tortor, at commodo enim felis tempor sapien. Curabitur vel rhoncus nulla. Maecenas varius ac risus nec pellentesque. In scelerisque semper ante, ac posuere urna. In bibendum est id facilisis lobortis. Etiam a quam finibus, suscipit magna non, rutrum orci. Quisque at arcu id quam tempor pretium nec ac dolor. Aenean ullamcorper est nec diam iaculis accumsan.
+
+Morbi ultrices leo eget varius ornare. Nulla facilisi. Vivamus vehicula lectus ipsum, sit amet posuere turpis consectetur in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras in feugiat tortor. Mauris semper orci sit amet ipsum blandit condimentum. Nullam non velit lobortis nisl porta porttitor scelerisque molestie ligula. Vestibulum tempus libero massa, eu pellentesque mauris congue sed. Proin sit amet nibh porta, varius nulla nec, fermentum nibh. Aliquam placerat cursus ipsum, ut efficitur nisl efficitur id.
+
+Aliquam eros ante, iaculis sed lectus non, mollis consequat lorem. Praesent vitae nulla a risus imperdiet pharetra. Praesent dapibus nisi eget sapien interdum posuere. In sodales dictum dui, sed vehicula libero suscipit et. Nunc bibendum, arcu sed feugiat hendrerit, diam turpis vestibulum turpis, et vestibulum arcu arcu non enim. Morbi faucibus et erat non ornare. In sapien diam, suscipit id tincidunt sit amet, consequat vitae ligula.</div>
+</div>
+
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+  <div class="row">
+  <div class="col-md-7">
+<div class="">
+    <svg width="460pt" height="300.20945pt" viewBox="0 0 720 463.20945" class="svg-states" enable-background="new 0 0 720 463.20945 "  class="img-fluid" alt="Responsive image"
         version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
         <g id="Layers">
             <g id="states">
@@ -11990,7 +12026,7 @@
                     338.90478,301.67606L343.22509,299.75608L344.42518,298.7961L344.18516,297.59611L346.1053,297.11612L346.1053,297.35611L346.34532,297.35611
                     L346.58534,297.59611L346.58534,297.35611L346.82536,297.35611L346.82536,297.11612L347.06537,297.11612L347.06537,297.35611
                     L347.30539,297.35611L347.30539,297.59611"/>
-                <path id="MY" clip-path="url(#SVG_CP_1)" fill="#ECFCD4" fill-rule="evenodd" stroke="#6E6E6E" stroke-width="0.48004" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+                <path  id="MY" clip-path="url(#SVG_CP_1)" fill="#ECFCD4" fill-rule="evenodd" stroke="#6E6E6E" stroke-width="0.48004" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
                     M331.94427,303.11604L332.18429,303.35604L332.18429,303.11604L332.4243,303.11604L332.4243,303.35604L332.66432,303.35604L332.90434,303.35604
                     L333.14436,303.35604L333.38437,303.35604L333.62439,303.59603L333.86441,303.59603L333.86441,303.83603L334.10443,303.83603
                     L334.34444,303.83603L334.58446,303.83603L334.58446,303.59603L334.82448,303.59603L335.0645,303.59603L335.30451,303.83603L
@@ -12052,8 +12088,7 @@
                     L326.18385,320.63581L326.18385,320.39581L326.18385,320.15582L326.18385,319.91582L325.94383,319.91582L325.94383,319.67582
                     L325.70381,319.67582L325.4638,319.67582L325.4638,319.43583L325.4638,319.19583L325.4638,318.95583L325.4638,318.71584L325.4638,318.47584
                     L325.22378,318.47584L325.22378,318.71584L325.22378,318.95583L324.98376,318.95583L324.98376,319.19583z"/>
-                    <a xlink:href="http://localhost/medios/index.php?pagina=accesos"> <a/>
-                <path id="CZ" clip-path="url(#SVG_CP_1)" fill="#ECFCD4" fill-rule="evenodd" stroke="#6E6E6E" stroke-width="0.48004" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+                                  <path id="CZ" clip-path="url(#SVG_CP_1)" fill="#ECFCD4" fill-rule="evenodd" stroke="#6E6E6E" stroke-width="0.48004" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
                     M308.42255,322.55579L308.42255,322.79578L308.66257,322.79578L308.90258,322.79578L308.90258,323.03578L309.1426,323.03578L
                     309.38262,323.03578L309.38262,323.27578L309.62264,323.27578L309.86265,323.27578L309.86265,323.51577L310.10267,323.51577L
                     310.34269,323.51577L310.34269,323.75577L310.58271,323.75577L310.82272,323.75577L311.06274,323.75577L311.06274,323.99577L
@@ -13428,8 +13463,7 @@
                     L454.83325,329.2757L455.07327,329.2757L455.31329,329.2757L455.31329,329.51569L455.31329,329.2757L455.55331,329.2757L455.79332,329.2757
                     L456.03334,329.2757L456.27336,329.2757L456.51338,329.2757L456.75339,329.2757L456.99341,329.2757L456.99341,329.51569L457.23343,329.2757
                     L457.23343,329.51569L457.23343,329.2757L457.47345,329.2757L457.71346,329.2757L457.71346,329.0357L457.95348,329.0357L458.1935,329.0357
-                    L458.1935,328.7957L458.1935,329.0357"/>
-                    
+                    L458.1935,328.7957L458.1935,329.0357"/>                    
                 <path  id="RV" clip-path="url(#SVG_CP_1)" fill="#ECFCD4" fill-rule="evenodd" stroke="none" d="M406.82974,392.63487L406.58973,392.63487
                     L406.58973,392.39487L406.82974,392.63487zM406.82974,389.03492L407.06976,389.27491L407.06976,389.51491L407.06976,389.27491
                     L406.82974,389.27491L406.58973,389.27491L406.58973,389.03492L406.82974,389.03492zM378.74769,372.95513L378.74769,373.19512
@@ -14072,7 +14106,7 @@
     </svg>
     </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
         <ul class="list-of-states">
     
     <li data-state="RV"><a href="#">RIVAS</a></li>
@@ -14100,6 +14134,16 @@
 
 </div>
 </div>
+
+
+
+
+
+  </div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+</div>
+
+
 
 
 
