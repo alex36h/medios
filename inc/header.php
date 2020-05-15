@@ -39,7 +39,7 @@
     <link href="img/system/favicon.ico?v=<?php echo $parametro['webversion']; ?>" rel="icon" type="image/x-icon"/>
     <link href="css/system.css?v=<?php echo $pagina; ?>" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <title>Medios | M&R Consultores</title>
+    <title><?php echo  $varAcceso['nombre']; ?> | M&R Consultores</title>
 </head>
 <body>
 
@@ -103,7 +103,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarText">
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
      <?php
 $listaMenu = "";
@@ -111,7 +111,7 @@ for($f = 0; $f<count($vectorMenu); $f++){
    if( $vectorMenu [$f] ['es_menu']== 'SI'){
 
     $menuAbierto ='';
-    $listaMenuInt ='<ul >';
+    $listaMenuInt ='<ul>';
     for($i = 0; $i<count($vectorMenu); $i++){
 
         if( $vectorMenu [$i] ['es_menu']== 'NO' && 
@@ -123,14 +123,19 @@ for($f = 0; $f<count($vectorMenu); $f++){
                 $menuAbierto ='class ="active"';
             }
 
-
-
-            $listaMenuInt .='<div class="dropdown-menu" aria-labelledby="navbarDropdown">';
-            $listaMenuInt .='<a class="dropdown-item" href="index.php?pagina='.$vectorMenu[$i]['ventana'].'">';  
+    
+      
+           
+          
+            $listaMenuInt .='<div class= "dropdown-menu" aria-labelledby="navbarDropdown">';
+            $listaMenuInt .='<a class="dropdown-item" href="index.php?pagina='.$vectorMenu[$i]['ventana'].'">';
             $listaMenuInt .='<i class="fas '.$vectorMenu[$i]['icono'].'"></i>';       
-            $listaMenuInt .=$vectorMenu [$i] ['nombre'];
+            $listaMenuInt .=$vectorMenu [$i]['nombre'];
             $listaMenuInt .='</a>';
             $listaMenuInt .='</div>';
+            
+          
+          
         }
 
     }
@@ -138,10 +143,14 @@ for($f = 0; $f<count($vectorMenu); $f++){
 
 
     $listaMenuInt .='</ul>';
-    $listaMenu .='<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ';
+    $listaMenu .='<li class="nav-item dropdown"> ';
+    $listaMenu .= '<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
     $listaMenu .='<i class="fas '.$vectorMenu[$f]['icono'].'"></i>'.$vectorMenu[$f]['nombre'];
     $listaMenu .=' </a>';
+   
     $listaMenu .= $listaMenuInt;
+
+        
     $listaMenu .='</li >';
 
    }

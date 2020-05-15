@@ -15,7 +15,7 @@ function cargarOptionUsuarios() {
             switch (respuesta.estado) {
                 case 1:
 
-                    //console.log(respuesta);
+                    console.log(respuesta);
                     var opciones = respuesta.data;
 
                     if (opciones.length > 0) {
