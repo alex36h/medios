@@ -192,6 +192,8 @@ include('inc/'.$pagina.'.php');
 include('inc/footer.php');
 
 
+
+
 }else{
     // Si no tenemos una sesion iniciada, mostramos el login del sistema
     include('inc/login.php');
