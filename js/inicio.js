@@ -69,6 +69,7 @@ function mostrarGraficoInicio() {
 
 $(document).ready(function() {
 
+
     /*
     Highcharts.chart('container', {
         chart: {
