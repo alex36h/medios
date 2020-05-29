@@ -66,7 +66,7 @@
 
 
 
-<script type="text/javascript" language="javascript" src="lib/js/jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" language="javascript" src="lib/js/jquery/jquery-3.5.1.min.js"></script>
 <script type="text/javascript" language="javascript" src="lib/css/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" language="javascript" src="js/login.js?v=<?php echo $parametro['webversion']; ?>"></script>
 </html>

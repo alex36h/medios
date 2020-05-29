@@ -23,7 +23,21 @@
               echo '<link href="lib/js/chosen_v1.8.7/chosen.min.css" rel="stylesheet" type="text/css"/>';
                   
                break;
+
+               case 'datatable';
+               echo '<link href="lib/js/DataTables-1.10.21/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>';
+                   
+                break;
   
+               case 'datatable';
+               echo '<link href="lib/js/DataTables-1.10.21/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css"/>';
+                   
+                break;
+
+                case 'datatable';
+                echo '<link href="lib/js/DataTables-1.10.21/css/dataTables.bootstrap.css" rel="stylesheet" type="text/css"/>';
+                    
+                 break;
  
 
         }

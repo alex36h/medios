@@ -18,7 +18,7 @@
              break;
 
              case 'jquery';
-             echo '<script type="text/javascript" language="javascript" src="lib/js/jquery/jquery-3.4.1.min.js"></script>';
+             echo '<script type="text/javascript" language="javascript" src="lib/js/jquery/jquery-3.5.1.min.js"></script>';
                  
               break;
               
@@ -37,6 +37,19 @@
               echo '<script type="text/javascript" language="javascript" src="lib/js/chosen_v1.8.7/chosen.jquery.min.js"></script>';
                   
                break;
+
+               case 'datatable';
+               echo '<script type="text/javascript" language="javascript" src="lib/js/DataTables-1.10.21/js/jquery.dataTables.min.js"></script>';
+                   
+                break;
+
+               case 'datatable';
+               echo '<script type="text/javascript" language="javascript" src="lib/js/DataTables-1.10.21/js/dataTables.bootstrap4.min.js"></script>';
+                   
+                break;
+
+            
+
          }
 
 
