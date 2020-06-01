@@ -42,9 +42,9 @@
 
     <!-- Login Form -->
     <form role="form" id="formLogin">
-      <input type="text" id="usuario" class="fadeIn second" name="user" placeholder="Usuario">
-      <input type="password" id="clave" class="fadeIn third" name="login" placeholder="Contraseña">
-      <input type="submit" class="fadeIn fourth" value="Acceder">
+      <input type="text" id="usuario" class="login fadeIn second" name="user" placeholder="Usuario">
+      <input type="password" id="clave" class="login fadeIn third" name="login" placeholder="Contraseña">
+      <input type="submit" class="login fadeIn fourth" value="Acceder">
     </form>
 
     <!-- Remind Passowrd -->
