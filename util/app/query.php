@@ -17,24 +17,25 @@ try{
 
     if( !$session->checkSession() ) throw new Exception("Debe iniciar una sesión");
 
+    $cuadrante='';
+    $cuadrante = $_POST['cuadrante'];
+
     $resultado = $conexion->ejecutarConsulta("
-        SELECT COUNT(*) AS total, date(fecha) AS fecha
-        FROM log_menu
-        GROUP BY date(fecha)
-        ORDER BY fecha DESC
-        LIMIT 10
+        SELECT * FROM tbl_religion WHERE id_cuadrante='".$cuadrante."'
     ");
 
-    $categories = array();
-    $data = array('name' => 'Visitas', 'data' => array());
+    
 
     foreach($resultado as $fila){
-        $categories[] = $fila['fecha'];
-        $data['data'][] = (int)$fila['total'];
-    }
+        
+   
+    
 
-    $respuesta->data['categories'] = $categories;
-    $respuesta->data['series'][] = $data;
+        $respuesta->data [] = $fila;
+      
+
+ 
+    }
 
 }catch(Exception $e){
     $respuesta->estado = 2;
