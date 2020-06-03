@@ -63,31 +63,7 @@
 
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-
-  <div class="row">
-
-<div class="col-md-12" id="cntTabla">
-
-    <div class="table-responsive">
-
-        <table id="tablaUsuarios" class="cell-border stripe table display" width="100%">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>GESTIÓN</th>
-                    <th>USUARIO</th>
-                    <th>NOMBRE</th>
-                    <th>TIPO USUARIO</th>
-                    <th>EMAIL</th>
-                </tr>
-            </thead>
-
-        </table>
-
-    </div>
-
-</div>
-</div>
+    <h1>Home</h1>
 
   </div>
   <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">

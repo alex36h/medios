@@ -1,0 +1,6 @@
+2020-06-03 02:42:24 >>> Error en el query: ( Table 'pedidos.tbl_religion' doesn't exist ) 
+        SELECT * FROM tbl_religion WHERE id_cuadrante='2'
+    
+2020-06-03 02:43:49 >>> Error en el query: ( Table 'pedidos.tbl_religion' doesn't exist ) 
+        SELECT * FROM tbl_religion WHERE id_cuadrante='1'
+    
