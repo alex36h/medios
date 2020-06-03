@@ -4,3 +4,19 @@
 2020-06-03 02:43:49 >>> Error en el query: ( Table 'pedidos.tbl_religion' doesn't exist ) 
         SELECT * FROM tbl_religion WHERE id_cuadrante='1'
     
+2020-06-03 14:24:26 >>> Error en el query: ( Unknown column 'tbl_licenciamunic' in 'where clause' ) 
+        SELECT * FROM tbl_religion WHERE tbl_licenciamunic='1'
+    
+2020-06-03 14:24:55 >>> Error en el query: ( Unknown column 'tbl_licenciamunic' in 'where clause' ) 
+        SELECT * FROM tbl_religion WHERE tbl_licenciamunic ='1'
+    
+2020-06-03 17:38:38 >>> Error en el query: ( Unknown column 'id_municipio' in 'where clause' ) 
+        SELECT * FROM tbl_religion WHERE id_cuadrante='0'
+        AND id_municipio ='1'
+        AND id_corrida ='2'
+    
+2020-06-03 17:38:53 >>> Error en el query: ( Unknown column 'id_municipio' in 'where clause' ) 
+        SELECT * FROM tbl_religion WHERE id_cuadrante='1'
+        AND id_municipio ='1'
+        AND id_corrida ='2'
+    

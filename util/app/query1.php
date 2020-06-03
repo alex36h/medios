@@ -20,38 +20,15 @@ try{
     $cuadrante='';
     $municipio='';
     $corrida='';
-
-    
-
     $cuadrante = $_POST['cuadrante'];
     $municipio= $_POST['municipio'];    
     $corrida= $_POST['corrida'];
 
-    if(empty($municipio)){
-
-        throw new Exception("Debe Seleccionar un Municipio");
-    }
-     
-
-
-    if(empty($cuadrante)){
-
-        throw new Exception("Debe Seleccionar un Cuadrante");
-    }
-     
-  
-    if(empty($corrida)){
-
-        throw new Exception("Debe Seleccionar una Corrida");
-    }
-     
-    
-    else{    $resultado = $conexion->ejecutarConsulta("
-        SELECT * FROM tbl_religion WHERE id_cuadrante='".$cuadrante."'
+    $resultado = $conexion->ejecutarConsulta("
+        SELECT * FROM  tbl_licenciamunic WHERE id_cuadrante='".$cuadrante."'
         AND id_municipio ='".$municipio."'
         AND id_corrida ='".$corrida."'
     ");
-    }
 
     
 
