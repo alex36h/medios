@@ -17,7 +17,7 @@ class Conexion{
     {
         $this->baseDatos = 'pedidos';
         $this->usuario = 'root';
-        $this->clave = 'root';
+        $this->clave = '12345';
         $this->servidor = '127.0.0.1';
         $this->puerto = 3306;
         $this->logs = $logs;

@@ -8,7 +8,7 @@
 
                 <option value="0" selected="selected">Seleccione</option>
                 <option value="1">Masaya</option>
-                <option value="2">Granada</option>
+                <option value="2">Rivas</option>
 
             </select>
 
@@ -68,7 +68,7 @@
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <h1>Home</h1>
-            <div id="container"></div>
+            
         </div>
 
 
