@@ -1,0 +1,24 @@
+2020-06-09 18:55:41 >>> Error en el query: ( Unknown column 'porcentaje' in 'order clause' ) 
+        SELECT * FROM  tbl_servnac WHERE id_cuadrante='1'
+        AND id_municipio ='1'
+        AND id_corrida ='1'
+        ORDER by porcentaje DESC
+    
+2020-06-09 18:55:48 >>> Error en el query: ( Unknown column 'porcentaje' in 'order clause' ) 
+        SELECT * FROM  tbl_servnac WHERE id_cuadrante='1'
+        AND id_municipio ='1'
+        AND id_corrida ='1'
+        ORDER by porcentaje DESC
+    
+2020-06-09 18:56:15 >>> Error en el query: ( Unknown column 'porcentaje' in 'order clause' ) 
+        SELECT * FROM  tbl_servnac WHERE id_cuadrante='1'
+        AND id_municipio ='1'
+        AND id_corrida ='1'
+        ORDER by porcentaje DESC
+    
+2020-06-09 19:02:18 >>> Error en el query: ( Table 'pedidos.tbl_licenciamunic' doesn't exist ) 
+        SELECT * FROM  tbl_licenciamunic WHERE id_cuadrante='1'
+        AND id_municipio ='1'
+        AND id_corrida ='1'
+        ORDER by porcentaje DESC
+    

@@ -25,9 +25,10 @@ try{
     $corrida= $_POST['corrida'];
 
     $resultado = $conexion->ejecutarConsulta("
-        SELECT * FROM  tbl_licenciamunic WHERE id_cuadrante='".$cuadrante."'
+        SELECT * FROM  tbl_lcm WHERE id_cuadrante='".$cuadrante."'
         AND id_municipio ='".$municipio."'
         AND id_corrida ='".$corrida."'
+        ORDER by porcentaje DESC
     ");
 
     

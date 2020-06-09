@@ -76,37 +76,17 @@
 
             <div class="row">
 
-                <div class="col-md-3" id="cntTablaRel">
+            
+            <div class="col-md-3" id="cntTablaRel">
                     <h6 class="text-center">Afiliación Religiosa</h6>
 
                     <div class="table-responsive ">
 
-                        <table id="tablaReligion" class="cell-border stripe table display table-sm" width="100%">
+                        <table id="tablaAfReligiosa" class="cell-border stripe table display table-sm" width="100%">
                             <thead>
                                 <tr>
 
-                                    <th>Denominacion</th>
-                                    <th>Cuadrante</th>
-
-                                </tr>
-                            </thead>
-
-                        </table>
-
-                    </div>
-
-
-
-                </div>
-                <div class="col-md-3" id="cntTablaRel">
-                    <h6 class="text-center">Licencia ciudadana Municipal</h6>
-                    <div class="table-responsive ">
-
-                        <table id="tablaLicencia" class="cell-border stripe table display table-sm" width="100%">
-                            <thead>
-                                <tr>
-
-                                    <th>Licencia</th>
+                                    <th>Afiliación</th>
                                     <th>Porcentaje</th>
 
                                 </tr>
@@ -115,9 +95,63 @@
                         </table>
 
                     </div>
+
+
+
                 </div>
+
+
+                <div class="col-md-3" id="cntTablaRel">
+                    <h6 class="text-center">Calidad Religiosa</h6>
+
+                    <div class="table-responsive ">
+
+                        <table id="tablaReligion" class="cell-border stripe table display table-sm" width="100%">
+                            <thead>
+                                <tr>
+
+                                    <th>Calidad Religiosa</th>
+                                    <th>Porcentaje</th>
+
+                                </tr>
+                            </thead>
+
+                        </table>
+
+                    </div>
+
+
+
+                </div>
+               
             </div>
 <hr>
+
+<div class="row">
+
+<div class="col-md-3" id="cntTablaRel">
+    <h6 class="text-center">Licencia ciudadana Municipal</h6>
+    <div class="table-responsive ">
+
+        <table id="tablaLicencia" class="cell-border stripe table display table-sm" width="100%">
+            <thead>
+                <tr>
+
+                    <th>Licencia</th>
+                    <th>Porcentaje</th>
+
+                </tr>
+            </thead>
+
+        </table>
+
+    </div>
+</div>
+</div>
+
+<hr>
+
+
  <div class="row">
 
 <div class="col-md-8" id="cntTablaRel">

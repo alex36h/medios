@@ -38,21 +38,24 @@ function consultarDatosRel() {
 
             var html = '';
             var i;
-            console.log(mydata);
+
             html += '<thead>';
             html += '<tr>';
 
-            html += '<th>Denominación</th>';
-            html += '<th>Cuadrante</th>';
+            html += '<th>Calidad Religiosa</th>';
+            html += '<th>Porecentaje</th>';
 
             html += '</tr>';
             html += '</thead>';
 
 
             for (i = 0; i < mydata.length; i++) {
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
                 html += '<tr>' +
                     '<td>' + mydata[i].religion + '</td>' +
-                    '<td>' + mydata[i].porcentaje + '%' + '</td>' +
+                    '<td>' + porcentaje.toPrecision(4) + '%' + '</td>' +
                     '</tr>';
             }
 
@@ -105,9 +108,12 @@ function consultarDatosLicMun() {
             html += '</thead>';
 
             for (i = 0; i < mydata.length; i++) {
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
                 html += '<tr>' +
                     '<td>' + mydata[i].licencia + '</td>' +
-                    '<td>' + mydata[i].porcentaje + '</td>' +
+                    '<td>' + porcentaje.toPrecision(4) + '%' + '</td>' +
                     '</tr>';
             }
             $("#tablaLicencia").html(html);
@@ -183,8 +189,76 @@ function consultarDatosServiciosNac() {
 
 }
 
-function mostrarMapa() {
+function consultarDatosAfReligiosa() {
 
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/afreligiosa.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+            switch (respuesta.estado) {
+                case 1:
+                    break;
+                case 2:
+                    $('#myModalWarningBody').html(respuesta.mensaje);
+                    $('#myModalWarning').modal('show');
+                    break;
+                default:
+                    alert("Se ha producido un error");
+                    break;
+            }
+
+
+
+            var mydata = respuesta.data;
+
+            var html = '';
+            var i;
+
+            html += '<thead>';
+            html += '<tr>';
+
+            html += '<th>Afiliación</th>';
+            html += '<th>Porcentaje</th>';
+
+            html += '</tr>';
+            html += '</thead>';
+
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].religion + '</td>' +
+                    '<td>' + porcentaje.toPrecision(3) + '%' + '</td>' +
+                    '</tr>';
+            }
+
+            $("#tablaAfReligiosa").html(html);
+
+
+        },
+        complete: function() {
+
+        }
+    });
 }
 
 
@@ -200,6 +274,7 @@ $(document).ready(function() {
         consultarDatosRel();
         consultarDatosLicMun();
         consultarDatosServiciosNac();
+        consultarDatosAfReligiosa();
 
 
         return false;

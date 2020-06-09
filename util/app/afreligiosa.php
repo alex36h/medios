@@ -47,10 +47,10 @@ try{
      
     
     else{    $resultado = $conexion->ejecutarConsulta("
-        SELECT * FROM tbl_religion WHERE id_cuadrante='".$cuadrante."'
+        SELECT * FROM tbl_areligion WHERE id_cuadrante='".$cuadrante."'
         AND id_municipio ='".$municipio."'
         AND id_corrida ='".$corrida."'
-       
+        ORDER by religion ASC
     ");
     }
 

@@ -28,6 +28,7 @@ try{
         SELECT * FROM  tbl_servnac WHERE id_cuadrante='".$cuadrante."'
         AND id_municipio ='".$municipio."'
         AND id_corrida ='".$corrida."'
+       
     ");
 
     
