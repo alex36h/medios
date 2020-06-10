@@ -50,7 +50,7 @@ try{
         SELECT * FROM tbl_areligion WHERE id_cuadrante='".$cuadrante."'
         AND id_municipio ='".$municipio."'
         AND id_corrida ='".$corrida."'
-        ORDER by religion ASC
+        ORDER BY FIELD (religion,'Catolico','Protestante','Creyente sin denominacion ','No creyente')
     ");
     }
 
