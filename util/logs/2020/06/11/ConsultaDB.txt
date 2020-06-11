@@ -1,0 +1,6 @@
+2020-06-11 19:44:14 >>> Error en el query: ( You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY FIELD (licencia,'Confianza','Credibilidad','Legitimidad')' at line 4 ) 
+        SELECT * FROM  tbl_lcm2 WHERE id_cuadrante='1'
+        AND id_municipio ='1'
+        AND id_corrida ='1'
+        ORDER by BY FIELD (licencia,'Confianza','Credibilidad','Legitimidad')
+    

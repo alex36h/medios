@@ -25,10 +25,10 @@ try{
     $corrida= $_POST['corrida'];
 
     $resultado = $conexion->ejecutarConsulta("
-        SELECT * FROM  tbl_servnac WHERE id_cuadrante='".$cuadrante."'
+        SELECT * FROM  tbl_sermun WHERE id_cuadrante='".$cuadrante."'
         AND id_municipio ='".$municipio."'
         AND id_corrida ='".$corrida."'
-        ORDER BY FIELD (servicio, 'Servicio de energía eléctrica domiciliar','Servicios de educación pública','Agua Potable','Servicios de salud pública','Servicios de Seguridad pública','Servicios de alumbrado público','Oportunidades de trabajo','Aguas servidas, alcantarillados')
+        ORDER BY FIELD (servicio, 'Transporte Colectivo','Centros deportivos', 'Parques y centros de recreación familiar', 'Otros servicios de transporte? (Caponeras, ciclo taxis, etc.)','Transporte selectivo, taxis','Atención a la población en situaciones de desastres naturales','Acceso a terrenos en cementerios','Construcción y mantenimiento de aceras y andenes','Recolección de desechos sólidos?','Limpieza de calles','Mantenimiento y limpieza de cementerios','Mantenimiento de las calles','Ornato de su sector de residencia','Ornato de la ciudad','Orden e higiene en los mercados','Estados de caminos rurales')
     ");
 
     

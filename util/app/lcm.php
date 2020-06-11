@@ -28,7 +28,7 @@ try{
         SELECT * FROM  tbl_lcm WHERE id_cuadrante='".$cuadrante."'
         AND id_municipio ='".$municipio."'
         AND id_corrida ='".$corrida."'
-        ORDER by porcentaje DESC
+        ORDER BY FIELD (licencia,'Apropiacion','Aprobacion','Aceptación','Rechazo')
     ");
 
     
