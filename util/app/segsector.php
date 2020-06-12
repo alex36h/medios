@@ -25,13 +25,12 @@ try{
     $corrida= $_POST['corrida'];
 
     $resultado = $conexion->ejecutarConsulta("
-        SELECT * FROM  tbl_servnac WHERE id_cuadrante='".$cuadrante."'
+        SELECT * FROM  tbl_segsector WHERE id_cuadrante='".$cuadrante."'
         AND id_municipio ='".$municipio."'
         AND id_corrida ='".$corrida."'
-        ORDER BY FIELD (servicio, 'Servicio de energía eléctrica domiciliar','Servicios de educación pública','Agua Potable','Servicios de salud pública','Servicios de Seguridad pública','Servicios de alumbrado público','Oportunidades de trabajo','Aguas servidas, alcantarillados')
+       
     ");
 
-    
     
 
     foreach($resultado as $fila){

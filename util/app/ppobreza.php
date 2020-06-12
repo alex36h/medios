@@ -25,13 +25,12 @@ try{
     $corrida= $_POST['corrida'];
 
     $resultado = $conexion->ejecutarConsulta("
-        SELECT * FROM  tbl_servnac WHERE id_cuadrante='".$cuadrante."'
+        SELECT * FROM  tbl_percpobreza WHERE id_cuadrante='".$cuadrante."'
         AND id_municipio ='".$municipio."'
         AND id_corrida ='".$corrida."'
-        ORDER BY FIELD (servicio, 'Servicio de energía eléctrica domiciliar','Servicios de educación pública','Agua Potable','Servicios de salud pública','Servicios de Seguridad pública','Servicios de alumbrado público','Oportunidades de trabajo','Aguas servidas, alcantarillados')
+        ORDER BY FIELD (percepcion,'Que vivieron la generación de sus padres con respecto a la que vivieron la generación de sus abuelos, era…','Que vive actualmente con respecto a la que vivieron la generación de sus padres, es','Que vivirán la generación de sus hijos con respecto a la que vive actualmente, será')
     ");
 
-    
     
 
     foreach($resultado as $fila){

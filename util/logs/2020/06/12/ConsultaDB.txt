@@ -1,0 +1,6 @@
+2020-06-12 15:19:08 >>> Error en el query: ( Unknown column 'licencia' in 'order clause' ) 
+        SELECT * FROM  tbl_capgestion WHERE id_cuadrante='1'
+        AND id_municipio ='1'
+        AND id_corrida ='1'
+        ORDER BY FIELD (licencia,'Conocimiento de los problemas del municipio','Resolución oportuna de problemas ','Capacidad de resolver los problemas del municipio','Comunicación con la ciudadanía','Confianza que genera con la ciudadanía')
+    

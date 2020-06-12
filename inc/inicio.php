@@ -1,4 +1,4 @@
-<h1 class="text-center"><span><?php echo $varAcceso['nombre'] ;?></span></h1>
+<h3 class="text-center"><span><?php echo $varAcceso['nombre'] ;?></span></h3>
 <hr>
 <form role="form" id="formConsulta">
     <div class="row">
@@ -263,8 +263,7 @@
                     </div>
 
                     <hr>
-
-                    <div class="row">
+ <div class="row">
 
 <div class="col-md-12" id="cntTablaRel">
     <h6 class="text-center"> Satisfacción con servicios nacionales </h6>
@@ -327,13 +326,101 @@
 
 </div>
 
+<hr>
+<div class="row">
 
-                </div>
+<div class="col-md-7" id="cntTablaRel">
+    <h6 class="text-center"> Capacidad de Gestión </h6>
+
+    <div class="table-responsive ">
+
+        <table id="tablaCapGestion"
+            class="table-striped table-bordered table-hover table-sm" width="100%">
+            <thead>
+                <tr>
+
+                    <th>Gestión</th>
+                    <th>Porcentaje</th>
+             
+
+
+                </tr>
+            </thead>
+
+        </table>
+
+    </div>
+
+</div>
+
+</div>
+
+
+
+</div>
 
 
                 <div class="tab-pane fade" id="percepcion" role="tabpanel" aria-labelledby="percepcion-tab">
 
-                <h1>Percepcion</h1>
+                <div class="row">
+
+<div class="col-md-12" id="cntTablaRel">
+    <h6 class="text-center"> Percepción acerca del desarrollo del municipio  </h6>
+
+    <div class="table-responsive ">
+
+        <table id="tablaPercDesa"
+            class="table-striped table-bordered table-hover table-sm" width="100%">
+            <thead>
+                <tr>
+
+                    <th>Mejor</th>
+                    <th>Igual</th>
+                    <th>Peor</th>
+                    <th>Ns/Nr</th>
+
+
+                </tr>
+            </thead>
+
+        </table>
+
+    </div>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="row">
+
+<div class="col-md-12" id="cntTablaRel">
+    <h6 class="text-center"> Percepción Niveles de Pobreza  </h6>
+
+    <div class="table-responsive ">
+
+        <table id="tablaPercPobr"
+            class="table-striped table-bordered table-hover table-sm" width="100%">
+            <thead>
+                <tr>
+
+                    <th>Mejor</th>
+                    <th>Igual</th>
+                    <th>Peor</th>
+                    <th>Ns/Nr</th>
+
+
+                </tr>
+            </thead>
+
+        </table>
+
+    </div>
+
+</div>
+
+</div>
 
                 </div>
 
@@ -342,6 +429,52 @@
                 <div class="tab-pane fade" id="seguridad" role="tabpanel" aria-labelledby="seguridad-tab">
 
                     <h1>Seguridad Ciudadana</h1>
+
+                    <div class="row">
+
+<div class="col-md-5" id="cntTablaRel">
+    <h6 class="text-center">Indice de victimización</h6>
+    <div class="table-responsive ">
+
+        <table id="tablaIndVictim" class="table-striped table-bordered table-hover table-sm"
+            width="100%">
+            <thead>
+                <tr>
+
+                    <th>Ha sido victima</th>
+                    <th>No ha sido victima</th>
+
+                </tr>
+            </thead>
+
+        </table>
+
+    </div>
+</div>
+
+<div class="col-md-7" id="cntTablaRel">
+    <h6 class="text-center">Indice de victimización</h6>
+    <div class="table-responsive ">
+
+        <table id="tablaSegSector" class="table-striped table-bordered table-hover table-sm"
+            width="100%">
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th> Muy seguro/seguro</th>
+                    <th>Muy inseguro/inseguro</th>
+                    <th>Ns/nr</th>
+                    <th>No ha sido victima</th>
+
+                </tr>
+            </thead>
+
+        </table>
+
+    </div>
+</div>
+
+</div>
 
 
 
