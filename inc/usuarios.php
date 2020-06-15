@@ -1,7 +1,24 @@
 <h1 class="text-center"><span><?php echo $varAcceso['nombre'] ;?></span></h1>
 <hr>
+<form role="form" method="POST" action= "util/upload/user.php"enctype="multipart/form-data"  >
+<div class="row">
 
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="filebutton">Seleccionar Archivo</label>
+                                <div class="col-md-4">
+                                    <input type="file" required name="file" id="file" class="input-large">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="singlebutton"></label>
+                                <div class="col-md-4">
+                                    <button type="submit" id="submit" name="Import" class="btn btn-primary " data-loading-text="Loading...">Import</button>
+                                </div>
+                            </div>
+                   
 
+                        </div>
+                        </form>
 
 <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">

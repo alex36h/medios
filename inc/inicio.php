@@ -452,8 +452,13 @@
     </div>
 </div>
 
-<div class="col-md-7" id="cntTablaRel">
-    <h6 class="text-center">Indice de victimización</h6>
+
+
+</div>
+<hr>
+<div class="row">
+<div class="col-md-12" id="cntTablaRel">
+    <h6 class="text-center">Que tan Seguro se Siente</h6>
     <div class="table-responsive ">
 
         <table id="tablaSegSector" class="table-striped table-bordered table-hover table-sm"
@@ -476,7 +481,55 @@
 
 </div>
 
+<hr>
+<div class="row">
+<div class="col-md-12" id="cntTablaRel">
+    <h6 class="text-center">Que tan seguro se siente Durante el dia</h6>
+    <div class="table-responsive ">
 
+        <table id="tablaSegDia" class="table-striped table-bordered table-hover table-sm"
+            width="100%">
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>Muy seguro/seguro</th>
+                    <th>Muy inseguro/inseguro</th>
+                    <th>Ns/nr</th>
+                    <th>No ha sido victima</th>
+
+                </tr>
+            </thead>
+
+        </table>
+
+    </div>
+</div>
+</div>
+
+<hr>
+<div class="row">
+<div class="col-md-12" id="cntTablaRel">
+    <h6 class="text-center">Que tan seguro se siente Durante la noche</h6>
+    <div class="table-responsive ">
+
+        <table id="tablaSegNoche" class="table-striped table-bordered table-hover table-sm"
+            width="100%">
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>Muy seguro/seguro</th>
+                    <th>Muy inseguro/inseguro</th>
+                    <th>Ns/nr</th>
+                    <th>No ha sido victima</th>
+
+                </tr>
+            </thead>
+
+        </table>
+
+    </div>
+</div>
+</div>
 
 
                 </div>

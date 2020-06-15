@@ -813,7 +813,140 @@ function consultarDatosSegSector() {
 
 }
 
+function consultarDatosSegDia() {
 
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/segdia.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+
+            var html = '';
+            var i;
+
+            html += ' <thead>';
+            html += '<tr>';
+
+            html += '<th></th>';
+            html += '<th>Muy seguro/seguro</th>';
+            html += '<th>Muy inseguro/inseguro</th>';
+            html += '<th>Ns/nr</th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var seguro = mydata[i].seguro * 100;
+                var inseguro = mydata[i].inseguro * 100;
+                var nsnr = mydata[i].nsnr * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].lugar + '</td>' +
+                    '<td>' + seguro.toFixed(1) + '%' + '</td>' +
+                    '<td>' + inseguro.toFixed(1) + '%' + '</td>' +
+                    '<td>' + nsnr.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaSegDia").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatosSegNoche() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/segnoche.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+
+            var html = '';
+            var i;
+
+            html += ' <thead>';
+            html += '<tr>';
+
+            html += '<th></th>';
+            html += '<th>Muy seguro/seguro</th>';
+            html += '<th>Muy inseguro/inseguro</th>';
+            html += '<th>Ns/nr</th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var seguro = mydata[i].seguro * 100;
+                var inseguro = mydata[i].inseguro * 100;
+                var nsnr = mydata[i].nsnr * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].lugar + '</td>' +
+                    '<td>' + seguro.toFixed(1) + '%' + '</td>' +
+                    '<td>' + inseguro.toFixed(1) + '%' + '</td>' +
+                    '<td>' + nsnr.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaSegNoche").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
 
 
 $(document).ready(function() {
@@ -835,6 +968,8 @@ $(document).ready(function() {
         consultarDatosPercPobreza();
         consultarIndVictim();
         consultarDatosSegSector();
+        consultarDatosSegDia();
+        consultarDatosSegNoche();
 
         return false;
 

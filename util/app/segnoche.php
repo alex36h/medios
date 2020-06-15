@@ -25,10 +25,10 @@ try{
     $corrida= $_POST['corrida'];
 
     $resultado = $conexion->ejecutarConsulta("
-        SELECT * FROM  tbl_segsector WHERE id_cuadrante='".$cuadrante."'
+        SELECT * FROM  tbl_segnoche WHERE id_cuadrante='".$cuadrante."'
         AND id_municipio ='".$municipio."'
         AND id_corrida ='".$corrida."'
-        ORDER BY FIELD (lugar , 'Barrio o sector de residencia','Municipio','Nicaragua')
+        ORDER BY FIELD (lugar , 'Barrio/Sector de residencia','municipio')
        
     ");
 
