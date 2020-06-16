@@ -240,9 +240,6 @@
                                 </table>
 
                             </div>
-                        </div>
-                        <div class="col-md-6" id="cntTablaRel">
-                            <h6 class="text-center">Licencia ciudadana Municipal 2</h6>
                             <div class="table-responsive ">
 
                                 <table id="tablaLicencia2" class="table-striped table-bordered table-hover table-sm"
@@ -250,8 +247,7 @@
                                     <thead>
                                         <tr>
 
-                                            <th>Licencia</th>
-                                            <th>Porcentaje</th>
+
 
                                         </tr>
                                     </thead>
@@ -260,167 +256,171 @@
 
                             </div>
                         </div>
+                        <div class="col-md-6" id="cntTablaRel">
+                            <h6 class="text-center">Licencia ciudadana Municipal 2</h6>
+
+                        </div>
                     </div>
 
                     <hr>
- <div class="row">
+                    <div class="row">
 
-<div class="col-md-12" id="cntTablaRel">
-    <h6 class="text-center"> Satisfacción con servicios nacionales </h6>
+                        <div class="col-md-12" id="cntTablaRel">
+                            <h6 class="text-center"> Satisfacción con servicios nacionales </h6>
 
-    <div class="table-responsive ">
+                            <div class="table-responsive ">
 
-        <table id="tablaSatisfaccionServ"
-            class="table-striped table-bordered table-hover table-sm" width="100%">
-            <thead>
-                <tr>
+                                <table id="tablaSatisfaccionServ"
+                                    class="table-striped table-bordered table-hover table-sm" width="100%">
+                                    <thead>
+                                        <tr>
 
-                    <th>Servicio</th>
-                    <th>Satisfecho</th>
-                    <th>Ni satisfecho ni insatisfecho</th>
-                    <th>Insatisfecho</th>
-                    <th>Ns/Nr</th>
-
-
-                </tr>
-            </thead>
-
-        </table>
-
-    </div>
-
-</div>
-
-</div>
+                                            <th>Servicio</th>
+                                            <th>Satisfecho</th>
+                                            <th>Ni satisfecho ni insatisfecho</th>
+                                            <th>Insatisfecho</th>
+                                            <th>Ns/Nr</th>
 
 
-<hr>
+                                        </tr>
+                                    </thead>
 
-<div class="row">
+                                </table>
 
-<div class="col-md-12" id="cntTablaRel">
-    <h6 class="text-center"> Satisfacción con servicios municipales </h6>
+                            </div>
 
-    <div class="table-responsive ">
+                        </div>
 
-        <table id="tablaServMun"
-            class="table-striped table-bordered table-hover table-sm" width="100%">
-            <thead>
-                <tr>
-
-                    <th>Servicio</th>
-                    <th>Satisfecho</th>
-                    <th>Ni satisfecho ni insatisfecho</th>
-                    <th>Insatisfecho</th>
-                    <th>Ns/Nr</th>
+                    </div>
 
 
-                </tr>
-            </thead>
+                    <hr>
 
-        </table>
+                    <div class="row">
 
-    </div>
+                        <div class="col-md-12" id="cntTablaRel">
+                            <h6 class="text-center"> Satisfacción con servicios municipales </h6>
 
-</div>
+                            <div class="table-responsive ">
 
-</div>
+                                <table id="tablaServMun" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
 
-<hr>
-<div class="row">
-
-<div class="col-md-7" id="cntTablaRel">
-    <h6 class="text-center"> Capacidad de Gestión </h6>
-
-    <div class="table-responsive ">
-
-        <table id="tablaCapGestion"
-            class="table-striped table-bordered table-hover table-sm" width="100%">
-            <thead>
-                <tr>
-
-                    <th>Gestión</th>
-                    <th>Porcentaje</th>
-             
+                                            <th>Servicio</th>
+                                            <th>Satisfecho</th>
+                                            <th>Ni satisfecho ni insatisfecho</th>
+                                            <th>Insatisfecho</th>
+                                            <th>Ns/Nr</th>
 
 
-                </tr>
-            </thead>
+                                        </tr>
+                                    </thead>
 
-        </table>
+                                </table>
 
-    </div>
+                            </div>
 
-</div>
+                        </div>
 
-</div>
+                    </div>
+
+                    <hr>
+                    <div class="row">
+
+                        <div class="col-md-7" id="cntTablaRel">
+                            <h6 class="text-center"> Capacidad de Gestión </h6>
+
+                            <div class="table-responsive ">
+
+                                <table id="tablaCapGestion" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Gestión</th>
+                                            <th>Porcentaje</th>
 
 
 
-</div>
+                                        </tr>
+                                    </thead>
+
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
 
 
                 <div class="tab-pane fade" id="percepcion" role="tabpanel" aria-labelledby="percepcion-tab">
 
-                <div class="row">
+                    <div class="row">
 
-<div class="col-md-12" id="cntTablaRel">
-    <h6 class="text-center"> Percepción acerca del desarrollo del municipio  </h6>
+                        <div class="col-md-12" id="cntTablaRel">
+                            <h6 class="text-center"> Percepción acerca del desarrollo del municipio </h6>
 
-    <div class="table-responsive ">
+                            <div class="table-responsive ">
 
-        <table id="tablaPercDesa"
-            class="table-striped table-bordered table-hover table-sm" width="100%">
-            <thead>
-                <tr>
+                                <table id="tablaPercDesa" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
 
-                    <th>Mejor</th>
-                    <th>Igual</th>
-                    <th>Peor</th>
-                    <th>Ns/Nr</th>
-
-
-                </tr>
-            </thead>
-
-        </table>
-
-    </div>
-
-</div>
-
-</div>
-
-<hr>
-
-<div class="row">
-
-<div class="col-md-12" id="cntTablaRel">
-    <h6 class="text-center"> Percepción Niveles de Pobreza  </h6>
-
-    <div class="table-responsive ">
-
-        <table id="tablaPercPobr"
-            class="table-striped table-bordered table-hover table-sm" width="100%">
-            <thead>
-                <tr>
-
-                    <th>Mejor</th>
-                    <th>Igual</th>
-                    <th>Peor</th>
-                    <th>Ns/Nr</th>
+                                            <th>Mejor</th>
+                                            <th>Igual</th>
+                                            <th>Peor</th>
+                                            <th>Ns/Nr</th>
 
 
-                </tr>
-            </thead>
+                                        </tr>
+                                    </thead>
 
-        </table>
+                                </table>
 
-    </div>
+                            </div>
 
-</div>
+                        </div>
 
-</div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+
+                        <div class="col-md-12" id="cntTablaRel">
+                            <h6 class="text-center"> Percepción Niveles de Pobreza </h6>
+
+                            <div class="table-responsive ">
+
+                                <table id="tablaPercPobr" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Mejor</th>
+                                            <th>Igual</th>
+                                            <th>Peor</th>
+                                            <th>Ns/Nr</th>
+
+
+                                        </tr>
+                                    </thead>
+
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -432,104 +432,148 @@
 
                     <div class="row">
 
-<div class="col-md-5" id="cntTablaRel">
-    <h6 class="text-center">Indice de victimización</h6>
-    <div class="table-responsive ">
+                        <div class="col-md-5" id="cntTablaRel">
+                            <h6 class="text-center">Indice de victimización</h6>
+                            <div class="table-responsive ">
 
-        <table id="tablaIndVictim" class="table-striped table-bordered table-hover table-sm"
-            width="100%">
-            <thead>
-                <tr>
+                                <table id="tablaIndVictim" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
 
-                    <th>Ha sido victima</th>
-                    <th>No ha sido victima</th>
+                                            <th>Ha sido victima</th>
+                                            <th>No ha sido victima</th>
 
-                </tr>
-            </thead>
+                                        </tr>
+                                    </thead>
 
-        </table>
+                                </table>
 
-    </div>
-</div>
+                            </div>
+                        </div>
 
 
 
-</div>
-<hr>
-<div class="row">
-<div class="col-md-12" id="cntTablaRel">
-    <h6 class="text-center">Que tan Seguro se Siente</h6>
-    <div class="table-responsive ">
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12" id="cntTablaRel">
+                            <h6 class="text-center">Que tan Seguro se Siente</h6>
+                            <div class="table-responsive ">
 
-        <table id="tablaSegSector" class="table-striped table-bordered table-hover table-sm"
-            width="100%">
-            <thead>
-                <tr>
-                    <th> </th>
-                    <th> Muy seguro/seguro</th>
-                    <th>Muy inseguro/inseguro</th>
-                    <th>Ns/nr</th>
-                    <th>No ha sido victima</th>
+                                <table id="tablaSegSector" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th> </th>
+                                            <th> Muy seguro/seguro</th>
+                                            <th>Muy inseguro/inseguro</th>
+                                            <th>Ns/nr</th>
+                                            <th>No ha sido victima</th>
 
-                </tr>
-            </thead>
+                                        </tr>
+                                    </thead>
 
-        </table>
+                                </table>
 
-    </div>
-</div>
+                            </div>
+                        </div>
 
-</div>
+                    </div>
 
-<hr>
-<div class="row">
-<div class="col-md-12" id="cntTablaRel">
-    <h6 class="text-center">Que tan seguro se siente Durante el dia</h6>
-    <div class="table-responsive ">
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12" id="cntTablaRel">
+                            <h6 class="text-center">Que tan seguro se siente Durante el dia</h6>
+                            <div class="table-responsive ">
 
-        <table id="tablaSegDia" class="table-striped table-bordered table-hover table-sm"
-            width="100%">
-            <thead>
-                <tr>
-                    <th> </th>
-                    <th>Muy seguro/seguro</th>
-                    <th>Muy inseguro/inseguro</th>
-                    <th>Ns/nr</th>
-                    <th>No ha sido victima</th>
+                                <table id="tablaSegDia" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th> </th>
+                                            <th>Muy seguro/seguro</th>
+                                            <th>Muy inseguro/inseguro</th>
+                                            <th>Ns/nr</th>
+                                            <th>No ha sido victima</th>
 
-                </tr>
-            </thead>
+                                        </tr>
+                                    </thead>
 
-        </table>
+                                </table>
 
-    </div>
-</div>
-</div>
+                            </div>
+                        </div>
+                    </div>
 
-<hr>
-<div class="row">
-<div class="col-md-12" id="cntTablaRel">
-    <h6 class="text-center">Que tan seguro se siente Durante la noche</h6>
-    <div class="table-responsive ">
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12" id="cntTablaRel">
+                            <h6 class="text-center">Que tan seguro se siente Durante la noche</h6>
+                            <div class="table-responsive ">
 
-        <table id="tablaSegNoche" class="table-striped table-bordered table-hover table-sm"
-            width="100%">
-            <thead>
-                <tr>
-                    <th> </th>
-                    <th>Muy seguro/seguro</th>
-                    <th>Muy inseguro/inseguro</th>
-                    <th>Ns/nr</th>
-                    <th>No ha sido victima</th>
+                                <table id="tablaSegNoche" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th> </th>
+                                            <th>Muy seguro/seguro</th>
+                                            <th>Muy inseguro/inseguro</th>
+                                            <th>Ns/nr</th>
+                                            <th>No ha sido victima</th>
 
-                </tr>
-            </thead>
+                                        </tr>
+                                    </thead>
 
-        </table>
+                                </table>
 
-    </div>
-</div>
-</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6" id="cntTablaRel">
+                            <h6 class="text-center">Calificación al trabajo que realiza la policia nacional</h6>
+                            <div class="table-responsive ">
+
+                                <table id="tablaTrabPolicia" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Calificación </th>
+                                            <th>Porcentaje</th>
+
+
+                                        </tr>
+                                    </thead>
+
+                                </table>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" id="cntTablaRel">
+                            <h6 class="text-center">Profesionalismo en las actuaciones de la policia nacional</h6>
+                            <div class="table-responsive ">
+
+                                <table id="tablaProfPolicia" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Calificación </th>
+                                            <th>Porcentaje</th>
+
+
+                                        </tr>
+                                    </thead>
+
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
 
 
                 </div>
@@ -539,7 +583,26 @@
 
                     <h1>Medios de Transporte </h1>
 
+                        <div class="row">
 
+                        <div class="col-md-12" id="cntTablaRel">
+                            <div class="table-responsive ">
+
+                                <table id="tablaTransporte" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+                                    <th>Transporte</th>
+                                    <th>Porcentaje</th>
+
+                                </tr>
+                                    </thead>
+
+                                </table>
+
+                            </div>
+                        </div>
+                        </div>
 
 
                 </div>
@@ -547,6 +610,50 @@
                 <div class="tab-pane fade" id="sector" role="tabpanel" aria-labelledby="sector-tab">
 
                     <h1>Problemas del Sector </h1>
+
+                    <div class="row">
+                        <h6>Principales problemas en el Sector de residencia</h6>
+                    <div class="col-md-12" id="cntTablaRel">
+                            <div class="table-responsive ">
+
+                                <table id="tablaProResi" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+                                    <th>Problema</th>
+                                    <th>Porcentaje</th>
+
+                                </tr>
+                                    </thead>
+
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+
+<hr>
+                    
+                    <div class="row">
+                        <h6>Principales problemas en el Municipio</h6>
+                    <div class="col-md-12" id="cntTablaRel">
+                            <div class="table-responsive ">
+
+                                <table id="tablaProMunicipio" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+                                    <th>Problema</th>
+                                    <th>Porcentaje</th>
+
+                                </tr>
+                                    </thead>
+
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
 
 
 
@@ -592,7 +699,30 @@
 
                     <h1>Frecuencia que ocurren las siguientes situaciones </h1>
 
+                    <div class="row">
 
+                        <div class="col-md-12" id="cntTablaRel">
+                            <h6 class="text-center">Profesionalismo en las actuaciones de la policia nacional</h6>
+                            <div class="table-responsive ">
+
+                                <table id="tablaFrecSitua" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+                                    <th>Situación</th>
+                                    <th>Frecuente</th>
+                                    <th>Alguna Frecuencia</th>
+                                    <th>Ninguna Frecuencia</th>
+
+
+                                        </tr>
+                                    </thead>
+
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
 
 
                 </div>

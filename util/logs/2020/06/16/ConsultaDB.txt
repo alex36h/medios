@@ -1,0 +1,36 @@
+2020-06-16 15:07:42 >>> Error en el query: ( Table 'pedidos.tbl_tpolicia' doesn't exist ) 
+        SELECT * FROM  tbl_tpolicia WHERE id_cuadrante='1'
+        AND id_municipio ='1'
+        AND id_corrida ='1'
+        ORDER BY FIELD (calificacion,'Bueno','Regular','Malo','NsNr')
+    
+2020-06-16 15:09:51 >>> Error en el query: ( Table 'pedidos.tbl_tpolicia' doesn't exist ) 
+        SELECT * FROM  tbl_tpolicia WHERE id_cuadrante='1'
+        AND id_municipio ='1'
+        AND id_corrida ='0'
+        ORDER BY FIELD (calificacion,'Bueno','Regular','Malo','NsNr')
+    
+2020-06-16 15:10:02 >>> Error en el query: ( Table 'pedidos.tbl_tpolicia' doesn't exist ) 
+        SELECT * FROM  tbl_tpolicia WHERE id_cuadrante='1'
+        AND id_municipio ='1'
+        AND id_corrida ='1'
+        ORDER BY FIELD (calificacion,'Bueno','Regular','Malo','NsNr')
+    
+2020-06-16 17:12:55 >>> Error en el query: ( Unknown column 'id_cuadrante' in 'where clause' ) 
+        SELECT * FROM  tbl_transp WHERE id_cuadrante='1'
+        AND id_municipio ='1'
+        AND id_corrida ='1'
+        ORDER BY FIELD (transporte,'Autobús urbano - Ruta','Autobús interurbano','Taxi','Transporte de empresa','Caponera/ Mototaxi','Vehículo particular','Motocicleta','Bicicleta','Carreta o carretón halado por caballo','Caballo','Otros medios:','Generalmente no utilizo ningún medio de transporte')
+    
+2020-06-16 17:13:50 >>> Error en el query: ( Unknown column 'id_cuadrante' in 'where clause' ) 
+        SELECT * FROM  tbl_transp WHERE id_cuadrante='1'
+        AND id_municipio ='1'
+        AND id_corrida ='1'
+       
+    
+2020-06-16 17:16:57 >>> Error en el query: ( Unknown column 'id_cuadrante' in 'where clause' ) 
+        SELECT * FROM  tbl_transp WHERE id_cuadrante='1'
+        AND id_municipio ='1'
+        AND id_corrida ='1'
+        ORDER BY FIELD (transporte,'Autobús urbano - Ruta','Autobús interurbano','Taxi','Transporte de empresa','Caponera/ Mototaxi','Vehículo particular','Motocicleta','Bicicleta','Carreta o carretón halado por caballo','Caballo','Otros medios:','Generalmente no utilizo ningún medio de transporte')
+    
