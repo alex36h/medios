@@ -655,6 +655,28 @@
                         </div>
                     </div>
 
+                    <div class="row">
+                        <h6>Principales problemas en el País</h6>
+                    <div class="col-md-12" id="cntTablaRel">
+                            <div class="table-responsive ">
+
+                                <table id="tablaProPais" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+                                    <th>Problema</th>
+                                    <th>Porcentaje</th>
+
+                                </tr>
+                                    </thead>
+
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+
+
 
 
 
@@ -663,7 +685,26 @@
 
                     <h1>Reconocimiento de Obras</h1>
 
+                    <div class="row">
+                        <h6>Obras realizadas en el Municipio </h6>
+                    <div class="col-md-12" id="cntTablaRel">
+                            <div class="table-responsive ">
 
+                                <table id="tablaObras" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+                                    <th>Problema</th>
+                                    <th>Porcentaje</th>
+
+                                </tr>
+                                    </thead>
+
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
 
 
                 </div>
@@ -671,16 +712,141 @@
                 <div class="tab-pane fade" id="gustar" role="tabpanel" aria-labelledby="gustar-tab">
 
                     <h1>Lo que más gusta y menos gusta del sector de residencia y del municipio.</h1>
+                 <div class="row">
+                 
+               
+                    <div class="col-md-6" id="cntTablaRel">
+                    <h6>Lo que mas gusta del municipio </h6>
+                            <div class="table-responsive ">
+
+                                <table id="tablaGmunicipio" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+                                    <th>Gusta</th>
+                                    <th>Porcentaje</th>
+
+                                </tr>
+                                    </thead>
+
+                                </table>
+
+                            </div>
+                        </div>
+
+                     
+                    <div class="col-md-6" id="cntTablaRel">
+                    <h6>Lo que menos gusta del municipio</h6>
+                            <div class="table-responsive ">
+
+                                <table id="tablaNGmunicipio" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+                                    <th>Problema</th>
+                                    <th>Porcentaje</th>
+
+                                </tr>
+                                    </thead>
+
+                                </table>
+
+                            </div>
+                        </div>
+                 
+                 </div>
+
+                    <hr>
+
+                    <div class="row">
+
+                    <div class="col-md-6" id="cntTablaRel">
+                    <h6>Lo que mas gusta del sector de residencia</h6>
+                            <div class="table-responsive ">
+
+                                <table id="tablaGResidencia" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+                                    <th>Gusta</th>
+                                    <th>Porcentaje</th>
+
+                                </tr>
+                                    </thead>
+
+                                </table>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" id="cntTablaRel">
+                    <h6>Lo que menos gusta del sector de residencia</h6>
+                            <div class="table-responsive ">
+
+                                <table id="tablaNGResidencia" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+                                    <th>No Gusta</th>
+                                    <th>Porcentaje</th>
+
+                                </tr>
+                                    </thead>
+
+                                </table>
+
+                            </div>
+                        </div>
 
 
-
+                    </div>
 
                 </div>
-
+        
                 <div class="tab-pane fade" id="agenda" role="tabpanel" aria-labelledby="agenda-tab">
 
                     <h1>Agenda Ciudadana</h1>
 
+                    <div class="row">
+                    <div class="col-md-6" id="cntTablaRel">
+                    <h6>Agenda ciudadana: Mejorar condiciones de vida </h6>
+                            <div class="table-responsive ">
+
+                                <table id="tablaCondVida" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+                                    <th>Agenda</th>
+                                    <th>Porcentaje</th>
+
+                                </tr>
+                                    </thead>
+
+                                </table>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" id="cntTablaRel">
+                    <h6>Agenda Ciudadana: Sugerencia  destino de recursos</h6>
+                            <div class="table-responsive ">
+
+                                <table id="tablaSugDestino" class="table-striped table-bordered table-hover table-sm"
+                                    width="100%">
+                                    <thead>
+                                        <tr>
+                                    <th>Agenda</th>
+                                    <th>Porcentaje</th>
+
+                                </tr>
+                                    </thead>
+
+                                </table>
+
+                            </div>
+                        </div>
+
+                    </div>
 
 
 

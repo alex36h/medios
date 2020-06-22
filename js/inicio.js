@@ -1331,6 +1331,489 @@ function consultarDatosProMunicipio() {
 }
 
 
+function consultarDatosPais() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/propais.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+
+            var html = '';
+            var i;
+
+            html += ' <thead>';
+            html += '<tr>';
+
+            html += '<th>Problema</th>';
+            html += '<th>Porcentaje</th>';
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].problema + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaProPais").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatosObras() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/obras.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+
+            var html = '';
+            var i;
+
+            html += ' <thead>';
+            html += '<tr>';
+
+            html += '<th>Problema</th>';
+            html += '<th>Porcentaje</th>';
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].obra + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaObras").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoGMunicipio() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/gmunicipio.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+
+            var html = '';
+            var i;
+
+            html += ' <thead>';
+            html += '<tr>';
+
+            html += '<th>Gusta</th>';
+            html += '<th>Porcentaje</th>';
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].gusta + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaGmunicipio").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoNGMunicipio() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/ngmunicipio.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+            console.log(mydata);
+            var html = '';
+            var i;
+
+            html += ' <thead>';
+            html += '<tr>';
+
+            html += '<th>No Gusta</th>';
+            html += '<th>Porcentaje</th>';
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].gusta + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaNGmunicipio").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoGResidencia() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/gresidencia.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+            console.log(mydata);
+            var html = '';
+            var i;
+
+            html += ' <thead>';
+            html += '<tr>';
+
+            html += '<th>Gusta</th>';
+            html += '<th>Porcentaje</th>';
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].gusta + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaGResidencia").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatoNGResidencia() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/ngresidencia.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+            console.log(mydata);
+            var html = '';
+            var i;
+
+            html += ' <thead>';
+            html += '<tr>';
+
+            html += '<th>No Gusta</th>';
+            html += '<th>Porcentaje</th>';
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].gusta + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaNGResidencia").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoCondVida() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/condvida.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+            console.log(mydata);
+            var html = '';
+            var i;
+
+            html += ' <thead>';
+            html += '<tr>';
+
+            html += '<th>Agenda</th>';
+            html += '<th>Porcentaje</th>';
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].agenda + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaCondVida").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatoSugDestino() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/sugdestino.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+            console.log(mydata);
+            var html = '';
+            var i;
+
+            html += ' <thead>';
+            html += '<tr>';
+
+            html += '<th>Agenda</th>';
+            html += '<th>Porcentaje</th>';
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].agenda + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaSugDestino").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
 $(document).ready(function() {
 
 
@@ -1358,6 +1841,15 @@ $(document).ready(function() {
         consultarDatosTransporte();
         consultarDatosProResidencia();
         consultarDatosProMunicipio();
+        consultarDatosPais();
+        consultarDatosObras();
+        consultarDatoGMunicipio();
+        consultarDatoNGMunicipio();
+        consultarDatoGResidencia();
+        consultarDatoNGResidencia();
+        consultarDatoCondVida();
+        consultarDatoSugDestino();
+
 
         return false;
 
