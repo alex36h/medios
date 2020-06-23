@@ -1,0 +1,12 @@
+2020-06-23 19:49:11 >>> Error en el query: ( Unknown column 'porcentaje' in 'order clause' ) 
+        SELECT * FROM  tbl_expectativa WHERE id_cuadrante='1'
+        AND id_municipio ='1'
+        AND id_corrida ='1'
+        ORDER BY porcentaje DESC
+    
+2020-06-23 20:53:57 >>> Error en el query: ( Unknown column 'porcentaje' in 'order clause' ) 
+        SELECT * FROM  tbl_pisotecho WHERE id_cuadrante='1'
+        AND id_municipio ='1'
+        AND id_corrida ='1'
+        ORDER BY porcentaje DESC
+    

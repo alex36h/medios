@@ -1722,7 +1722,7 @@ function consultarDatoCondVida() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="text-center">';
             html += '<tr>';
 
             html += '<th>Agenda</th>';
@@ -1783,7 +1783,7 @@ function consultarDatoSugDestino() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="text-center">';
             html += '<tr>';
 
             html += '<th>Agenda</th>';
@@ -1812,6 +1812,266 @@ function consultarDatoSugDestino() {
 
 
 }
+
+function consultarDatoSSimpatia() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/simpatia.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+            console.log(mydata);
+            var html = '';
+            var i;
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Simpatía</th>';
+            html += '<th>Porcentaje</th>';
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].simpatia + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaSimpatia").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatosExpectativa() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/expectativa.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+            console.log(mydata);
+            var html = '';
+            var i;
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += ' <th>Oportunidad</th>';
+            html += ' <th>FSLN</th>';
+            html += ' <th>Oposición</th>';
+            html += ' <th>Ninguno</th>';
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+
+                var fsln = mydata[i].fsln * 100;
+                var oposicion = mydata[i].oposicion * 100;
+                var ninguno = mydata[i].ninguno * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].expectativa + '</td>' +
+                    '<td>' + fsln.toFixed(1) + '%' + '</td>' +
+                    '<td>' + oposicion.toFixed(1) + '%' + '</td>' +
+                    '<td>' + ninguno.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaExpectativa").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoIntencion() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/intencion.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+            console.log(mydata);
+            var html = '';
+            var i;
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Intención</th>';
+            html += '<th>Porcentaje</th>';
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].intencion + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaIntencion").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoPisoTecho() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/piso.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+            console.log(mydata);
+            var html = '';
+            var i;
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>P Techo</th>';
+            html += '<th>PISO Caja negra</th>';
+            html += '<th>Probabilidad de voto atendiendo a simpatía</th>';
+            html += '<th>Gobierno: Con quien le iría mejor</th>';
+            html += '<th>TECHO Según LCM</th>';
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var escenario1 = mydata[i].escenario1 * 100;
+                var escenario2 = mydata[i].escenario2 * 100;
+                var escenario3 = mydata[i].escenario3 * 100;
+                var escenario4 = mydata[i].escenario4 * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].opcion + '</td>' +
+                    '<td>' + escenario1.toFixed(1) + '%' + '</td>' +
+                    '<td>' + escenario2.toFixed(1) + '%' + '</td>' +
+                    '<td>' + escenario3.toFixed(1) + '%' + '</td>' +
+                    '<td>' + escenario4.toFixed(1) + '%' + '</td>' +
+
+
+
+                    '</tr>';
+            }
+            $("#tablaPiso").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
 
 
 $(document).ready(function() {
@@ -1849,7 +2109,10 @@ $(document).ready(function() {
         consultarDatoNGResidencia();
         consultarDatoCondVida();
         consultarDatoSugDestino();
-
+        consultarDatoSSimpatia();
+        consultarDatosExpectativa();
+        consultarDatoIntencion();
+        consultarDatoPisoTecho();
 
         return false;
 
