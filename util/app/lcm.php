@@ -13,6 +13,8 @@ $respuesta->estado = 1;
 $respuesta->mensaje = "";
 $respuesta->data = array();
 
+
+
 try{
 
     if( !$session->checkSession() ) throw new Exception("Debe iniciar una sesión");
@@ -20,9 +22,19 @@ try{
     $cuadrante='';
     $municipio='';
     $corrida='';
-    $cuadrante = $_POST['cuadrante'];
-    $municipio= $_POST['municipio'];    
-    $corrida= $_POST['corrida'];
+    
+    if(
+        ( isset($_POST['cuadrante']) && !empty($_POST['cuadrante']) ) && 
+        ( isset($_POST['municipio']) && !empty($_POST['municipio']) ) && 
+        ( isset($_POST['corrida']) && !empty($_POST['corrida']) ) 
+    ){
+        $cuadrante = $_POST['cuadrante'];
+        $municipio = $_POST['municipio'];
+        $corrida = $_POST['corrida'];
+        
+    }
+
+
 
     $resultado = $conexion->ejecutarConsulta("
         SELECT * FROM  tbl_lcm WHERE id_cuadrante='".$cuadrante."'
@@ -31,7 +43,6 @@ try{
         ORDER BY FIELD (licencia,'Apropiacion','Aprobacion','Aceptación','Rechazo')
     ");
 
-    
 
     foreach($resultado as $fila){
         
@@ -44,9 +55,18 @@ try{
  
     }
 
+
+  
+
+
+    
+
+
+
 }catch(Exception $e){
     $respuesta->estado = 2;
     $respuesta->mensaje = $e->getMessage();
 }
 
 print_r(json_encode($respuesta));
+

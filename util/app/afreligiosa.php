@@ -21,38 +21,25 @@ try{
     $municipio='';
     $corrida='';
 
-    
-
-    $cuadrante = $_POST['cuadrante'];
-    $municipio= $_POST['municipio'];    
-    $corrida= $_POST['corrida'];
-
-    if(empty($municipio)){
-
-        throw new Exception("Debe Seleccionar un Municipio");
+    if(
+        ( isset($_POST['cuadrante']) && !empty($_POST['cuadrante']) ) && 
+        ( isset($_POST['municipio']) && !empty($_POST['municipio']) ) && 
+        ( isset($_POST['corrida']) && !empty($_POST['corrida']) ) 
+    ){
+        $cuadrante = $_POST['cuadrante'];
+        $municipio = $_POST['municipio'];
+        $corrida = $_POST['corrida'];
+        
     }
-     
 
 
-    if(empty($cuadrante)){
-
-        throw new Exception("Debe Seleccionar un Cuadrante");
-    }
-     
-  
-    if(empty($corrida)){
-
-        throw new Exception("Debe Seleccionar una Corrida");
-    }
-     
-    
-    else{    $resultado = $conexion->ejecutarConsulta("
+   $resultado = $conexion->ejecutarConsulta("
         SELECT * FROM tbl_areligion WHERE id_cuadrante='".$cuadrante."'
         AND id_municipio ='".$municipio."'
         AND id_corrida ='".$corrida."'
         ORDER BY FIELD (religion,'Catolico','Protestante','Creyente sin denominacion ','No creyente')
     ");
-    }
+
 
     
 

@@ -45,6 +45,7 @@
             <button type="submit" class="btn btn-block btn-success" id="consultar"><strong><i class="fas fa-search"></i>
                     Consultar
                 </strong></button>
+               
         </div>
     </div>
 

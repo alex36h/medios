@@ -20,10 +20,16 @@ try{
     $cuadrante='';
     $municipio='';
     $corrida='';
-    $cuadrante = $_POST['cuadrante'];
-    $municipio= $_POST['municipio'];    
-    $corrida= $_POST['corrida'];
-
+    if(
+        ( isset($_POST['cuadrante']) && !empty($_POST['cuadrante']) ) && 
+        ( isset($_POST['municipio']) && !empty($_POST['municipio']) ) && 
+        ( isset($_POST['corrida']) && !empty($_POST['corrida']) ) 
+    ){
+        $cuadrante = $_POST['cuadrante'];
+        $municipio = $_POST['municipio'];
+        $corrida = $_POST['corrida'];
+        
+    }
     $resultado = $conexion->ejecutarConsulta("
         SELECT * FROM  tbl_segsector WHERE id_cuadrante='".$cuadrante."'
         AND id_municipio ='".$municipio."'

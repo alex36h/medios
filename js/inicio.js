@@ -359,63 +359,7 @@ function consultarDatosCReligiosa() {
 
 
 
-function consultarDatosLicMun2() {
 
-    var municipio = $("#municipio option:selected").val();
-    var cuadrante = $("#cuadrante option:selected").val();
-    var corrida = $("#corrida option:selected").val();
-
-    $.ajax({
-        async: false,
-        type: "POST",
-        url: "util/app/lcm2.php",
-        data: {
-            municipio: municipio,
-            cuadrante: cuadrante,
-            corrida: corrida
-
-        },
-        dataType: 'json',
-        //beforeSend: function(){},
-        error: function(request, status, error) {
-            alert(request.responseText);
-        },
-        success: function(respuesta) {
-
-
-
-            var mydata = respuesta.data;
-            var html = '';
-            var i;
-
-            html += ' <thead>';
-            html += '<tr>';
-
-
-
-            html += '</tr>';
-            html += '</thead>';
-
-            for (i = 0; i < mydata.length; i++) {
-                // '<td>' + porcentaje.toPrecision(4) + '%' + '</td>' +
-                var porcentaje = mydata[i].porcentaje * 100;
-
-                html += '<tr>' +
-                    '<td>' + mydata[i].licencia + '</td>' +
-                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
-                    '</tr>';
-            }
-            $("#tablaLicencia2").html(html);
-
-
-        },
-        complete: function() {
-
-        }
-    });
-
-
-}
 
 
 function consultarDatosServiciosMun() {
@@ -1537,7 +1481,6 @@ function consultarDatoNGMunicipio() {
 
 
             var mydata = respuesta.data;
-            console.log(mydata);
             var html = '';
             var i;
 
@@ -1597,7 +1540,6 @@ function consultarDatoGResidencia() {
 
 
             var mydata = respuesta.data;
-            console.log(mydata);
             var html = '';
             var i;
 
@@ -1658,7 +1600,6 @@ function consultarDatoNGResidencia() {
 
 
             var mydata = respuesta.data;
-            console.log(mydata);
             var html = '';
             var i;
 
@@ -1718,7 +1659,6 @@ function consultarDatoCondVida() {
 
 
             var mydata = respuesta.data;
-            console.log(mydata);
             var html = '';
             var i;
 
@@ -1779,7 +1719,6 @@ function consultarDatoSugDestino() {
 
 
             var mydata = respuesta.data;
-            console.log(mydata);
             var html = '';
             var i;
 
@@ -1839,7 +1778,6 @@ function consultarDatoSSimpatia() {
 
 
             var mydata = respuesta.data;
-            console.log(mydata);
             var html = '';
             var i;
 
@@ -1899,7 +1837,6 @@ function consultarDatosExpectativa() {
 
 
             var mydata = respuesta.data;
-            console.log(mydata);
             var html = '';
             var i;
 
@@ -1966,7 +1903,6 @@ function consultarDatoIntencion() {
 
 
             var mydata = respuesta.data;
-            console.log(mydata);
             var html = '';
             var i;
 
@@ -2026,7 +1962,6 @@ function consultarDatoPisoTecho() {
 
 
             var mydata = respuesta.data;
-            console.log(mydata);
             var html = '';
             var i;
 
@@ -2086,7 +2021,6 @@ $(document).ready(function() {
         consultarDatosServiciosNac();
         consultarDatosAfReligiosa();
         consultarDatosCReligiosa();
-        consultarDatosLicMun2();
         consultarDatosServiciosMun();
         consultarDatosCapGestion();
         consultarDatosPercDesarrollo();
