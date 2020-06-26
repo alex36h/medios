@@ -44,6 +44,7 @@ class Conexion{
             $this->conexion->set_charset('utf8');
             return true;
         }
+        
     }
 
     public function ejecutarConsulta( $sql ){
@@ -67,9 +68,7 @@ class Conexion{
 }
 
 $conexion = new Conexion('../logs/');
-$conexion->conectar();
 
-$resultado = $conexion->ejecutarConsulta("SELECT * FROM usuarios");
 
 /*
 print_r($resultado->num_rows);

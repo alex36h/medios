@@ -43,6 +43,7 @@ try{
         ORDER BY FIELD (licencia,'Apropiacion','Aprobacion','Aceptación','Rechazo')
     ");
 
+    
 
     foreach($resultado as $fila){
         

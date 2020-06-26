@@ -1,4 +1,4 @@
-<h3 class="text-center"><span><?php echo $varAcceso['nombre'] ;?></span></h3>
+<h3 class="text-center">Aplicación Licencia Ciudadana</h3>
 <hr>
 <form role="form" id="formConsulta">
     <div class="row">
@@ -45,7 +45,7 @@
             <button type="submit" class="btn btn-block btn-success" id="consultar"><strong><i class="fas fa-search"></i>
                     Consultar
                 </strong></button>
-               
+
         </div>
     </div>
 
@@ -134,9 +134,160 @@
 
                     <div class="card text">
                         <div class="card-header text-center">
-                            <h5>Caracterización</h5>
+                            <h5>Caracterización del Municipio</h5>
                         </div>
                         <div class="card-body">
+
+                            <div class="row">
+                                <div class="col-md-6" id="cntTablaRel">
+                                    <h6 class="text-center">Sector</h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaSector"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Sector</th>
+                                                    <th>Porcentaje</th>
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="col-md-6" id="cntTablaRel">
+                                    <h6 class="text-center"> ¿Es usted el Principal Soporte del Hogar?</h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaSoporteH"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Respuesta</th>
+                                                    <th>Porcentaje</th>
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+
+                            <br>
+
+
+                            <div class="row">
+                                <div class="col-md-6" id="cntTablaRel">
+                                    <h6 class="text-center">¿Cuál es su parentesco o relación que tiene, con el
+                                        principal soporte del hogar?</h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaParentescoSop"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Parentesco</th>
+                                                    <th>Porcentaje</th>
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6" id="cntTablaRel">
+                                    <h6 class="text-center">Genero</h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaGenero"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Genero</th>
+                                                    <th>Porcentaje</th>
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <br>
+
+                            <div class="row">
+
+                                <div class="col-md-6" id="cntTablaRel">
+                                    <h6 class="text-center">Grupo generacional del entrevistado</h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="GrupoGen" class="table-striped table-bordered table-hover table-sm"
+                                            width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Grupo generacional</th>
+                                                    <th>Porcentaje</th>
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6" id="cntTablaRel">
+                                    <h6 class="text-center">Grupo generacional del entrevistado</h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaEstadoCiv" class="table-striped table-bordered table-hover table-sm"
+                                            width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Estado Civil</th>
+                                                    <th>Porcentaje</th>
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
 
 
                         </div>

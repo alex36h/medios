@@ -17,7 +17,9 @@ function consultarDatosRel() {
         dataType: 'json',
         beforeSend: function() {
             $("#myTabContent").hide();
+            $("#myTab").hide();
             $("#cargando").html('<img src="img/system/loading.gif" height="70" width="70">');
+
 
         },
         error: function(request, status, error) {
@@ -39,8 +41,11 @@ function consultarDatosRel() {
                     break;
             }
 
+
             $("#cargando").html('');
             $("#myTabContent").show();
+            $("#myTab").show();
+
 
             var mydata = respuesta.data;
 
@@ -1953,12 +1958,22 @@ function consultarDatoPisoTecho() {
 
         },
         dataType: 'json',
-        //beforeSend: function(){},
+        beforeSend: function() {
+            $("#myTabContent").hide();
+            $("#myTab").hide();
+            $("#cargando").html('<img src="img/system/loading.gif" height="70" width="70">');
+
+
+        },
         error: function(request, status, error) {
             alert(request.responseText);
         },
         success: function(respuesta) {
 
+
+            $("#cargando").html('');
+            $("#myTabContent").show();
+            $("#myTab").show();
 
 
             var mydata = respuesta.data;
@@ -2009,6 +2024,384 @@ function consultarDatoPisoTecho() {
 
 
 
+function consultarDatoSector() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/sector.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Sector</th>';
+            html += '<th>Porcentaje</th>';
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].sector + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaSector").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatoSoporteH() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/soporte.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Respuesta</th>';
+            html += '<th>Opción</th>';
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].respuesta + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaSoporteH").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoParentescoSop() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/parentesco.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Parentesco</th>';
+            html += '<th>Opción</th>';
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].parentesco + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaParentescoSop").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoGenero() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/genero.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Genero</th>';
+            html += '<th>Opción</th>';
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].genero + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaGenero").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDaGrupoGen() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/grupogeneracion.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Grupo generacional</th>';
+            html += '<th>Opción</th>';
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].perfil + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#GrupoGen").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatoEstadoCiv() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/estadocivil.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Estado Civil</th>';
+            html += '<th>Porcentaje</th>';
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].estado + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaEstadoCiv").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+
+
 $(document).ready(function() {
 
 
@@ -2023,8 +2416,8 @@ $(document).ready(function() {
         consultarDatosCReligiosa();
         consultarDatosServiciosMun();
         consultarDatosCapGestion();
-        consultarDatosPercDesarrollo();
-        consultarDatosPercPobreza();
+
+
         consultarIndVictim();
         consultarDatosSegSector();
         consultarDatosSegDia();
@@ -2048,9 +2441,51 @@ $(document).ready(function() {
         consultarDatoIntencion();
         consultarDatoPisoTecho();
 
+
+
+
+
+        consultarDatoSector();
+        consultarDatoSoporteH();
+        consultarDatoParentescoSop();
+        consultarDatoGenero();
+        consultarDaGrupoGen();
+        consultarDatoEstadoCiv();
+
         return false;
 
     });
+
+
+
+    /*
+    $("#percepcion-tab").on("click", function(event) {
+
+        consultarDatosPercDesarrollo();
+        consultarDatosPercPobreza();
+
+        $("#municipio").change(function() {
+
+            consultarDatosPercDesarrollo();
+            consultarDatosPercPobreza();
+
+        });
+
+
+        $("#cuadrante").change(function() {
+            consultarDatosPercDesarrollo();
+            consultarDatosPercPobreza();
+
+
+        });
+
+        $("#corrida").change(function() {
+            consultarDatosPercDesarrollo();
+            consultarDatosPercPobreza();
+
+
+        });
+    });*/
 
 
 });
