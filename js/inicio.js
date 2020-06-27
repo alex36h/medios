@@ -2308,7 +2308,7 @@ function consultarDaGrupoGen() {
             html += '<tr>';
 
             html += '<th>Grupo generacional</th>';
-            html += '<th>Opción</th>';
+            html += '<th>Porcentaje</th>';
 
 
             html += '</tr>';
@@ -2400,6 +2400,194 @@ function consultarDatoEstadoCiv() {
 }
 
 
+function consultarDatoPareja() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/pareja.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Estado</th>';
+            html += '<th>Porcentaje</th>';
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].pareja + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaPareja").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoNucleo() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/nucleo.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Hogar</th>';
+            html += '<th>Promedio</th>';
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var promedio = mydata[i].promedio * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].hogar + '</td>' +
+                    '<td>' + promedio.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaNucleo").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatoEscolaridad() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/escolaridad.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Escolaridad</th>';
+            html += '<th>Porcentaje</th>';
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].estudios + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaEscolaridad").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
 
 
 $(document).ready(function() {
@@ -2451,6 +2639,9 @@ $(document).ready(function() {
         consultarDatoGenero();
         consultarDaGrupoGen();
         consultarDatoEstadoCiv();
+        consultarDatoPareja();
+        consultarDatoNucleo();
+        consultarDatoEscolaridad();
 
         return false;
 

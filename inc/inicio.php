@@ -265,12 +265,12 @@
                                 </div>
 
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h6 class="text-center">Grupo generacional del entrevistado</h6>
+                                    <h6 class="text-center">Estado civil del entrevistado</h6>
 
                                     <div class="table-responsive ">
 
-                                        <table id="tablaEstadoCiv" class="table-striped table-bordered table-hover table-sm"
-                                            width="100%">
+                                        <table id="tablaEstadoCiv"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
                                             <thead>
                                                 <tr>
 
@@ -284,6 +284,80 @@
 
                                     </div>
                                 </div>
+
+                            </div>
+
+
+                            <br>
+
+                            <div class="row">
+
+                                <div class="col-md-4" id="cntTablaRel">
+                                    <h6 class="text-center">Actualmente tiene pareja con la que convive aquí en su hogar
+                                    </h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaPareja"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Estado</th>
+                                                    <th>Porcentaje</th>
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4" id="cntTablaRel">
+                                    <h6 class="text-center">Nucleo del hogar </h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaNucleo"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Hogar</th>
+                                                    <th>Porcentaje</th>
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4" id="cntTablaRel">
+                                    <h6 class="text-center">Nucleo del hogar </h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaEscolaridad"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Escolaridad</th>
+                                                    <th>Porcentaje</th>
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+
+
 
                             </div>
 
@@ -541,6 +615,8 @@
                                 </div>
 
                             </div>
+
+
 
 
                         </div>
