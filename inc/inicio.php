@@ -336,7 +336,7 @@
                                 </div>
 
                                 <div class="col-md-4" id="cntTablaRel">
-                                    <h6 class="text-center">Nucleo del hogar </h6>
+                                    <h6 class="text-center">Nivel de escolaridad del entrevistado </h6>
 
                                     <div class="table-responsive ">
 
@@ -361,7 +361,564 @@
 
                             </div>
 
+                            <br>
 
+                            <div class="row">
+                                <div class="col-md-4" id="cntTablaRel">
+                                    <h6 class="text-center">Genera Ingresos </h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaIngresos"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Genera ingresos</th>
+                                                    <th>No genera ingresos</th>
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-8" id="cntTablaRel">
+                                    <h6 class="text-center">Ingresos Provienen</h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="IngresoProv"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Trabajo</th>
+                                                    <th>Pensión por jubilación </th>
+                                                    <th>Remesas</th>
+                                                    <th>Pensión alimenticia</th>
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <br>
+
+                            <div class="row">
+
+                                <div class="col-md-5" id="cntTablaRel">
+                                    <h6 class="text-center">Razones por las que no genera </h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="TablaNogenraIng"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Razón</th>
+                                                    <th>Porcentaje</th>
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3" id="cntTablaRel">
+                                    <h6 class="text-center">Este trabajo lo realizá en </h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaTrabajoRealiza"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Lugar</th>
+                                                    <th>Porcentaje</th>
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4" id="cntTablaRel">
+                                    <h6 class="text-center">Composicion según lugar de trabajo
+                                    </h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaTrabajocomposicion"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Tipo</th>
+                                                    <th>Porcentaje</th>
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <br>
+
+                            <div class="row">
+
+                                <div class="col-md-5" id="cntTablaRel">
+                                    <h6 class="text-center">Tipo de Ingreso </h6>
+
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaTipoIngreso"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Tipo</th>
+                                                    <th>Porcentaje</th>
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3" id="cntTablaRel">
+                                    <h6 class="text-center">Trabaja Para </h6>
+
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaTrabajoSector"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Sector Público</th>
+                                                    <th>Sector Privado</th>
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4" id="cntTablaRel">
+                                    <h6 class="text-center">Afiliación seguro social</h6>
+
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaAfiliadoSeguro"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Sector Público</th>
+                                                    <th>Sector Privado</th>
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <br>
+
+                            <div class="row">
+                                <div class="col-md-6" id="cntTablaRel">
+                                    <h6 class="text-center">Descripción socioeconomica del entrevistado</h6>
+
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaDescripcionEntrevistado"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Descripción</th>
+                                                    <th>Porcentaje</th>
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6" id="cntTablaRel">
+                                    <h6 class="text-center">NSE Medio tipicohacia alto</h6>
+
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaNseAlto"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>NSE Medio tipicohacia alto</th>
+                                                    <th>AB</th>
+                                                    <th>C1</th>
+                                                    <th>C2</th>
+
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="row">
+
+                                <div class="col-md-6" id="cntTablaRel">
+                                    <h6 class="text-center">NSE Medio medio </h6>
+
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaNseMedio"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>NSE Medio medio </th>
+                                                    <th>D1</th>
+                                                    <th>D2</th>
+
+
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6" id="cntTablaRel">
+                                    <h6 class="text-center">NSE Medio bajo</h6>
+
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaNseBajo"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>NSE Medio bajo</th>
+                                                    <th>D1</th>
+                                                    <th>D2</th>
+
+
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6" id="cntTablaRel">
+                                    <h6 class="text-center">Genero</h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaGeneroPsh"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Genero</th>
+                                                    <th>Porcentaje</th>
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6" id="cntTablaRel">
+                                    <h6 class="text-center">Grupo generacional del entrevistado</h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="GrupoGenPsh"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Grupo generacional</th>
+                                                    <th>Porcentaje</th>
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="row">
+
+                                <div class="col-md-6" id="cntTablaRel">
+                                    <h6 class="text-center">Estado civil del Psh</h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaEstadoCivPsh"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Estado Civil</th>
+                                                    <th>Porcentaje</th>
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6" id="cntTablaRel">
+                                    <h6 class="text-center">Actualmente tiene pareja con la que convive aquí en su hogar
+                                    </h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaParejaPsh"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Estado</th>
+                                                    <th>Porcentaje</th>
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-12" id="cntTablaRel">
+                                    <h6 class="text-center">Nivel de escolaridad del entrevistado </h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaEscolaridadPsh"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Escolaridad</th>
+                                                    <th>Porcentaje</th>
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <br>
+
+                            <div class="row">
+
+                                <div class="col-md-6" id="cntTablaRel">
+                                    <h6 class="text-center">Composicion según lugar de trabajo Psh
+                                    </h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaTrabajocomposicionPsh"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Tipo</th>
+                                                    <th>Porcentaje</th>
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-4" id="cntTablaRel">
+                                    <h6 class="text-center">Afiliación seguro social Psh</h6>
+
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaAfiliadoSeguroPsh"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Sector Público</th>
+                                                    <th>Sector Privado</th>
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <br>
+
+                            <div class="row">
+
+                            <div class="col-md-5" id="cntTablaRel">
+                                    <h6 class="text-center">Tipo de Ingreso Psh</h6>
+
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaTipoIngresoPsh"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Tipo</th>
+                                                    <th>Porcentaje</th>
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-3" id="cntTablaRel">
+                                    <h6 class="text-center">Trabaja Para (Psh)</h6>
+
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaTrabajoSectorPsh"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Sector Público</th>
+                                                    <th>Sector Privado</th>
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4" id="cntTablaRel">
+                                    <h6 class="text-center">Descripción socioeconomica del entrevistado</h6>
+
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaDescripcionPsh"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Descripción</th>
+                                                    <th>Porcentaje</th>
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
 
 
                         </div>

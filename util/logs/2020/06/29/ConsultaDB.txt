@@ -1,0 +1,6 @@
+2020-06-29 16:18:55 >>> Error en el query: ( Unknown column 'id_corrida' in 'where clause' ) 
+        SELECT * FROM tbl_rngnera 
+        WHERE id_municipio='1'
+        AND id_corrida ='1'
+ 
+    

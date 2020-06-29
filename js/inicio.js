@@ -2588,6 +2588,1417 @@ function consultarDatoEscolaridad() {
 }
 
 
+function consultarDatoGeneraIngreso() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/ingresos.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Genera ingresos</th>';
+            html += '<th>No genera ingresos</th>';
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var genera = mydata[i].genera * 100;
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + genera.toFixed(1) + '%' + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaIngresos").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatoIngresoProv() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/ingresosprov.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Trabajo</th>';
+            html += '<th>Pensión por jubilación </th>';
+            html += '<th>Remesas</th>';
+            html += '<th>Pensión alimenticia</th>';
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var trabajo = mydata[i].trabajo * 100;
+                var pensionjub = mydata[i].pensionjub * 100;
+                var remesas = mydata[i].remesas * 100;
+                var pensionalim = mydata[i].pensionalim * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + trabajo.toFixed(1) + '%' + '</td>' +
+                    '<td>' + pensionjub.toFixed(1) + '%' + '</td>' +
+                    '<td>' + remesas.toFixed(1) + '%' + '</td>' +
+                    '<td>' + pensionalim.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#IngresoProv").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+
+function consultarDatoRazonNogenraIng() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/razonnogeneraing.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Razón</th>';
+            html += '<th>Porcentaje </th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].razon + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#TablaNogenraIng").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoTrabajoRealiza() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/trabajorealiza.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Lugar</th>';
+            html += '<th>Porcentaje </th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].lugar + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaTrabajoRealiza").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoTrabajoCompos() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/trabajocomposicion.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Tipo</th>';
+            html += '<th>Porcentaje </th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].tipo + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaTrabajocomposicion").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatoTipoIngreso() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/tipoingreso.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Ingreso</th>';
+            html += '<th>Porcentaje </th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].ingreso + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaTipoIngreso").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatoTrabajoSector() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/trabajosector.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Sector Público</th>';
+            html += '<th>Sector Privado</th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var publico = mydata[i].sectorpublico * 100;
+                var privado = mydata[i].sectorprivado * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + publico.toFixed(1) + '%' + '</td>' +
+                    '<td>' + privado.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaTrabajoSector").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoAfiliacionSeguro() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/afseguro.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Esta Afiliado</th>';
+            html += '<th>No esta Afiliado</th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var afiliado = mydata[i].afiliado * 100;
+                var noafiliado = mydata[i].noafiliado * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + afiliado.toFixed(1) + '%' + '</td>' +
+                    '<td>' + noafiliado.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaAfiliadoSeguro").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatoDescripcionEntrevistado() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/descripcionentrev.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Descripción</th>';
+            html += '<th>Porcentaje</th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].descripcion + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaDescripcionEntrevistado").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatoDescripcionNseAlto() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/nsealto.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>NSE Medio tipicohacia alto</th>';
+            html += '<th>AB</th>';
+            html += '<th>C1</th>';
+            html += '<th>C2</th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var nse = mydata[i].nse * 100;
+                var ab = mydata[i].ab * 100;
+                var c1 = mydata[i].c1 * 100;
+                var c2 = mydata[i].c2 * 100;
+
+
+
+
+                html += '<tr>' +
+                    '<td>' + nse.toFixed(1) + '%' + '</td>' +
+                    '<td>' + ab.toFixed(1) + '%' + '</td>' +
+                    '<td>' + c1.toFixed(1) + '%' + '</td>' +
+                    '<td>' + c2.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaNseAlto").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoDescripcionNseMedio() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/nsemedio.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Descripción</th>';
+            html += '<th>Porcentaje</th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var nse = mydata[i].nse * 100;
+                var d1 = mydata[i].d1 * 100;
+                var d2 = mydata[i].d2 * 100;
+
+
+
+                html += '<tr>' +
+
+                    '<td>' + nse.toFixed(1) + '%' + '</td>' +
+                    '<td>' + d1.toFixed(1) + '%' + '</td>' +
+                    '<td>' + d2.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaNseMedio").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoDescripcionNsebajo() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/nsebajo.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Descripción</th>';
+            html += '<th>Porcentaje</th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var nse = mydata[i].nse * 100;
+                var e1 = mydata[i].e1 * 100;
+                var e2 = mydata[i].e2 * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + nse.toFixed(1) + '%' + '</td>' +
+                    '<td>' + e1.toFixed(1) + '%' + '</td>' +
+                    '<td>' + e2.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaNseBajo").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatoGeneroPsh() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/generopsh.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Genero</th>';
+            html += '<th>Opción</th>';
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].genero + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaGeneroPsh").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDaGrupoGenPsh() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/grupogeneracionpsh.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Grupo generacional</th>';
+            html += '<th>Porcentaje</th>';
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].perfil + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#GrupoGenPsh").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatoEstadoCivPsh() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/estadocivilpsh.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Estado Civil</th>';
+            html += '<th>Porcentaje</th>';
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].estado + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaEstadoCivPsh").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoParejaPsh() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/parejapsh.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Estado</th>';
+            html += '<th>Porcentaje</th>';
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].pareja + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaParejaPsh").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatoEscolaridadPsh() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/escolaridadpsh.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Escolaridad</th>';
+            html += '<th>Porcentaje</th>';
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].estudios + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaEscolaridadPsh").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatoTrabajoComposPsh() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/trabajocomposicionpsh.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Tipo</th>';
+            html += '<th>Porcentaje </th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].tipo + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaTrabajocomposicionPsh").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+
+function consultarDatoAfiliacionSeguroPsh() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/afseguropsh.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Esta Afiliado</th>';
+            html += '<th>No esta Afiliado</th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var afiliado = mydata[i].afiliado * 100;
+                var noafiliado = mydata[i].noafiliado * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + afiliado.toFixed(1) + '%' + '</td>' +
+                    '<td>' + noafiliado.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaAfiliadoSeguroPsh").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+
+function consultarDatoTipoIngreso() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/tipoingresopsh.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Ingreso</th>';
+            html += '<th>Porcentaje </th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].ingreso + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaTipoIngresoPsh").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoTrabajoSectorPsh() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/trabajosectorpsh.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Sector Público</th>';
+            html += '<th>Sector Privado</th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var publico = mydata[i].sectorpublico * 100;
+                var privado = mydata[i].sectorprivado * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + publico.toFixed(1) + '%' + '</td>' +
+                    '<td>' + privado.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaTrabajoSectorPsh").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatoDescripcionPsh() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "util/app/caracterizacion/descripcionpsh.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Descripción</th>';
+            html += '<th>Porcentaje</th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].descripcion + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaDescripcionPsh").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
 
 
 $(document).ready(function() {
@@ -2642,6 +4053,28 @@ $(document).ready(function() {
         consultarDatoPareja();
         consultarDatoNucleo();
         consultarDatoEscolaridad();
+        consultarDatoGeneraIngreso();
+        consultarDatoIngresoProv();
+        consultarDatoRazonNogenraIng();
+        consultarDatoTrabajoRealiza();
+        consultarDatoTrabajoCompos();
+        consultarDatoTipoIngreso();
+        consultarDatoTrabajoSector();
+        consultarDatoAfiliacionSeguro();
+        consultarDatoDescripcionEntrevistado();
+        consultarDatoDescripcionNseAlto();
+        consultarDatoDescripcionNseMedio();
+        consultarDatoDescripcionNsebajo();
+        consultarDatoGeneroPsh();
+        consultarDaGrupoGenPsh();
+        consultarDatoEstadoCivPsh();
+        consultarDatoParejaPsh();
+        consultarDatoEscolaridadPsh();
+        consultarDatoTrabajoComposPsh();
+        consultarDatoAfiliacionSeguroPsh();
+        consultarDatoTipoIngreso();
+        consultarDatoTrabajoSectorPsh();
+        consultarDatoDescripcionPsh();
 
         return false;
 
