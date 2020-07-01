@@ -22,7 +22,7 @@ try{
     $corrida = $_GET["corrida"];
 
     $resultado = $conexion->ejecutarConsulta("
-        SELECT * FROM  tbl_promun WHERE id_cuadrante='".$cuadrante."'
+        SELECT * FROM  tbl_propais WHERE id_cuadrante='".$cuadrante."'
         AND id_municipio ='".$municipio."'
         AND id_corrida ='".$corrida."'
         ORDER BY porcentaje DESC
