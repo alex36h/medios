@@ -76,7 +76,7 @@ function consultarDatosLicMun() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/lcm.php",
         data: {
             municipio: municipio,
@@ -137,7 +137,7 @@ function consultarDatosServiciosNac() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/servnac.php",
         data: {
             municipio: municipio,
@@ -205,7 +205,7 @@ function consultarDatosAfReligiosa() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/afreligiosa.php",
         data: {
             municipio: municipio,
@@ -266,7 +266,7 @@ function consultarDatosCReligiosa() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/creligiosa.php",
         data: {
             municipio: municipio,
@@ -340,7 +340,7 @@ function consultarDatosServiciosMun() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/servmun.php",
         data: {
             municipio: municipio,
@@ -409,7 +409,7 @@ function consultarDatosCapGestion() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/cgestion.php",
         data: {
             municipio: municipio,
@@ -471,7 +471,7 @@ function consultarDatosPercDesarrollo() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/pdesarrollo.php",
         data: {
             municipio: municipio,
@@ -540,7 +540,7 @@ function consultarDatosPercPobreza() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/ppobreza.php",
         data: {
             municipio: municipio,
@@ -608,7 +608,7 @@ function consultarIndVictim() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/ivictizacion.php",
         data: {
             municipio: municipio,
@@ -667,7 +667,7 @@ function consultarDatosSegSector() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/segsector.php",
         data: {
             municipio: municipio,
@@ -734,7 +734,7 @@ function consultarDatosSegDia() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/segdia.php",
         data: {
             municipio: municipio,
@@ -802,7 +802,7 @@ function consultarDatosSegNoche() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/segnoche.php",
         data: {
             municipio: municipio,
@@ -869,7 +869,7 @@ function consultarDatosTrabPolicia() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/tpolicia.php",
         data: {
             municipio: municipio,
@@ -933,7 +933,7 @@ function consultarDatosProfPolicia() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/ppolicia.php",
         data: {
             municipio: municipio,
@@ -997,7 +997,7 @@ function consultarDatosFrecSituaciones() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/fsituaciones.php",
         data: {
             municipio: municipio,
@@ -1068,7 +1068,7 @@ function consultarDatosTransporte() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/transporte.php",
         data: {
             municipio: municipio,
@@ -1132,7 +1132,7 @@ function consultarDatosProResidencia() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/proresidencia.php",
         data: {
             municipio: municipio,
@@ -1192,7 +1192,7 @@ function consultarDatosProMunicipio() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/promunicipio.php",
         data: {
             municipio: municipio,
@@ -1253,7 +1253,7 @@ function consultarDatosPais() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/propais.php",
         data: {
             municipio: municipio,
@@ -1313,7 +1313,7 @@ function consultarDatosObras() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/obras.php",
         data: {
             municipio: municipio,
@@ -1373,7 +1373,7 @@ function consultarDatoGMunicipio() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/gmunicipio.php",
         data: {
             municipio: municipio,
@@ -1433,7 +1433,7 @@ function consultarDatoNGMunicipio() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/ngmunicipio.php",
         data: {
             municipio: municipio,
@@ -1492,7 +1492,7 @@ function consultarDatoGResidencia() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/gresidencia.php",
         data: {
             municipio: municipio,
@@ -1552,7 +1552,7 @@ function consultarDatoNGResidencia() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/ngresidencia.php",
         data: {
             municipio: municipio,
@@ -1611,7 +1611,7 @@ function consultarDatoCondVida() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/condvida.php",
         data: {
             municipio: municipio,
@@ -1671,7 +1671,7 @@ function consultarDatoSugDestino() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/sugdestino.php",
         data: {
             municipio: municipio,
@@ -1730,7 +1730,7 @@ function consultarDatoSSimpatia() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/simpatia.php",
         data: {
             municipio: municipio,
@@ -1789,7 +1789,7 @@ function consultarDatosExpectativa() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/expectativa.php",
         data: {
             municipio: municipio,
@@ -1855,7 +1855,7 @@ function consultarDatoIntencion() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/intencion.php",
         data: {
             municipio: municipio,
@@ -1914,7 +1914,7 @@ function consultarDatoPisoTecho() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/piso.php",
         data: {
             municipio: municipio,
@@ -1994,7 +1994,7 @@ function consultarDatoSector() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/sector.php",
         data: {
             municipio: municipio,
@@ -2057,7 +2057,7 @@ function consultarDatoSoporteH() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/soporte.php",
         data: {
             municipio: municipio,
@@ -2119,7 +2119,7 @@ function consultarDatoParentescoSop() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/parentesco.php",
         data: {
             municipio: municipio,
@@ -2181,7 +2181,7 @@ function consultarDatoGenero() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/genero.php",
         data: {
             municipio: municipio,
@@ -2244,7 +2244,7 @@ function consultarDaGrupoGen() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/grupogeneracion.php",
         data: {
             municipio: municipio,
@@ -2307,7 +2307,7 @@ function consultarDatoEstadoCiv() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/estadocivil.php",
         data: {
             municipio: municipio,
@@ -2370,7 +2370,7 @@ function consultarDatoPareja() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/pareja.php",
         data: {
             municipio: municipio,
@@ -2432,7 +2432,7 @@ function consultarDatoNucleo() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/nucleo.php",
         data: {
             municipio: municipio,
@@ -2495,7 +2495,7 @@ function consultarDatoEscolaridad() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/escolaridad.php",
         data: {
             municipio: municipio,
@@ -2558,7 +2558,7 @@ function consultarDatoGeneraIngreso() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/ingresos.php",
         data: {
             municipio: municipio,
@@ -2621,7 +2621,7 @@ function consultarDatoIngresoProv() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/ingresosprov.php",
         data: {
             municipio: municipio,
@@ -2690,7 +2690,7 @@ function consultarDatoRazonNogenraIng() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/razonnogeneraing.php",
         data: {
             municipio: municipio,
@@ -2752,7 +2752,7 @@ function consultarDatoTrabajoRealiza() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/trabajorealiza.php",
         data: {
             municipio: municipio,
@@ -2814,7 +2814,7 @@ function consultarDatoTrabajoCompos() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/trabajocomposicion.php",
         data: {
             municipio: municipio,
@@ -2877,7 +2877,7 @@ function consultarDatoTipoIngreso() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/tipoingreso.php",
         data: {
             municipio: municipio,
@@ -2940,7 +2940,7 @@ function consultarDatoTrabajoSector() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/trabajosector.php",
         data: {
             municipio: municipio,
@@ -3003,7 +3003,7 @@ function consultarDatoAfiliacionSeguro() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/afseguro.php",
         data: {
             municipio: municipio,
@@ -3067,7 +3067,7 @@ function consultarDatoDescripcionEntrevistado() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/descripcionentrev.php",
         data: {
             municipio: municipio,
@@ -3131,7 +3131,7 @@ function consultarDatoDescripcionNseAlto() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/nsealto.php",
         data: {
             municipio: municipio,
@@ -3202,7 +3202,7 @@ function consultarDatoDescripcionNseMedio() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/nsemedio.php",
         data: {
             municipio: municipio,
@@ -3269,7 +3269,7 @@ function consultarDatoDescripcionNsebajo() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/nsebajo.php",
         data: {
             municipio: municipio,
@@ -3337,7 +3337,7 @@ function consultarDatoGeneroPsh() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/generopsh.php",
         data: {
             municipio: municipio,
@@ -3400,7 +3400,7 @@ function consultarDaGrupoGenPsh() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/grupogeneracionpsh.php",
         data: {
             municipio: municipio,
@@ -3463,7 +3463,7 @@ function consultarDatoEstadoCivPsh() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/estadocivilpsh.php",
         data: {
             municipio: municipio,
@@ -3525,7 +3525,7 @@ function consultarDatoParejaPsh() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/parejapsh.php",
         data: {
             municipio: municipio,
@@ -3588,7 +3588,7 @@ function consultarDatoEscolaridadPsh() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/escolaridadpsh.php",
         data: {
             municipio: municipio,
@@ -3651,7 +3651,7 @@ function consultarDatoTrabajoComposPsh() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/trabajocomposicionpsh.php",
         data: {
             municipio: municipio,
@@ -3715,7 +3715,7 @@ function consultarDatoAfiliacionSeguroPsh() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/afseguropsh.php",
         data: {
             municipio: municipio,
@@ -3780,7 +3780,7 @@ function consultarDatoTipoIngreso() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/tipoingresopsh.php",
         data: {
             municipio: municipio,
@@ -3842,7 +3842,7 @@ function consultarDatoTrabajoSectorPsh() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/trabajosectorpsh.php",
         data: {
             municipio: municipio,
@@ -3906,7 +3906,7 @@ function consultarDatoDescripcionPsh() {
 
     $.ajax({
         async: false,
-        type: "POST",
+        type: "GET",
         url: "util/app/caracterizacion/descripcionpsh.php",
         data: {
             municipio: municipio,
@@ -4030,7 +4030,7 @@ $(document).ready(function() {
         consultarDatosPercDesarrollo();
         consultarDatosPercPobreza();
 
-        $("#municipio").change(function() {
+        $("#municipio").change(function(event) {
 
             consultarDatosPercDesarrollo();
             consultarDatosPercPobreza();
@@ -4038,14 +4038,14 @@ $(document).ready(function() {
         });
 
 
-        $("#cuadrante").change(function() {
+        $("#cuadrante").change(function(event) {
             consultarDatosPercDesarrollo();
             consultarDatosPercPobreza();
 
 
         });
 
-        $("#corrida").change(function() {
+        $("#corrida").change(function(event) {
             consultarDatosPercDesarrollo();
             consultarDatosPercPobreza();
 
@@ -4060,7 +4060,7 @@ $(document).ready(function() {
         consultarDatosRel();
         consultarDatosAfReligiosa();
 
-        $("#municipio").change(function() {
+        $("#municipio").change(function(event) {
             consultarDatosCReligiosa();
             consultarDatosRel();
             consultarDatosAfReligiosa();
@@ -4068,7 +4068,7 @@ $(document).ready(function() {
         });
 
 
-        $("#cuadrante").change(function() {
+        $("#cuadrante").change(function(event) {
             consultarDatosCReligiosa();
             consultarDatosRel();
             consultarDatosAfReligiosa();
@@ -4076,7 +4076,7 @@ $(document).ready(function() {
 
         });
 
-        $("#corrida").change(function() {
+        $("#corrida").change(function(event) {
 
             consultarDatosCReligiosa();
             consultarDatosRel();
@@ -4105,7 +4105,7 @@ $(document).ready(function() {
         });
 
 
-        $("#cuadrante").change(function() {
+        $("#cuadrante").change(function(event) {
             consultarDatosLicMun();
             consultarDatosServiciosMun();
             consultarDatosServiciosNac();
@@ -4116,7 +4116,7 @@ $(document).ready(function() {
 
         });
 
-        $("#corrida").change(function() {
+        $("#corrida").change(function(event) {
             consultarDatosLicMun();
             consultarDatosServiciosMun();
             consultarDatosServiciosNac();
@@ -4139,7 +4139,7 @@ $(document).ready(function() {
         consultarDatosTrabPolicia();
         consultarDatosProfPolicia();
 
-        $("#municipio").change(function() {
+        $("#municipio").change(function(event) {
 
             consultarIndVictim();
             consultarDatosSegSector();
@@ -4151,7 +4151,7 @@ $(document).ready(function() {
         });
 
 
-        $("#cuadrante").change(function() {
+        $("#cuadrante").change(function(event) {
             consultarIndVictim();
             consultarDatosSegSector();
             consultarDatosSegDia();
@@ -4161,7 +4161,7 @@ $(document).ready(function() {
 
         });
 
-        $("#corrida").change(function() {
+        $("#corrida").change(function(event) {
             consultarIndVictim();
             consultarDatosSegSector();
             consultarDatosSegDia();
@@ -4177,19 +4177,19 @@ $(document).ready(function() {
 
         consultarDatosFrecSituaciones();
 
-        $("#municipio").change(function() {
+        $("#municipio").change(function(event) {
 
             consultarDatosFrecSituaciones();
         });
 
 
-        $("#cuadrante").change(function() {
+        $("#cuadrante").change(function(event) {
 
             consultarDatosFrecSituaciones();
 
         });
 
-        $("#corrida").change(function() {
+        $("#corrida").change(function(event) {
 
             consultarDatosFrecSituaciones();
 
@@ -4201,19 +4201,19 @@ $(document).ready(function() {
 
         consultarDatosTransporte();
 
-        $("#municipio").change(function() {
+        $("#municipio").change(function(event) {
 
             consultarDatosTransporte();
         });
 
 
-        $("#cuadrante").change(function() {
+        $("#cuadrante").change(function(event) {
 
             consultarDatosTransporte();
 
         });
 
-        $("#corrida").change(function() {
+        $("#corrida").change(function(event) {
 
             consultarDatosTransporte();
 
@@ -4227,7 +4227,7 @@ $(document).ready(function() {
         consultarDatosProMunicipio();
         consultarDatosPais();
 
-        $("#municipio").change(function() {
+        $("#municipio").change(function(event) {
 
             consultarDatosProResidencia();
             consultarDatosProMunicipio();
@@ -4235,7 +4235,7 @@ $(document).ready(function() {
         });
 
 
-        $("#cuadrante").change(function() {
+        $("#cuadrante").change(function(event) {
 
             consultarDatosProResidencia();
             consultarDatosProMunicipio();
@@ -4243,7 +4243,7 @@ $(document).ready(function() {
 
         });
 
-        $("#corrida").change(function() {
+        $("#corrida").change(function(event) {
 
             consultarDatosProResidencia();
             consultarDatosProMunicipio();
@@ -4258,20 +4258,20 @@ $(document).ready(function() {
 
         consultarDatosObras();
 
-        $("#municipio").change(function() {
+        $("#municipio").change(function(event) {
 
             consultarDatosObras();
 
         });
 
 
-        $("#cuadrante").change(function() {
+        $("#cuadrante").change(function(event) {
 
             consultarDatosObras();
 
         });
 
-        $("#corrida").change(function() {
+        $("#corrida").change(function(event) {
 
             consultarDatosObras();
 
@@ -4287,7 +4287,7 @@ $(document).ready(function() {
         consultarDatoGResidencia();
         consultarDatoNGResidencia();
 
-        $("#municipio").change(function() {
+        $("#municipio").change(function(event) {
 
             consultarDatoGMunicipio();
             consultarDatoNGMunicipio();
@@ -4297,7 +4297,7 @@ $(document).ready(function() {
         });
 
 
-        $("#cuadrante").change(function() {
+        $("#cuadrante").change(function(event) {
 
             consultarDatoGMunicipio();
             consultarDatoNGMunicipio();
@@ -4306,7 +4306,7 @@ $(document).ready(function() {
 
         });
 
-        $("#corrida").change(function() {
+        $("#corrida").change(function(event) {
 
             consultarDatoGMunicipio();
             consultarDatoNGMunicipio();
@@ -4322,7 +4322,7 @@ $(document).ready(function() {
         consultarDatoCondVida();
         consultarDatoSugDestino();
 
-        $("#municipio").change(function() {
+        $("#municipio").change(function(event) {
 
             consultarDatoCondVida();
             consultarDatoSugDestino();
@@ -4330,14 +4330,14 @@ $(document).ready(function() {
         });
 
 
-        $("#cuadrante").change(function() {
+        $("#cuadrante").change(function(event) {
 
             consultarDatoCondVida();
             consultarDatoSugDestino();
 
         });
 
-        $("#corrida").change(function() {
+        $("#corrida").change(function(event) {
 
             consultarDatoCondVida();
             consultarDatoSugDestino();
@@ -4355,7 +4355,7 @@ $(document).ready(function() {
 
 
 
-        $("#municipio").change(function() {
+        $("#municipio").change(function(event) {
 
 
             consultarDatoSSimpatia();
@@ -4368,7 +4368,7 @@ $(document).ready(function() {
         });
 
 
-        $("#cuadrante").change(function() {
+        $("#cuadrante").change(function(event) {
 
 
             consultarDatoSSimpatia();
@@ -4379,7 +4379,7 @@ $(document).ready(function() {
 
         });
 
-        $("#corrida").change(function() {
+        $("#corrida").change(function(event) {
 
 
             consultarDatoSSimpatia();

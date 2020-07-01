@@ -16,20 +16,9 @@ $respuesta->data = array();
 try{
 
     if( !$session->checkSession() ) throw new Exception("Debe iniciar una sesión");
-
-    $cuadrante='';
-    $municipio='';
-    $corrida='';
-    if(
     
-        ( isset($_POST['municipio']) && !empty($_POST['municipio']) ) && 
-        ( isset($_POST['corrida']) && !empty($_POST['corrida']) ) 
-    ){
-     
-        $municipio = $_POST['municipio'];
-        $corrida = $_POST['corrida'];
-        
-    }
+    $municipio = $_GET["municipio"];
+    $corrida = $_GET["corrida"];
 
     
        $resultado = $conexion->ejecutarConsulta("

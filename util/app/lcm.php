@@ -19,21 +19,9 @@ try{
 
     if( !$session->checkSession() ) throw new Exception("Debe iniciar una sesión");
 
-    $cuadrante='';
-    $municipio='';
-    $corrida='';
-    
-    if(
-        ( isset($_POST['cuadrante']) && !empty($_POST['cuadrante']) ) && 
-        ( isset($_POST['municipio']) && !empty($_POST['municipio']) ) && 
-        ( isset($_POST['corrida']) && !empty($_POST['corrida']) ) 
-    ){
-        $cuadrante = $_POST['cuadrante'];
-        $municipio = $_POST['municipio'];
-        $corrida = $_POST['corrida'];
-        
-    }
-
+    $cuadrante = $_GET["cuadrante"];
+    $municipio = $_GET["municipio"];
+    $corrida = $_GET["corrida"];
 
 
     $resultado = $conexion->ejecutarConsulta("

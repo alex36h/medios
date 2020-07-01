@@ -17,19 +17,9 @@ try{
 
     if( !$session->checkSession() ) throw new Exception("Debe iniciar una sesión");
 
-    $cuadrante='';
-    $municipio='';
-    $corrida='';
-    if(
+    $municipio = $_GET["municipio"];
+    $corrida = $_GET["corrida"];
     
-        ( isset($_POST['municipio']) && !empty($_POST['municipio']) ) && 
-        ( isset($_POST['corrida']) && !empty($_POST['corrida']) ) 
-    ){
-     
-        $municipio = $_POST['municipio'];
-        $corrida = $_POST['corrida'];
-        
-    }
     /*if(empty($municipio)){
 
         throw new Exception("Debe Seleccionar un Municipio");

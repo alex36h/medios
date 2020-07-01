@@ -1,0 +1,12 @@
+2020-07-01 01:34:15 >>> Error en el query: ( Table 'pedidos.tbl_creligion' doesn't exist ) 
+        SELECT * FROM tbl_creligion WHERE id_cuadrante=''
+        AND id_municipio =''
+        AND id_corrida =''
+        ORDER BY FIELD (categoria,'Devotos','De Precepto','Nominal')
+    
+2020-07-01 01:34:27 >>> Error en el query: ( Table 'pedidos.tbl_creligion' doesn't exist ) 
+        SELECT * FROM tbl_creligion WHERE id_cuadrante=''
+        AND id_municipio =''
+        AND id_corrida =''
+        ORDER BY FIELD (categoria,'Devotos','De Precepto','Nominal')
+    
