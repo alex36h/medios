@@ -20,13 +20,14 @@ try{
     $municipio = $_GET["municipio"];
     $corrida = $_GET["corrida"];
 
-    
-       $resultado = $conexion->ejecutarConsulta("
-        SELECT * FROM tbl_tipoingreso 
-        WHERE id_municipio='".$municipio."'
-        AND id_corrida ='".$corrida."'
- 
-    ");
+
+
+    $resultado = $conexion->ejecutarConsulta("
+    SELECT * FROM tbl_tipoingreso 
+    WHERE id_municipio='".$municipio."'
+    AND id_corrida ='".$corrida."'
+
+");
 
 
     

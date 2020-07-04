@@ -868,7 +868,7 @@
                                             <div class="row">
 
                                                 <div class="col-md-12" id="cntTablaRel">
-                                                    <h6 class="text-center">Nivel de escolaridad del entrevistado </h6>
+                                                    <h6 class="text-center">Nivel de escolaridad del Psh </h6>
 
                                                     <div class="table-responsive ">
 

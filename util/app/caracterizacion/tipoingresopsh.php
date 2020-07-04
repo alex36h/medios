@@ -23,7 +23,7 @@ try{
 
 
     $resultado = $conexion->ejecutarConsulta("
-    SELECT * FROM tbl_tipoingreso 
+    SELECT * FROM tbl_tipoingresopsh 
     WHERE id_municipio='".$municipio."'
     AND id_corrida ='".$corrida."'
 

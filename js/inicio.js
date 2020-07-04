@@ -2900,6 +2900,7 @@ function consultarDatoTipoIngreso() {
 
 
 
+
             html += ' <thead class="text-center">';
             html += '<tr>';
 
@@ -3773,7 +3774,7 @@ function consultarDatoAfiliacionSeguroPsh() {
 
 
 
-function consultarDatoTipoIngreso() {
+function consultarDatoTipoIngresoPsh() {
 
     var municipio = $("#municipio option:selected").val();
     var corrida = $("#corrida option:selected").val();
@@ -3820,7 +3821,7 @@ function consultarDatoTipoIngreso() {
 
 
                 html += '<tr>' +
-                    '<td>' + mydata[i].ingreso + '</td>' +
+                    '<td>' + mydata[i].opciones + '</td>' +
                     '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
 
                     '</tr>';
@@ -3927,8 +3928,6 @@ function consultarDatoDescripcionPsh() {
             var html = '';
             var i;
 
-
-
             html += ' <thead class="text-center">';
             html += '<tr>';
 
@@ -3973,19 +3972,6 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         consultarDatoSector();
         consultarDatoSoporteH();
         consultarDatoParentescoSop();
@@ -4001,7 +3987,7 @@ $(document).ready(function() {
         consultarDatoTrabajoRealiza();
         consultarDatoTrabajoCompos();
         consultarDatoTipoIngreso();
-        consultarDatoTrabajoSector();
+        consultarDatoTrabajoSector()
         consultarDatoAfiliacionSeguro();
         consultarDatoDescripcionEntrevistado();
         consultarDatoDescripcionNseAlto();
@@ -4014,44 +4000,108 @@ $(document).ready(function() {
         consultarDatoEscolaridadPsh();
         consultarDatoTrabajoComposPsh();
         consultarDatoAfiliacionSeguroPsh();
-        consultarDatoTipoIngreso();
+        consultarDatoTipoIngresoPsh();
         consultarDatoTrabajoSectorPsh();
         consultarDatoDescripcionPsh();
 
         return false;
 
+
+
     });
 
 
+    $("#cuadrante").change(function(event) {
 
 
-    $("#percepcion-tab").on("click", function(event) {
-
-        consultarDatosPercDesarrollo();
-        consultarDatosPercPobreza();
-
-        $("#municipio").change(function(event) {
-
-            consultarDatosPercDesarrollo();
-            consultarDatosPercPobreza();
-
-        });
+        var active = $(".tab-pane.active").attr("id");
 
 
-        $("#cuadrante").change(function(event) {
-            consultarDatosPercDesarrollo();
-            consultarDatosPercPobreza();
+
+        switch (active) {
 
 
-        });
+            case ("profile"):
+                console.log(active);
+                consultarDatosCReligiosa();
+                consultarDatosRel();
+                consultarDatosAfReligiosa();
+                active = "";
+                break;
+            case ("contact"):
+                consultarDatosLicMun();
+                consultarDatosServiciosMun();
+                consultarDatosServiciosNac();
+                consultarDatosCapGestion();
+                active = "";
+                break;
 
-        $("#corrida").change(function(event) {
-            consultarDatosPercDesarrollo();
-            consultarDatosPercPobreza();
+            case ("percepcion"):
+                consultarDatosPercDesarrollo();
+                consultarDatosPercPobreza();
+
+                active = "";
+                break;
+
+            case ("seguridad"):
+                consultarIndVictim();
+                consultarDatosSegSector();
+                consultarDatosSegDia();
+                consultarDatosSegNoche();
+                consultarDatosTrabPolicia();
+                consultarDatosProfPolicia();
+                active = "";
+                break;
+
+            case ("frecuencia"):
+                consultarDatosFrecSituaciones();
+                active = "";
+                break;
+
+            case ("transporte"):
+                consultarDatosTransporte();
+                active = "";
+                break;
+
+            case ("sector"):
+                consultarDatosProResidencia();
+                consultarDatosProMunicipio();
+                consultarDatosPais();
+                active = "";
+                break;
+
+            case ("obras"):
+                consultarDatosObras();
+                break;
+
+            case ("gustar"):
+                consultarDatoGMunicipio();
+                consultarDatoNGMunicipio();
+                consultarDatoGResidencia();
+                consultarDatoNGResidencia();
+                break;
+            case ("agenda"):
+                consultarDatoCondVida();
+                consultarDatoSugDestino();
+
+                break;
+
+            case ("tematica"):
+                consultarDatoSSimpatia();
+                consultarDatosExpectativa();
+                consultarDatoIntencion();
+                consultarDatoPisoTecho();
+
+                break;
+            default:
+                //Declaraciones ejecutadas cuando ninguno de los valores coincide con el valor de la expresión
+                break;
+        }
 
 
-        });
     });
+
+
 
 
     $("#profile-tab").on("click", function(event) {
@@ -4060,30 +4110,6 @@ $(document).ready(function() {
         consultarDatosRel();
         consultarDatosAfReligiosa();
 
-        $("#municipio").change(function(event) {
-            consultarDatosCReligiosa();
-            consultarDatosRel();
-            consultarDatosAfReligiosa();
-
-        });
-
-
-        $("#cuadrante").change(function(event) {
-            consultarDatosCReligiosa();
-            consultarDatosRel();
-            consultarDatosAfReligiosa();
-
-
-        });
-
-        $("#corrida").change(function(event) {
-
-            consultarDatosCReligiosa();
-            consultarDatosRel();
-            consultarDatosAfReligiosa();
-
-
-        });
     });
 
 
@@ -4094,41 +4120,20 @@ $(document).ready(function() {
         consultarDatosServiciosNac();
         consultarDatosCapGestion();
 
-        $("#municipio").change(function() {
 
-            consultarDatosLicMun();
-            consultarDatosServiciosMun();
-            consultarDatosServiciosNac();
-            consultarDatosCapGestion();
-
-
-        });
-
-
-        $("#cuadrante").change(function(event) {
-            consultarDatosLicMun();
-            consultarDatosServiciosMun();
-            consultarDatosServiciosNac();
-            consultarDatosCapGestion();
-
-
-
-
-        });
-
-        $("#corrida").change(function(event) {
-            consultarDatosLicMun();
-            consultarDatosServiciosMun();
-            consultarDatosServiciosNac();
-            consultarDatosCapGestion();
-
-
-
-
-
-        });
     });
 
+
+
+    $("#percepcion-tab").on("click", function(event) {
+
+
+
+        consultarDatosPercDesarrollo();
+        consultarDatosPercPobreza();
+
+
+    });
 
     $("#seguridad-tab").on("click", function(event) {
 
@@ -4139,37 +4144,7 @@ $(document).ready(function() {
         consultarDatosTrabPolicia();
         consultarDatosProfPolicia();
 
-        $("#municipio").change(function(event) {
 
-            consultarIndVictim();
-            consultarDatosSegSector();
-            consultarDatosSegDia();
-            consultarDatosSegNoche();
-            consultarDatosTrabPolicia();
-            consultarDatosProfPolicia();
-
-        });
-
-
-        $("#cuadrante").change(function(event) {
-            consultarIndVictim();
-            consultarDatosSegSector();
-            consultarDatosSegDia();
-            consultarDatosSegNoche();
-            consultarDatosTrabPolicia();
-            consultarDatosProfPolicia();
-
-        });
-
-        $("#corrida").change(function(event) {
-            consultarIndVictim();
-            consultarDatosSegSector();
-            consultarDatosSegDia();
-            consultarDatosSegNoche();
-            consultarDatosTrabPolicia();
-            consultarDatosProfPolicia();
-
-        });
     });
 
 
@@ -4177,23 +4152,7 @@ $(document).ready(function() {
 
         consultarDatosFrecSituaciones();
 
-        $("#municipio").change(function(event) {
 
-            consultarDatosFrecSituaciones();
-        });
-
-
-        $("#cuadrante").change(function(event) {
-
-            consultarDatosFrecSituaciones();
-
-        });
-
-        $("#corrida").change(function(event) {
-
-            consultarDatosFrecSituaciones();
-
-        });
     });
 
 
@@ -4201,23 +4160,8 @@ $(document).ready(function() {
 
         consultarDatosTransporte();
 
-        $("#municipio").change(function(event) {
-
-            consultarDatosTransporte();
-        });
 
 
-        $("#cuadrante").change(function(event) {
-
-            consultarDatosTransporte();
-
-        });
-
-        $("#corrida").change(function(event) {
-
-            consultarDatosTransporte();
-
-        });
     });
 
 
@@ -4227,29 +4171,13 @@ $(document).ready(function() {
         consultarDatosProMunicipio();
         consultarDatosPais();
 
-        $("#municipio").change(function(event) {
-
-            consultarDatosProResidencia();
-            consultarDatosProMunicipio();
-            consultarDatosPais();
-        });
 
 
-        $("#cuadrante").change(function(event) {
 
-            consultarDatosProResidencia();
-            consultarDatosProMunicipio();
-            consultarDatosPais();
 
-        });
 
-        $("#corrida").change(function(event) {
 
-            consultarDatosProResidencia();
-            consultarDatosProMunicipio();
-            consultarDatosPais();
 
-        });
     });
 
 
@@ -4258,24 +4186,7 @@ $(document).ready(function() {
 
         consultarDatosObras();
 
-        $("#municipio").change(function(event) {
 
-            consultarDatosObras();
-
-        });
-
-
-        $("#cuadrante").change(function(event) {
-
-            consultarDatosObras();
-
-        });
-
-        $("#corrida").change(function(event) {
-
-            consultarDatosObras();
-
-        });
     });
 
 
@@ -4287,33 +4198,7 @@ $(document).ready(function() {
         consultarDatoGResidencia();
         consultarDatoNGResidencia();
 
-        $("#municipio").change(function(event) {
 
-            consultarDatoGMunicipio();
-            consultarDatoNGMunicipio();
-            consultarDatoGResidencia();
-            consultarDatoNGResidencia();
-
-        });
-
-
-        $("#cuadrante").change(function(event) {
-
-            consultarDatoGMunicipio();
-            consultarDatoNGMunicipio();
-            consultarDatoGResidencia();
-            consultarDatoNGResidencia();
-
-        });
-
-        $("#corrida").change(function(event) {
-
-            consultarDatoGMunicipio();
-            consultarDatoNGMunicipio();
-            consultarDatoGResidencia();
-            consultarDatoNGResidencia();
-
-        });
     });
 
 
@@ -4322,27 +4207,6 @@ $(document).ready(function() {
         consultarDatoCondVida();
         consultarDatoSugDestino();
 
-        $("#municipio").change(function(event) {
-
-            consultarDatoCondVida();
-            consultarDatoSugDestino();
-
-        });
-
-
-        $("#cuadrante").change(function(event) {
-
-            consultarDatoCondVida();
-            consultarDatoSugDestino();
-
-        });
-
-        $("#corrida").change(function(event) {
-
-            consultarDatoCondVida();
-            consultarDatoSugDestino();
-
-        });
     });
 
 
@@ -4358,10 +4222,6 @@ $(document).ready(function() {
         $("#municipio").change(function(event) {
 
 
-            consultarDatoSSimpatia();
-            consultarDatosExpectativa();
-            consultarDatoIntencion();
-            consultarDatoPisoTecho();
 
 
 
