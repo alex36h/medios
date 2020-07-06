@@ -10,6 +10,7 @@
                 <option value="1">Masaya</option>
                 <option value="2">Rivas</option>
                 <option value="3">Jalapa</option>
+                <option value="4">Chinandega</option>
 
             </select>
 
@@ -906,6 +907,38 @@
                                     <div id="collapseFive" class="collapse" role="tabpanel"
                                         aria-labelledby="headingFive">
                                         <div class="card-body">
+
+
+
+                                        <div class="row">
+
+                                        <div class="col-md-12" id="cntTablaRel">
+                                                    <h6 class="text-center">Ingresos Provienen Psh</h6>
+
+                                                    <div class="table-responsive ">
+
+                                                        <table id="IngresoProvPsh"
+                                                            class="table-striped table-bordered table-hover table-sm"
+                                                            width="100%">
+                                                            <thead>
+                                                                <tr>
+
+                                                                    <th>Trabajo</th>
+                                                                    <th>Pensión por jubilación </th>
+                                                                    <th>Remesas</th>
+                                                                    <th>Pensión alimenticia</th>
+
+
+                                                                </tr>
+                                                            </thead>
+
+                                                        </table>
+
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                        <br>
 
 
                                             <div class="row">

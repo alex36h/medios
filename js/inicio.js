@@ -3961,6 +3961,71 @@ function consultarDatoDescripcionPsh() {
 
 }
 
+function consultarDatoIngresoProvPsh() {
+
+    var municipio = $("#municipio option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "GET",
+        url: "util/app/caracterizacion/ingresosprovpsh.php",
+        data: {
+            municipio: municipio,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function() {        },
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+            html += ' <thead class="text-center">';
+            html += '<tr>';
+
+            html += '<th>Trabajo</th>';
+            html += '<th>Pensión por jubilación </th>';
+            html += '<th>Remesas</th>';
+            html += '<th>Pensión alimenticia</th>';
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var trabajo = mydata[i].trabajo * 100;
+                var pensionjub = mydata[i].pensionjub * 100;
+                var remesas = mydata[i].remesas * 100;
+                var pensionalim = mydata[i].pensionalim * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + trabajo.toFixed(1) + '%' + '</td>' +
+                    '<td>' + pensionjub.toFixed(1) + '%' + '</td>' +
+                    '<td>' + remesas.toFixed(1) + '%' + '</td>' +
+                    '<td>' + pensionalim.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#IngresoProvPsh").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
 
 
 $(document).ready(function() {
@@ -4003,6 +4068,7 @@ $(document).ready(function() {
         consultarDatoTipoIngresoPsh();
         consultarDatoTrabajoSectorPsh();
         consultarDatoDescripcionPsh();
+        consultarDatoIngresoProvPsh();
 
         return false;
 
