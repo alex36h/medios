@@ -4010,6 +4010,96 @@ $(document).ready(function() {
 
     });
 
+    $("#municipio").change(function(event) {
+
+
+        var active = $(".tab-pane.active").attr("id");
+
+
+
+        switch (active) {
+
+
+            case ("profile"):
+                console.log(active);
+                consultarDatosCReligiosa();
+                consultarDatosRel();
+                consultarDatosAfReligiosa();
+                active = "";
+                break;
+            case ("contact"):
+                consultarDatosLicMun();
+                consultarDatosServiciosMun();
+                consultarDatosServiciosNac();
+                consultarDatosCapGestion();
+                active = "";
+                break;
+
+            case ("percepcion"):
+                consultarDatosPercDesarrollo();
+                consultarDatosPercPobreza();
+
+                active = "";
+                break;
+
+            case ("seguridad"):
+                consultarIndVictim();
+                consultarDatosSegSector();
+                consultarDatosSegDia();
+                consultarDatosSegNoche();
+                consultarDatosTrabPolicia();
+                consultarDatosProfPolicia();
+                active = "";
+                break;
+
+            case ("frecuencia"):
+                consultarDatosFrecSituaciones();
+                active = "";
+                break;
+
+            case ("transporte"):
+                consultarDatosTransporte();
+                active = "";
+                break;
+
+            case ("sector"):
+                consultarDatosProResidencia();
+                consultarDatosProMunicipio();
+                consultarDatosPais();
+                active = "";
+                break;
+
+            case ("obras"):
+                consultarDatosObras();
+                break;
+
+            case ("gustar"):
+                consultarDatoGMunicipio();
+                consultarDatoNGMunicipio();
+                consultarDatoGResidencia();
+                consultarDatoNGResidencia();
+                break;
+            case ("agenda"):
+                consultarDatoCondVida();
+                consultarDatoSugDestino();
+
+                break;
+
+            case ("tematica"):
+                consultarDatoSSimpatia();
+                consultarDatosExpectativa();
+                consultarDatoIntencion();
+                consultarDatoPisoTecho();
+
+                break;
+            default:
+                //Declaraciones ejecutadas cuando ninguno de los valores coincide con el valor de la expresión
+                break;
+        }
+
+
+    });
+
 
     $("#cuadrante").change(function(event) {
 
