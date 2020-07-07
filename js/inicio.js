@@ -4028,6 +4028,385 @@ function consultarDatoIngresoProvPsh() {
 }
 
 
+function consultarDatoAlcalde() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "GET",
+        url: "util/app/calificacionautoridades/alcalde.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+            html += ' <thead>';
+            html += '<tr>';
+
+            html += '<th>Alcalde</th>';
+            html += '<th>Porcentaje</th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].calificacion + '</td>' +
+                    '<td>' + porcentaje.toFixed(2) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaAlcalde").html(html);
+
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoViceAlcalde() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "GET",
+        url: "util/app/calificacionautoridades/vicealcalde.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+            html += ' <thead>';
+            html += '<tr>';
+
+            html += '<th>Vice Alcalde</th>';
+            html += '<th>Porcentaje</th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].calificacion + '</td>' +
+                    '<td>' + porcentaje.toFixed(2) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaVicAlcalde").html(html);
+
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoSecretaria() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "GET",
+        url: "util/app/calificacionautoridades/secretaria.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+            html += ' <thead>';
+            html += '<tr>';
+
+            html += '<th>Secretaría</th>';
+            html += '<th>Porcentaje</th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].calificacion + '</td>' +
+                    '<td>' + porcentaje.toFixed(2) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaSecretaria").html(html);
+
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatoAdAlcalde() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "GET",
+        url: "util/app/calificacionautoridades/adalcalde.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+            html += ' <thead>';
+            html += '<tr>';
+
+            html += '<th>Alcalde</th>';
+            html += '<th>Porcentaje</th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].calificacion + '</td>' +
+                    '<td>' + porcentaje.toFixed(2) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaAdAlcalde").html(html);
+
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+function consultarDatoAdViceAlcalde() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "GET",
+        url: "util/app/calificacionautoridades/advicealcalde.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+            html += ' <thead>';
+            html += '<tr>';
+
+            html += '<th>Vice Alcalde</th>';
+            html += '<th>Porcentaje</th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].calificacion + '</td>' +
+                    '<td>' + porcentaje.toFixed(2) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaAdViceAlcalde").html(html);
+
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatoAdSecretaria() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "GET",
+        url: "util/app/calificacionautoridades/adsecretaria.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+            var html = '';
+            var i;
+
+
+            html += ' <thead>';
+            html += '<tr>';
+
+            html += '<th>Secretario</th>';
+            html += '<th>Porcentaje</th>';
+
+
+
+            html += '</tr>';
+            html += '</thead>';
+
+
+            for (i = 0; i < mydata.length; i++) {
+
+                var porcentaje = mydata[i].porcentaje * 100;
+
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].calificacion + '</td>' +
+                    '<td>' + porcentaje.toFixed(2) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaAdSecretaria").html(html);
+
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+
 $(document).ready(function() {
 
 
@@ -4098,6 +4477,11 @@ $(document).ready(function() {
                 consultarDatosServiciosMun();
                 consultarDatosServiciosNac();
                 consultarDatosCapGestion();
+                consultarDatoAlcalde();
+                consultarDatoViceAlcalde();
+                consultarDatoAdAlcalde();
+                consultarDatoAdViceAlcalde();
+                consultarDatoAdSecretaria();
                 active = "";
                 break;
 
@@ -4115,6 +4499,7 @@ $(document).ready(function() {
                 consultarDatosSegNoche();
                 consultarDatosTrabPolicia();
                 consultarDatosProfPolicia();
+                consultarDatoSecretaria();
                 active = "";
                 break;
 
@@ -4275,6 +4660,12 @@ $(document).ready(function() {
         consultarDatosServiciosMun();
         consultarDatosServiciosNac();
         consultarDatosCapGestion();
+        consultarDatoAlcalde();
+        consultarDatoViceAlcalde();
+        consultarDatoSecretaria();
+        consultarDatoAdAlcalde();
+        consultarDatoAdViceAlcalde();
+        consultarDatoAdSecretaria();
 
 
     });

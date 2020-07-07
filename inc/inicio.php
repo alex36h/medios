@@ -11,6 +11,9 @@
                 <option value="2">Rivas</option>
                 <option value="3">Jalapa</option>
                 <option value="4">Chinandega</option>
+                <option value="5">Matagalpa</option>
+
+
 
             </select>
 
@@ -910,9 +913,9 @@
 
 
 
-                                        <div class="row">
+                                            <div class="row">
 
-                                        <div class="col-md-12" id="cntTablaRel">
+                                                <div class="col-md-12" id="cntTablaRel">
                                                     <h6 class="text-center">Ingresos Provienen Psh</h6>
 
                                                     <div class="table-responsive ">
@@ -936,9 +939,9 @@
 
                                                     </div>
                                                 </div>
-                                        </div>
+                                            </div>
 
-                                        <br>
+                                            <br>
 
 
                                             <div class="row">
@@ -1334,6 +1337,168 @@
                                 </div>
 
                             </div>
+
+                            <br>
+
+                            <div class="row">
+                                <div class="col-md-6" id="cntTablaRel">
+                                    <h6 class="text-center">Calificación al trabajo realizado por las autoridades
+                                        municipales </h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaAlcalde"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Alcalde</th>
+                                                    <th>Porcentaje</th>
+
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6" id="cntTablaRel">
+
+                                    <h6 class="text-center">Agrado/ Desagrado autoridades municipales </h6>
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaAdAlcalde"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Alcalde</th>
+                                                    <th>Porcentaje</th>
+
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="row">
+                                <div class="col-md-6" id="cntTablaRel">
+
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaVicAlcalde"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Vice Alcalde</th>
+                                                    <th>Porcentaje</th>
+
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6" id="cntTablaRel">
+
+
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaAdViceAlcalde"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Vice Alcalde</th>
+                                                    <th>Porcentaje</th>
+
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <br>
+
+                            <div class="row">
+                                <div class="col-md-6" id="cntTablaRel">
+
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaSecretaria"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Secretaría</th>
+                                                    <th>Porcentaje</th>
+
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6" id="cntTablaRel">
+
+
+                                    <div class="table-responsive ">
+
+                                        <table id="tablaAdSecretaria"
+                                            class="table-striped table-bordered table-hover table-sm" width="100%">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Secretaría</th>
+                                                    <th>Porcentaje</th>
+
+
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
 
 
 
