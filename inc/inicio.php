@@ -12,6 +12,7 @@
                 <option value="3">Jalapa</option>
                 <option value="4">Chinandega</option>
                 <option value="5">Matagalpa</option>
+                <option value="6">Granada</option>
 
 
 

@@ -4479,6 +4479,7 @@ $(document).ready(function() {
                 consultarDatosCapGestion();
                 consultarDatoAlcalde();
                 consultarDatoViceAlcalde();
+                consultarDatoSecretaria();
                 consultarDatoAdAlcalde();
                 consultarDatoAdViceAlcalde();
                 consultarDatoAdSecretaria();
@@ -4574,6 +4575,12 @@ $(document).ready(function() {
                 consultarDatosServiciosMun();
                 consultarDatosServiciosNac();
                 consultarDatosCapGestion();
+                consultarDatoAlcalde();
+                consultarDatoViceAlcalde();
+                consultarDatoSecretaria();
+                consultarDatoAdAlcalde();
+                consultarDatoAdViceAlcalde();
+                consultarDatoAdSecretaria();
                 active = "";
                 break;
 
