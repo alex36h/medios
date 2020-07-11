@@ -13,6 +13,9 @@
                 <option value="4">Chinandega</option>
                 <option value="5">Matagalpa</option>
                 <option value="6">Granada</option>
+                <option value="7">Chichigalpa</option>
+                <option value="8">El Viejo</option>
+                
 
 
 
@@ -185,7 +188,7 @@
 
                                                 </div>
 
-                                                <div class="col-md-6" id="cntTablaRel">
+                                                <div class="col-md-12" id="cntTablaRel">
                                                     <h6 class="text-center"> ¿Es usted el Principal Soporte del Hogar?
                                                     </h6>
 
