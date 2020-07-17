@@ -15,6 +15,10 @@
                 <option value="6">Granada</option>
                 <option value="7">Chichigalpa</option>
                 <option value="8">El Viejo</option>
+                <option value="9">Diriamba</option>
+                <option value="10">El Tuma la Dalia</option>
+                <option value="11">Nueva Guinea</option>
+                <option value="12">Jinotepe</option>
                 
 
 
