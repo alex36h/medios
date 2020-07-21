@@ -19,6 +19,8 @@
                 <option value="10">El Tuma la Dalia</option>
                 <option value="11">Nueva Guinea</option>
                 <option value="12">Jinotepe</option>
+                <option value="13">Blufields</option>
+                <option value="14">Tipitapa</option>
                 
 
 
