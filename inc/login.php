@@ -7,7 +7,7 @@
     <link href="lib/css/bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="css/login.css?v=<?php echo $parametro['webversion']; ?>" rel="stylesheet" type="text/css"/>
     <link href="img/system/favicon.ico?v=<?php echo $parametro['webversion']; ?>" rel="icon" type="image/x-icon"/>
-    <title>Medios | M&R Consultores</title>
+    <title>LCM | M&R Consultores</title>
 </head>
 <body>
 

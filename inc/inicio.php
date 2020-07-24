@@ -21,6 +21,11 @@
                 <option value="12">Jinotepe</option>
                 <option value="13">Blufields</option>
                 <option value="14">Tipitapa</option>
+                <option value="15">Boaco</option>
+                <option value="16">Juigalpa</option>
+                <option value="17">León</option>
+                <option value="18">Jinotega</option>
+                <option value="19">Ocotal</option>
                 
 
 
