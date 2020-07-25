@@ -132,15 +132,18 @@ for($f = 0; $f<count($vectorMenu); $f++){
             $vectorMenu [$i] ['idpadre']== $vectorMenu[$f]['idmenu']
         ){
 
-            if($pagina == $vectorMenu[$i]['ventana']){
-
-                $menuAbierto ='class ="active"';
-            }
-
+         
     
-      
-           
-          
+                /*
+            $listaMenuInt .= '<div class="dropdown-menu" aria-labelledby="navbarDropdown">';
+            $listaMenuInt .= ' <a class="dropdown-item" href="#">Action</a>';
+            $listaMenuInt .=' <a class="dropdown-item" href="#">Another action</a>';
+            $listaMenuInt .= '<div class="dropdown-divider"></div>';
+            $listaMenuInt .= ' <a class="dropdown-item" href="#">Something else here</a>';
+            $listaMenuInt .='</div>';
+          */
+
+            
             $listaMenuInt .='<div class= "dropdown-menu" aria-labelledby="navbarDropdown">';
             $listaMenuInt .='<a class="dropdown-item" href="index.php?pagina='.$vectorMenu[$i]['ventana'].'">';
             $listaMenuInt .='<i class="fas '.$vectorMenu[$i]['icono'].'"></i>';       
@@ -163,6 +166,7 @@ for($f = 0; $f<count($vectorMenu); $f++){
     $listaMenu .=' </a>';
    
     $listaMenu .= $listaMenuInt;
+    
 
         
     $listaMenu .='</li >';
@@ -181,6 +185,10 @@ for($f = 0; $f<count($vectorMenu); $f++){
   
  <a class="nav-link"> Bienvenido: <b><?php echo $_SESSION['nombre'];?></b></a>
 
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="util/system/logout.php"><i class="fa fa-user" aria-hidden="true"></i> Perfil 
+</a>
       </li>
       <li class="nav-item">
         <a class="nav-link " href="util/system/logout.php">Cerrar Sesion <i class="fas fa-sign-out-alt"></i></a>
