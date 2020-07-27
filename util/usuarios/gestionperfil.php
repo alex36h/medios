@@ -30,35 +30,30 @@ try{
 
     if( !$session->checkSession() ) throw new Exception("Debe iniciar una sesión");
 
-    $existe = 0;
+    $existe=1;
     $usuario = '';
     $nombre = '';
     $email = '';
-    $tipo_usuario = '';
+    $clave = '';
     /*$clave_cifrada = hash('sha512', 'm7x'.$parametro['claveusuario']);*/
 
-    $clave_cifrada =$parametro['claveusuario'];
+
     
 
     if(
         ( isset($_POST['usuario']) && !empty($_POST['usuario']) ) && 
         ( isset($_POST['nombre']) && !empty($_POST['nombre']) ) && 
-        ( isset($_POST['tipo_usuario']) && !empty($_POST['tipo_usuario']) ) && 
-        ( isset($_POST['email']) && !empty($_POST['email']) )
+        ( isset($_POST['email']) && !empty($_POST['email']) ) && 
+        ( isset($_POST['clave']) && !empty($_POST['clave']) )
     ){
         $usuario = $_POST['usuario'];
         $nombre = $_POST['nombre'];
-        $tipo_usuario = $_POST['tipo_usuario'];
-        $email = strtolower(trim($_POST['email']));
+        $email = $_POST['email'];
+        $clave = strtolower(trim($_POST['clave']));
     }
 
-    if(
-        isset($_POST['existe']) && !empty($_POST['existe'])
-    ){
-        $existe = $_POST['existe'];
-    }
 
-    if( empty($usuario) || empty($nombre) || empty($tipo_usuario) || empty($email) ){
+    if( empty($usuario) || empty($nombre) || empty($email) || empty($clave) ){
         throw new Exception("Algunos datos llegaron vacios");
     }
 
@@ -83,7 +78,7 @@ try{
             UPDATE usuarios SET 
             nombre='".$nombre."',
             email='".$email."',
-            tipo_usuario='".$tipo_usuario."',
+            clave='".$clave."',
             usuario_actualizacion='".$_SESSION['usuario']."',
             fecha_actualizacion=NOW()
             WHERE 
@@ -94,31 +89,6 @@ try{
 
         $respuesta->mensaje = "Usuario actualizado con éxito";
 
-    }else{
-        $resultado = $conexion->ejecutarConsulta("
-            SELECT COUNT(*) AS total 
-            FROM usuarios
-            WHERE usuario = '".$usuario."'
-        ");
-
-        $total = 0;
-
-        foreach($resultado as $fila){
-            $total = $fila['total'];
-        }
-
-        if( $total > 0 ) throw new Exception("El usuario (".$usuario."), ya existe en la aplicación");
-
-        $insert = $conexion->ejecutarConsulta("
-            INSERT INTO usuarios
-            (usuario, nombre, email, clave, tipo_usuario, usuario_creacion, fecha_creacion)
-            VALUES 
-            ('".$usuario."','".$nombre."','".$email."','".$clave_cifrada."','".$tipo_usuario."','".$_SESSION['usuario']."',NOW())
-        ");
-
-        if( !$insert ) throw new Exception("Error al crear el usuario");
-
-        $respuesta->mensaje = "Usuario creado con éxito";
     }
 
 }catch(Exception $e){

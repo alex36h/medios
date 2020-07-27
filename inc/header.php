@@ -164,6 +164,8 @@ for($f = 0; $f<count($vectorMenu); $f++){
     $listaMenu .= '<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
     $listaMenu .='<i class="fas '.$vectorMenu[$f]['icono'].'"></i>'.$vectorMenu[$f]['nombre'];
     $listaMenu .=' </a>';
+
+    
    
     $listaMenu .= $listaMenuInt;
     
@@ -183,11 +185,11 @@ for($f = 0; $f<count($vectorMenu); $f++){
   
     <li class="nav-item ">
   
- <a class="nav-link"> Bienvenido: <b><?php echo $_SESSION['nombre'];?></b></a>
+ <a class="nav-link" id="perfil"> Bienvenido: <b><?php echo $_SESSION['nombre'];?></b></a>
 
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="util/system/logout.php"><i class="fa fa-user" aria-hidden="true"></i> Perfil 
+        <a class="nav-link " id="profiles" href="http://localhost/medios/index.php?pagina=perfil"><i class="fa fa-user" aria-hidden="true"></i> Perfil 
 </a>
       </li>
       <li class="nav-item">

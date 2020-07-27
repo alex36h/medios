@@ -34,7 +34,9 @@ try{
 
     $datos_usuario = array();
 
-    $clave_cifrada = hash("sha512", "m7x".$clave);
+    /*$clave_cifrada = hash("sha512", "m7x".$clave);*/
+
+    $clave_cifrada =$clave;
 
     $resultado = $conexion->ejecutarConsulta("
         SELECT * FROM usuarios
