@@ -80,3 +80,7 @@ html {
     font-weight: bold;
 }
 */
+
+.card.active>.card-header {
+    background-color: red;
+}
