@@ -188,10 +188,7 @@ for($f = 0; $f<count($vectorMenu); $f++){
  <a class="nav-link" id="perfil"> Bienvenido: <b><?php echo $_SESSION['nombre'];?></b></a>
 
       </li>
-      <li class="nav-item">
-        <a class="nav-link " id="profiles" href="http://localhost/medios/index.php?pagina=perfil"><i class="fa fa-user" aria-hidden="true"></i> Perfil 
-</a>
-      </li>
+
       <li class="nav-item">
         <a class="nav-link " href="util/system/logout.php">Cerrar Sesion <i class="fas fa-sign-out-alt"></i></a>
       </li>

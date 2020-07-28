@@ -58,9 +58,6 @@ $(document).ready(function() {
 
     $("#formPerfil").submit(function() {
 
-        alert("esto se va descontrollaarrrr");
-
-
 
         var usuario = $("#usuario").val();
         var nombre = $("#nombre").val();
