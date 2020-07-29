@@ -1,6 +1,6 @@
 <h3 class="text-center">Aplicación Licencia Ciudadana</h3>
 <hr>
-<form role="form" id="formConsulta">
+<form role="form" id="">
     <div class="row">
         <div class="col-sm">
             <label for="municipio">Municipio</label>
@@ -53,7 +53,7 @@
 
                 <option value="0" selected="selected">Seleccione</option>
                 <option value="1">Enero - Febrero 2020</option>
-                <option value="2">Marzo - Abril 2020</option>
+
 
             </select>
 
@@ -156,7 +156,7 @@
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
                                         <h5 class="mb-0">
-                                            <button id="one" class="btn btn-link" data-toggle="collapse" 
+                                            <button type="button" id="one" class="btn btn-link" data-toggle="collapse" 
                                                 data-target="#collapseOne" aria-expanded="false"
                                                 aria-controls="collapseOne">
                                                 Caracterización
@@ -254,7 +254,7 @@
                                 <div class="card">
                                     <div class="card-header" id="headingTwo">
                                         <h5 class="mb-0">
-                                            <button id="two" class="btn btn-link collapsed" data-toggle="collapse"
+                                            <button type="button" id="two" class="btn btn-link collapsed" data-toggle="collapse"
                                                 data-target="#collapseTwo" aria-expanded="false"
                                                 aria-controls="collapseTwo">
                                                 Descripción sociodemográfica del entrevistado
@@ -425,7 +425,7 @@
                                 <div class="card">
                                     <div class="card-header" id="headingThree">
                                         <h5 class="mb-0">
-                                            <button id="three" class="btn btn-link collapsed" data-toggle="collapse"
+                                            <button type="button" id="three" class="btn btn-link collapsed" data-toggle="collapse"
                                                 data-target="#collapseThree" aria-expanded="false"
                                                 aria-controls="collapseThree">
                                                 Descripción socioeconómica del entrevistado
@@ -766,7 +766,7 @@
                                 <div class="card">
                                     <div class="card-header" id="headingFour">
                                         <h5 class="mb-0">
-                                            <button id="four" class="btn btn-link collapsed" data-toggle="collapse"
+                                            <button type="button" id="four" class="btn btn-link collapsed" data-toggle="collapse"
                                                 data-target="#collapseFour" aria-expanded="false"
                                                 aria-controls="collapseFour">
                                                 Descripción del principal soporte del hogar
@@ -907,7 +907,7 @@
                                 <div class="card">
                                     <div class="card-header" id="headingFive">
                                         <h5 class="mb-0">
-                                            <button id="five" class="btn btn-link collapsed" data-toggle="collapse"
+                                            <button type="button" id="five" class="btn btn-link collapsed" data-toggle="collapse"
                                                 data-target="#collapseFive" aria-expanded="false"
                                                 aria-controls="collapseFive">
                                                 Descripción económica del principal soporte económico del hogar
@@ -1112,8 +1112,8 @@
 
 
                     <div class="card text">
-                        <div class="card-header text-center">
-                            <h5>Denominación Religiosa</h5>
+                        <div class="custom card-header text-center font-italic font-weight-bold">
+                            <h5 class="text-white"> <strong>Denominación Religiosa</strong></h5>
                         </div>
                         <div class="card-body">
 

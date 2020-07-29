@@ -40,7 +40,7 @@ function consultarDatosRel() {
             var i;
 
             html += '<thead>';
-            html += '<tr>';
+            html += '<tr >';
 
             html += '<th>Calidad Religiosa</th>';
             html += '<th>Porecentaje</th>';
@@ -53,9 +53,9 @@ function consultarDatosRel() {
 
                 var porcentaje = mydata[i].porcentaje * 100;
 
-                html += '<tr>' +
+                html += '<tr >' +
                     '<td>' + mydata[i].religion + '</td>' +
-                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+                    '<td >' + porcentaje.toFixed(1) + '%' + '</td>' +
                     '</tr>';
             }
 
@@ -4424,6 +4424,7 @@ $(document).ready(function() {
                     consultarDatoSector();
                     consultarDatoSoporteH();
                     consultarDatoParentescoSop();
+
                     break;
 
                 case ("Descripción sociodemográfica del entrevistado"):
@@ -4433,6 +4434,7 @@ $(document).ready(function() {
                     consultarDatoPareja();
                     consultarDatoNucleo();
                     consultarDatoEscolaridad();
+
                     break;
 
                 case ("Descripción socioeconómica del entrevistado"):
@@ -4448,6 +4450,7 @@ $(document).ready(function() {
                     consultarDatoDescripcionNseAlto();
                     consultarDatoDescripcionNseMedio();
                     consultarDatoDescripcionNsebajo();
+
                     break;
 
                 case ("Descripción del principal soporte del hogar"):
@@ -4490,6 +4493,7 @@ $(document).ready(function() {
                     consultarDatoSector();
                     consultarDatoSoporteH();
                     consultarDatoParentescoSop();
+                    current = "";
                     break;
 
                 case ("Descripción sociodemográfica del entrevistado"):
@@ -4499,6 +4503,7 @@ $(document).ready(function() {
                     consultarDatoPareja();
                     consultarDatoNucleo();
                     consultarDatoEscolaridad();
+                    current = "";
                     break;
 
                 case ("Descripción socioeconómica del entrevistado"):
@@ -4514,6 +4519,7 @@ $(document).ready(function() {
                     consultarDatoDescripcionNseAlto();
                     consultarDatoDescripcionNseMedio();
                     consultarDatoDescripcionNsebajo();
+                    current = "";
                     break;
 
                 case ("Descripción del principal soporte del hogar"):
@@ -4522,6 +4528,7 @@ $(document).ready(function() {
                     consultarDatoEstadoCivPsh();
                     consultarDatoParejaPsh();
                     consultarDatoEscolaridadPsh();
+                    current = "";
 
                     break;
                 case ("Descripción económica del principal soporte económico del hogar"):
@@ -4532,6 +4539,7 @@ $(document).ready(function() {
                     consultarDatoTrabajoSectorPsh();
                     consultarDatoDescripcionPsh();
                     consultarDatoIngresoProvPsh();
+                    current = "";
 
                     break;
 
@@ -4545,14 +4553,99 @@ $(document).ready(function() {
 
 
 
+
         });
+
+
+
+
+
+
 
 
 
     });
 
+
+
+    $("#headingOne").click(function() {
+        consultarDatoSector();
+        consultarDatoSoporteH();
+        consultarDatoParentescoSop();
+        $('.collapse').on('hidden.bs.collapse', function() {
+            current = "";
+        });
+
+    });
+
+
+    $("#headingTwo").click(function() {
+        consultarDatoGenero();
+        consultarDaGrupoGen();
+        consultarDatoEstadoCiv();
+        consultarDatoPareja();
+        consultarDatoNucleo();
+        consultarDatoEscolaridad();
+        $('.collapse').on('hidden.bs.collapse', function() {
+            current = "";
+        });
+
+
+    });
+
+    $("#headingThree").click(function() {
+        consultarDatoGeneraIngreso();
+        consultarDatoIngresoProv();
+        consultarDatoRazonNogenraIng();
+        consultarDatoTrabajoRealiza();
+        consultarDatoTrabajoCompos();
+        consultarDatoTipoIngreso();
+        consultarDatoTrabajoSector()
+        consultarDatoAfiliacionSeguro();
+        consultarDatoDescripcionEntrevistado();
+        consultarDatoDescripcionNseAlto();
+        consultarDatoDescripcionNseMedio();
+        consultarDatoDescripcionNsebajo();
+
+        $('.collapse').on('hidden.bs.collapse', function() {
+            current = "";
+        });
+
+
+    });
+
+    $("#headingFour").click(function() {
+        consultarDatoGeneroPsh();
+        consultarDaGrupoGenPsh();
+        consultarDatoEstadoCivPsh();
+        consultarDatoParejaPsh();
+        consultarDatoEscolaridadPsh();
+        $('.collapse').on('hidden.bs.collapse', function() {
+            current = "";
+        });
+
+    });
+
+    $("#headingFive").click(function() {
+        consultarDatoTrabajoComposPsh();
+        consultarDatoAfiliacionSeguroPsh();
+        consultarDatoTipoIngresoPsh();
+        consultarDatoTrabajoSectorPsh();
+        consultarDatoDescripcionPsh();
+        consultarDatoIngresoProvPsh();
+
+        $('.collapse').on('hidden.bs.collapse', function() {
+            current = "";
+        });
+
+    });
+
+
+
+
+
     /*
-        $("#one").on("click", function(event) {
+        $("#headingOne").on("click", function(event) {
 
             consultarDatoSector();
             consultarDatoSoporteH();
@@ -4560,7 +4653,7 @@ $(document).ready(function() {
         });
 
 
-        $("#two").on("click", function(event) {
+        $("#headingTwo").on("click", function(event) {
 
             consultarDatoGenero();
             consultarDaGrupoGen();
@@ -4569,57 +4662,50 @@ $(document).ready(function() {
             consultarDatoNucleo();
             consultarDatoEscolaridad();
         });
+        
+               $("#three").on("click", function(event) {
 
-        $("#three").on("click", function(event) {
+                   consultarDatoGeneraIngreso();
+                   consultarDatoIngresoProv();
+                   consultarDatoRazonNogenraIng();
+                   consultarDatoTrabajoRealiza();
+                   consultarDatoTrabajoCompos();
+                   consultarDatoTipoIngreso();
+                   consultarDatoTrabajoSector()
+                   consultarDatoAfiliacionSeguro();
+                   consultarDatoDescripcionEntrevistado();
+                   consultarDatoDescripcionNseAlto();
+                   consultarDatoDescripcionNseMedio();
+                   consultarDatoDescripcionNsebajo();
+               });
 
-            consultarDatoGeneraIngreso();
-            consultarDatoIngresoProv();
-            consultarDatoRazonNogenraIng();
-            consultarDatoTrabajoRealiza();
-            consultarDatoTrabajoCompos();
-            consultarDatoTipoIngreso();
-            consultarDatoTrabajoSector()
-            consultarDatoAfiliacionSeguro();
-            consultarDatoDescripcionEntrevistado();
-            consultarDatoDescripcionNseAlto();
-            consultarDatoDescripcionNseMedio();
-            consultarDatoDescripcionNsebajo();
-        });
+               $("#four").on("click", function(event) {
 
-        $("#four").on("click", function(event) {
+                   consultarDatoGeneroPsh();
+                   consultarDaGrupoGenPsh();
+                   consultarDatoEstadoCivPsh();
+                   consultarDatoParejaPsh();
+                   consultarDatoEscolaridadPsh();
+               });
 
-            consultarDatoGeneroPsh();
-            consultarDaGrupoGenPsh();
-            consultarDatoEstadoCivPsh();
-            consultarDatoParejaPsh();
-            consultarDatoEscolaridadPsh();
-        });
+               $("#five").on("click", function(event) {
 
-        $("#five").on("click", function(event) {
+                   consultarDatoTrabajoComposPsh();
+                   consultarDatoAfiliacionSeguroPsh();
+                   consultarDatoTipoIngresoPsh();
+                   consultarDatoTrabajoSectorPsh();
+                   consultarDatoDescripcionPsh();
+                   consultarDatoIngresoProvPsh();
+               });
 
-            consultarDatoTrabajoComposPsh();
-            consultarDatoAfiliacionSeguroPsh();
-            consultarDatoTipoIngresoPsh();
-            consultarDatoTrabajoSectorPsh();
-            consultarDatoDescripcionPsh();
-            consultarDatoIngresoProvPsh();
-        });
-
-    */
-
-
+           */
 
 
 
 
 
-    $("#formConsulta").submit(function() {
-
-        return false;
 
 
-
-    });
 
     $("#municipio").change(function(event) {
 

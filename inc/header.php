@@ -112,7 +112,7 @@
 
 <!-------------------------------------------->
 <div class="container">
-<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light navbar-custom ">
   <a class="navbar-brand" href="#">M&R Consultores</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -125,7 +125,7 @@ for($f = 0; $f<count($vectorMenu); $f++){
    if( $vectorMenu [$f] ['es_menu']== 'SI'){
 
     $menuAbierto ='';
-    $listaMenuInt ='<ul>';
+    $listaMenuInt ='<ul class= "dropdown-menu">';
     for($i = 0; $i<count($vectorMenu); $i++){
 
         if( $vectorMenu [$i] ['es_menu']== 'NO' && 
@@ -144,7 +144,7 @@ for($f = 0; $f<count($vectorMenu); $f++){
           */
 
             
-            $listaMenuInt .='<div class= "dropdown-menu" aria-labelledby="navbarDropdown">';
+            $listaMenuInt .='<div  aria-labelledby="navbarDropdown">';
             $listaMenuInt .='<a class="dropdown-item" href="index.php?pagina='.$vectorMenu[$i]['ventana'].'">';
             $listaMenuInt .='<i class="fas '.$vectorMenu[$i]['icono'].'"></i>';       
             $listaMenuInt .=$vectorMenu [$i]['nombre'];
