@@ -1,4 +1,4 @@
-<h3 class="text-center">Aplicación Licencia Ciudadana</h3>
+
 <hr>
 <form role="form" id="">
     <div class="row">
@@ -71,7 +71,7 @@
         <div class="col-md-3 mb-3 ">
             <ul class="nav nav-pills flex-column " id="myTab" role="tablist">
                 <li class="nav-item border  ">
-                    <a class="nav-link active " id="home-tab" data-toggle="tab" href="#home" role="tab"
+                    <a class="nav-link active customtabs" id="home-tab" data-toggle="tab" href="#home" role="tab"
                         aria-controls="home" aria-selected="true">Caracterización</a>
                 </li>
                 <li class="nav-item border">
@@ -147,8 +147,8 @@
 
 
                     <div class="card text">
-                        <div class="card-header text-center">
-                            <h5>Caracterización del Municipio</h5>
+                        <div class="card-header text-center custom  font-weight-bold">
+                            <h5 class="text-white"> <stron>Caracterización del Municipio</strong></h5>
                         </div>
                         <div class="card-body">
 
@@ -169,7 +169,7 @@
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h6 class="text-center">Sector</h6>
+                                                    <h5 class="text-center customtitle">Sector</h5>
 
                                                     <div class="table-responsive ">
 
@@ -194,8 +194,8 @@
                                                 </div>
 
                                                 <div class="col-md-12" id="cntTablaRel">
-                                                    <h6 class="text-center"> ¿Es usted el Principal Soporte del Hogar?
-                                                    </h6>
+                                                    <h5 class="text-center customtitle"> ¿Es usted el Principal Soporte del Hogar?
+                                                    </h5>
 
                                                     <div class="table-responsive ">
 
@@ -225,9 +225,9 @@
 
                                             <div class="row">
                                                 <div class="col-md-12" id="cntTablaRel">
-                                                    <h6 class="text-center">¿Cuál es su parentesco o relación que tiene,
+                                                    <h5 class="text-center customtitle">¿Cuál es su parentesco o relación que tiene,
                                                         con el
-                                                        principal soporte del hogar?</h6>
+                                                        principal soporte del hogar?</h5>
 
                                                     <div class="table-responsive ">
 
@@ -268,7 +268,7 @@
 
 
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h6 class="text-center">Genero</h6>
+                                                    <h5 class="text-center customtitle">Genero</h5>
 
                                                     <div class="table-responsive ">
 
@@ -294,7 +294,7 @@
                                             <div class="row">
 
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h6 class="text-center">Grupo generacional del entrevistado</h6>
+                                                    <h5 class="text-center customtitle">Grupo generacional del entrevistado</h5>
 
                                                     <div class="table-responsive ">
 
@@ -316,7 +316,7 @@
                                                 </div>
 
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h6 class="text-center">Estado civil del entrevistado</h6>
+                                                    <h5 class="text-center customtitle">Estado civil del entrevistado</h5>
 
                                                     <div class="table-responsive ">
 
@@ -345,9 +345,9 @@
                                                 <div class="row">
 
                                                     <div class="col-md-4" id="cntTablaRel">
-                                                        <h6 class="text-center">Actualmente tiene pareja con la que
+                                                        <h5 class="text-center customtitle">Actualmente tiene pareja con la que
                                                             convive aquí en su hogar
-                                                        </h6>
+                                                        </h5>
 
                                                         <div class="table-responsive ">
 
@@ -369,7 +369,7 @@
                                                     </div>
 
                                                     <div class="col-md-4" id="cntTablaRel">
-                                                        <h6 class="text-center">Nucleo del hogar </h6>
+                                                        <h5 class="text-center customtitle">Nucleo del hogar </h5>
 
                                                         <div class="table-responsive ">
 
@@ -391,8 +391,8 @@
                                                     </div>
 
                                                     <div class="col-md-4" id="cntTablaRel">
-                                                        <h6 class="text-center">Nivel de escolaridad del entrevistado
-                                                        </h6>
+                                                        <h5 class="text-center customtitle">Nivel de escolaridad del entrevistado
+                                                        </h5>
 
                                                         <div class="table-responsive ">
 
@@ -437,7 +437,7 @@
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-md-4" id="cntTablaRel">
-                                                    <h6 class="text-center">Genera Ingresos </h6>
+                                                    <h5 class="text-center customtitle">Genera Ingresos </h5>
 
                                                     <div class="table-responsive ">
 
@@ -459,7 +459,7 @@
                                                 </div>
 
                                                 <div class="col-md-8" id="cntTablaRel">
-                                                    <h6 class="text-center">Ingresos Provienen</h6>
+                                                    <h5 class="text-center customtitle">Ingresos Provienen</h5>
 
                                                     <div class="table-responsive ">
 
@@ -490,7 +490,7 @@
                                             <div class="row">
 
                                                 <div class="col-md-5" id="cntTablaRel">
-                                                    <h6 class="text-center">Razones por las que no genera </h6>
+                                                    <h5 class="text-center customtitle">Razones por las que no genera </h5>
 
                                                     <div class="table-responsive ">
 
@@ -513,7 +513,7 @@
                                                 </div>
 
                                                 <div class="col-md-3" id="cntTablaRel">
-                                                    <h6 class="text-center">Este trabajo lo realizá en </h6>
+                                                    <h5 class="text-center customtitle">Este trabajo lo realizá en </h5>
 
                                                     <div class="table-responsive ">
 
@@ -537,8 +537,8 @@
 
 
                                                 <div class="col-md-4" id="cntTablaRel">
-                                                    <h6 class="text-center">Composicion según lugar de trabajo
-                                                    </h6>
+                                                    <h5 class="text-center customtitle">Composicion según lugar de trabajo
+                                                    </h5>
 
                                                     <div class="table-responsive ">
 
@@ -571,7 +571,7 @@
                                             <div class="row">
 
                                                 <div class="col-md-5" id="cntTablaRel">
-                                                    <h6 class="text-center">Tipo de Ingreso </h6>
+                                                    <h5 class="text-center customtitle">Tipo de Ingreso </h5>
 
 
                                                     <div class="table-responsive ">
@@ -595,7 +595,7 @@
                                                 </div>
 
                                                 <div class="col-md-3" id="cntTablaRel">
-                                                    <h6 class="text-center">Trabaja Para </h6>
+                                                    <h5 class="text-center customtitle">Trabaja Para </h5>
 
 
                                                     <div class="table-responsive ">
@@ -619,7 +619,7 @@
                                                 </div>
 
                                                 <div class="col-md-4" id="cntTablaRel">
-                                                    <h6 class="text-center">Afiliación seguro social</h6>
+                                                    <h class="text-center">Afiliación seguro social</h5>
 
 
                                                     <div class="table-responsive ">
@@ -648,8 +648,8 @@
 
                                             <div class="row">
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h6 class="text-center">Descripción socioeconomica del entrevistado
-                                                    </h6>
+                                                    <h5 class="text-center customtitle">Descripción socioeconomica del entrevistado
+                                                    </h5>
 
 
                                                     <div class="table-responsive ">
@@ -673,7 +673,7 @@
                                                 </div>
 
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h6 class="text-center">NSE Medio tipicohacia alto</h6>
+                                                    <h5 class="text-center customtitle">NSE Medio tipicohacia alto</h5>
 
 
                                                     <div class="table-responsive ">
@@ -705,7 +705,7 @@
                                             <div class="row">
 
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h6 class="text-center">NSE Medio medio </h6>
+                                                    <h5 class="text-center customtitle">NSE Medio medio </h5>
 
 
                                                     <div class="table-responsive ">
@@ -732,7 +732,7 @@
                                                 </div>
 
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h6 class="text-center">NSE Medio bajo</h6>
+                                                    <h5 class="text-center customtitle">NSE Medio bajo</h5>
 
 
                                                     <div class="table-responsive ">
@@ -778,7 +778,7 @@
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h6 class="text-center">Genero</h6>
+                                                    <h5 class="text-center customtitle">Genero</h5>
 
                                                     <div class="table-responsive ">
 
@@ -800,7 +800,7 @@
                                                 </div>
 
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h6 class="text-center">Grupo generacional del entrevistado</h6>
+                                                    <h5 class="text-center customtitle">Grupo generacional del entrevistado</h5>
 
                                                     <div class="table-responsive ">
 
@@ -827,7 +827,7 @@
                                             <div class="row">
 
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h6 class="text-center">Estado civil del Psh</h6>
+                                                    <h5 class="text-center customtitle">Estado civil del Psh</h5>
 
                                                     <div class="table-responsive ">
 
@@ -849,9 +849,9 @@
                                                 </div>
 
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h6 class="text-center">Actualmente tiene pareja con la que convive
+                                                    <h5 class="text-center customtitle">Actualmente tiene pareja con la que convive
                                                         aquí en su hogar
-                                                    </h6>
+                                                    </h5>
 
                                                     <div class="table-responsive ">
 
@@ -878,7 +878,7 @@
                                             <div class="row">
 
                                                 <div class="col-md-12" id="cntTablaRel">
-                                                    <h6 class="text-center">Nivel de escolaridad del Psh </h6>
+                                                    <h5 class="text-center customtitle">Nivel de escolaridad del Psh </h5>
 
                                                     <div class="table-responsive ">
 
@@ -920,7 +920,7 @@
                                             <div class="row">
 
                                                 <div class="col-md-12" id="cntTablaRel">
-                                                    <h6 class="text-center">Ingresos Provienen Psh</h6>
+                                                    <h5 class="text-center customtitle">Ingresos Provienen Psh</h5>
 
                                                     <div class="table-responsive ">
 
@@ -951,8 +951,8 @@
                                             <div class="row">
 
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h6 class="text-center">Composicion según lugar de trabajo Psh
-                                                    </h6>
+                                                    <h5 class="text-center customtitle">Composicion según lugar de trabajo Psh
+                                                    </h5>
 
                                                     <div class="table-responsive ">
 
@@ -976,7 +976,7 @@
 
 
                                                 <div class="col-md-4" id="cntTablaRel">
-                                                    <h6 class="text-center">Afiliación seguro social Psh</h6>
+                                                    <h5 class="text-center customtitle">Afiliación seguro social Psh</h5>
 
 
                                                     <div class="table-responsive ">
@@ -1006,7 +1006,7 @@
                                             <div class="row">
 
                                                 <div class="col-md-5" id="cntTablaRel">
-                                                    <h6 class="text-center">Tipo de Ingreso Psh</h6>
+                                                    <h5 class="text-center customtitle">Tipo de Ingreso Psh</h5>
 
 
                                                     <div class="table-responsive ">
@@ -1031,7 +1031,7 @@
 
 
                                                 <div class="col-md-3" id="cntTablaRel">
-                                                    <h6 class="text-center">Trabaja Para (Psh)</h6>
+                                                    <h5 class="text-center customtitle">Trabaja Para (Psh)</h5>
 
 
                                                     <div class="table-responsive ">
@@ -1055,8 +1055,8 @@
                                                 </div>
 
                                                 <div class="col-md-4" id="cntTablaRel">
-                                                    <h6 class="text-center">Descripción socioeconomica del entrevistado
-                                                    </h6>
+                                                    <h5 class="text-center customtitle">Descripción socioeconomica del entrevistado
+                                                    </h5>
 
 
                                                     <div class="table-responsive ">
@@ -1112,7 +1112,7 @@
 
 
                     <div class="card text">
-                        <div class="custom card-header text-center font-italic font-weight-bold">
+                        <div class="card-header text-center custom  font-weight-bold">
                             <h5 class="text-white"> <strong>Denominación Religiosa</strong></h5>
                         </div>
                         <div class="card-body">
@@ -1121,7 +1121,7 @@
 
 
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h6 class="text-center">Afiliación Religiosa</h6>
+                                    <h5 class="text-center customtitle">Afiliación Religiosa</h5>
 
                                     <div class="table-responsive ">
 
@@ -1146,7 +1146,7 @@
 
 
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h6 class="text-center">Calidad Religiosa</h6>
+                                    <h5 class="text-center customtitle">Calidad Religiosa</h5>
 
                                     <div class="table-responsive ">
 
@@ -1175,7 +1175,7 @@
                             <div class="row">
 
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h6 class="text-center">Denominacion Religiosa</h6>
+                                    <h5 class="text-center customtitle">Denominacion Religiosa</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaCReligion"
@@ -1208,14 +1208,14 @@
 
 
                     <div class="card text">
-                        <div class="card-header text-center">
-                            <h5>Licencia ciudadana Municipal</h5>
+                        <div class="card-header text-center custom font-weight-bold">
+                            <h5 class="text-white"><stron>Licencia ciudadana Municipal</strong></h5>
                         </div>
                         <div class="card-body">
                             <div class="row">
 
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h6 class="text-center">Licencia</h6>
+                                    <h5 class="text-center customtitle">Licencia</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaLicencia"
@@ -1256,7 +1256,7 @@
                             <div class="row">
 
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h6 class="text-center"> Satisfacción con servicios nacionales </h6>
+                                    <h5 class="text-center customtitle"> Satisfacción con servicios nacionales </h5>
 
                                     <div class="table-responsive ">
 
@@ -1289,7 +1289,7 @@
                             <div class="row">
 
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h6 class="text-center"> Satisfacción con servicios municipales </h6>
+                                    <h5 class="text-center customtitle"> Satisfacción con servicios municipales </h5>
 
                                     <div class="table-responsive ">
 
@@ -1322,7 +1322,7 @@
                             <div class="row">
 
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h6 class="text-center"> Capacidad de Gestión </h6>
+                                    <h5 class="text-center customtitle"> Capacidad de Gestión </h5>
 
                                     <div class="table-responsive ">
 
@@ -1351,8 +1351,8 @@
 
                             <div class="row">
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h6 class="text-center">Calificación al trabajo realizado por las autoridades
-                                        municipales </h6>
+                                    <h5 class="text-center customtitle">Calificación al trabajo realizado por las autoridades
+                                        municipales </h5>
 
                                     <div class="table-responsive ">
 
@@ -1377,7 +1377,7 @@
 
                                 <div class="col-md-6" id="cntTablaRel">
 
-                                    <h6 class="text-center">Agrado/ Desagrado autoridades municipales </h6>
+                                    <h5 class="text-center customtitle">Agrado/ Desagrado autoridades municipales </h5>
 
                                     <div class="table-responsive ">
 
@@ -1528,14 +1528,14 @@
 
 
                     <div class="card text">
-                        <div class="card-header text-center">
-                            <h5>Percepción acerca del desarrollo del municipio</h5>
+                        <div class="card-header text-center custom font-weight-bold">
+                            <h5 class="text-white">Percepción acerca del desarrollo del municipio</h5>
                         </div>
                         <div class="card-body">
                             <div class="row">
 
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h6 class="text-center">Desarrollo del municipio </h6>
+                                    <h5 class="text-center customtitle">Desarrollo del municipio </h5>
 
                                     <div class="table-responsive ">
 
@@ -1566,7 +1566,7 @@
                             <div class="row">
 
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h6 class="text-center"> Percepción Niveles de Pobreza </h6>
+                                    <h5 class="text-center customtitle"> Percepción Niveles de Pobreza </h5>
 
                                     <div class="table-responsive ">
 
@@ -1609,8 +1609,8 @@
 
 
                     <div class="card text">
-                        <div class="card-header text-center">
-                            <h5>Seguridad Ciudadana</h5>
+                        <div class="card-header text-center custom font-weight-bold">
+                            <h5 class="text-white"><strong>Seguridad Ciudadana</strong></h5>
                         </div>
                         <div class="card-body">
 
@@ -1618,7 +1618,7 @@
                             <div class="row">
 
                                 <div class="col-md-5" id="cntTablaRel">
-                                    <h6 class="text-center">Indice de victimización</h6>
+                                    <h5 class="text-center customtitle">Indice de victimización</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaIndVictim"
@@ -1645,7 +1645,7 @@
 
                             <div class="row">
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h6 class="text-center">Que tan Seguro se Siente</h6>
+                                    <h5 class="text-center customtitle">Que tan Seguro se Siente</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaSegSector"
@@ -1672,7 +1672,7 @@
 
                             <div class="row">
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h6 class="text-center">Que tan seguro se siente Durante el dia</h6>
+                                    <h5 class="text-center customtitle">Que tan seguro se siente Durante el dia</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaSegDia"
@@ -1700,7 +1700,7 @@
 
                             <div class="row">
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h6 class="text-center">Que tan seguro se siente Durante la noche</h6>
+                                    <h5 class="text-center customtitle">Que tan seguro se siente Durante la noche</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaSegNoche"
@@ -1725,7 +1725,7 @@
                             <br>
                             <div class="row">
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h6 class="text-center">Calificación al trabajo que realiza la policia nacional</h6>
+                                    <h5 class="text-center customtitle">Calificación al trabajo que realiza la policia nacional</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaTrabPolicia"
@@ -1745,8 +1745,8 @@
                                 </div>
 
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h6 class="text-center">Profesionalismo en las actuaciones de la policia nacional
-                                    </h6>
+                                    <h5 class="text-center customtitle">Profesionalismo en las actuaciones de la policia nacional
+                                    </h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaProfPolicia"
@@ -1784,8 +1784,8 @@
 
 
                     <div class="card text">
-                        <div class="card-header text-center">
-                            <h5>Medios de Transporte Utilizados</h5>
+                        <div class="card-header text-center custom font-weight-bold">
+                            <h5 class="text-white"><strong>Medios de Transporte Utilizados</strong></h5>
                         </div>
                         <div class="card-body">
                             <div class="row">
@@ -1826,13 +1826,13 @@
 
 
                     <div class="card text">
-                        <div class="card-header text-center">
-                            <h5>Problemas del sector de residencia, municipio, país top 10 </h5>
+                        <div class="card-header text-center custom font-weight-bold">
+                            <h5 class="text-white"><strong>Problemas del sector de residencia, municipio, país top 10</strong> </h5>
                         </div>
                         <div class="card-body">
 
                             <div class="row">
-                                <h6>Principales problemas en el Sector de residencia</h6>
+                                <h5 class="text-center customtitle">Principales problemas en el Sector de residencia</h5>
                                 <div class="col-md-12" id="cntTablaRel">
                                     <div class="table-responsive ">
 
@@ -1855,7 +1855,7 @@
                             <br>
 
                             <div class="row">
-                                <h6>Principales problemas en el Municipio</h6>
+                                <h5 class="text-center customtitle">Principales problemas en el Municipio</h5>
                                 <div class="col-md-12" id="cntTablaRel">
                                     <div class="table-responsive ">
 
@@ -1878,7 +1878,7 @@
                             <br>
 
                             <div class="row">
-                                <h6>Principales problemas en el País</h6>
+                                <h5 class="text-center customtitle">Principales problemas en el País</h5>
                                 <div class="col-md-12" id="cntTablaRel">
                                     <div class="table-responsive ">
 
@@ -1916,13 +1916,13 @@
 
 
                     <div class="card text">
-                        <div class="card-header text-center">
-                            <h5>Reconocimiento de obras realizadas en el municipio </h5>
+                        <div class="card-header text-center custom font-weight-bold">
+                            <h5 class="text-white"><strong>Reconocimiento de obras realizadas en el municipio</strong> </h5>
                         </div>
                         <div class="card-body">
                             <div class="row">
 
-                                <h6>Obras realizadas en el Municipio </h6>
+                                <h5 class="text-center customtitle">Obras realizadas en el Municipio </h5>
                                 <div class="col-md-12" id="cntTablaRel">
                                     <div class="table-responsive ">
 
@@ -1962,8 +1962,8 @@
 
 
                     <div class="card text">
-                        <div class="card-header text-center">
-                            <h5>Lo que más gusta y menos gusta del sector de residencia y del municipio</h5>
+                        <div class="card-header text-center custom font-weight-bold">
+                            <h5 class="text-white">Lo que más gusta y menos gusta del sector de residencia y del municipio</h5>
                         </div>
                         <div class="card-body">
 
@@ -1971,7 +1971,7 @@
 
 
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h6>Lo que mas gusta del municipio </h6>
+                                    <h5 class="text-center customtitle">Lo que mas gusta del municipio </h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaGmunicipio"
@@ -1991,7 +1991,7 @@
 
 
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h6>Lo que menos gusta del municipio</h6>
+                                    <h5 class="text-center customtitle">Lo que menos gusta del municipio</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaNGmunicipio"
@@ -2017,7 +2017,7 @@
                             <div class="row">
 
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h6>Lo que mas gusta del sector de residencia</h6>
+                                    <h5 class="text-center customtitle">Lo que mas gusta del sector de residencia</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaGResidencia"
@@ -2036,7 +2036,7 @@
                                 </div>
 
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h6>Lo que menos gusta del sector de residencia</h6>
+                                    <h5 class="text-center customtitle">Lo que menos gusta del sector de residencia</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaNGResidencia"
@@ -2074,13 +2074,13 @@
                 <div class="tab-pane fade" id="agenda" role="tabpanel" aria-labelledby="agenda-tab">
 
                     <div class="card text">
-                        <div class="card-header text-center">
-                            <h5>Agenda Ciudadana</h5>
+                        <div class="card-header text-center custom font-weight-bold">
+                            <h5 class="text-white">Agenda Ciudadana</h5>
                         </div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h6 class="text-center">Mejorar condiciones de vida </h6>
+                                    <h5 class="text-center customtitle">Mejorar condiciones de vida </h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaCondVida"
@@ -2099,7 +2099,7 @@
                                 </div>
 
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h6 class="text-center">Sugerencia destino de recursos</h6>
+                                    <h5 class="text-center customtitle">Sugerencia destino de recursos</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaSugDestino"
@@ -2136,13 +2136,13 @@
 
 
                     <div class="card text">
-                        <div class="card-header text-center">
-                            <h5>Temática política</h5>
+                        <div class="card-header text-center custom font-weight-bold">
+                            <h5 class="text-white">Temática política</h5>
                         </div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h6 class="text-center">Simpatía política </h6>
+                                    <h5 class="text-center customtitle">Simpatía política </h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaSimpatia"
@@ -2161,7 +2161,7 @@
                                 </div>
 
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h6 class="text-center">Modelo de predisposición</h6>
+                                    <h5 class="text-center customtitle">Modelo de predisposición</h5>
                                     <div class="table-responsive ">
 
                                         <table id="" class="table-striped table-bordered table-hover table-sm"
@@ -2184,8 +2184,8 @@
                             <br>
                             <div class="row">
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h6 class="text-center">Pensando en Futuras Elecciones, Diría que Personas Como
-                                        Usted </h6>
+                                    <h5 class="text-center customtitle">Pensando en Futuras Elecciones, Diría que Personas Como
+                                        Usted </h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaExpectativa"
@@ -2208,7 +2208,7 @@
                             <br>
                             <div class="row">
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h6 class="text-center">Intención de Voto</h6>
+                                    <h5 class="text-center customtitle">Intención de Voto</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaIntencion"
@@ -2232,7 +2232,7 @@
 
                             <div class="row">
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h6 class="text-center">Pisos y Techos</h6>
+                                    <h5 class="text-center customtitle">Pisos y Techos</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaPiso" class="table-striped table-bordered table-hover table-sm"
@@ -2272,16 +2272,16 @@
 
 
                     <div class="card text">
-                        <div class="card-header text-center">
-                            <h5>Frecuencia que ocurren las siguientes situaciones</h5>
+                        <div class="card-header text-center custom font-weight-bold">
+                            <h5 class="text-white"><strong>Frecuencia que ocurren las siguientes situaciones</strong></h5>
                         </div>
                         <div class="card-body">
 
                             <div class="row">
 
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h6 class="text-center">Profesionalismo en las actuaciones de la policia nacional
-                                    </h6>
+                                    <h5 class="text-center customtitle">Profesionalismo en las actuaciones de la policia nacional
+                                    </h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaFrecSitua"

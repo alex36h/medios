@@ -39,14 +39,14 @@ function consultarDatosRel() {
             var html = '';
             var i;
 
-            html += '<thead>';
+            html += '<thead class="customtable text-white" class="customtable text-white">';
             html += '<tr >';
 
             html += '<th>Calidad Religiosa</th>';
             html += '<th>Porecentaje</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
 
             for (i = 0; i < mydata.length; i++) {
@@ -98,14 +98,14 @@ function consultarDatosLicMun() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white" class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Licencia </th>';
             html += '<th>Porcentaje</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
                 // '<td>' + porcentaje.toPrecision(4) + '%' + '</td>' +
@@ -159,7 +159,7 @@ function consultarDatosServiciosNac() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white" class="customtable text-white">';
             html += '<tr>';
 
             html += '<th></th>';
@@ -170,7 +170,7 @@ function consultarDatosServiciosNac() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -228,14 +228,14 @@ function consultarDatosAfReligiosa() {
             var html = '';
             var i;
 
-            html += '<thead>';
+            html += '<thead class="customtable text-white" class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Afiliación</th>';
             html += '<th>Porcentaje</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
 
             for (i = 0; i < mydata.length; i++) {
@@ -289,7 +289,7 @@ function consultarDatosCReligiosa() {
             var html = '';
             var i;
 
-            html += '<thead>';
+            html += '<thead class="customtable text-white" class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Categoría</th>';
@@ -299,7 +299,7 @@ function consultarDatosCReligiosa() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
 
             for (i = 0; i < mydata.length; i++) {
@@ -362,7 +362,7 @@ function consultarDatosServiciosMun() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th></th>';
@@ -373,7 +373,7 @@ function consultarDatosServiciosMun() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -430,7 +430,7 @@ function consultarDatosCapGestion() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Gestión</th>';
@@ -439,7 +439,7 @@ function consultarDatosCapGestion() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -493,7 +493,7 @@ function consultarDatosPercDesarrollo() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th></th>';
@@ -504,7 +504,7 @@ function consultarDatosPercDesarrollo() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -562,7 +562,7 @@ function consultarDatosPercPobreza() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th></th>';
@@ -573,7 +573,7 @@ function consultarDatosPercPobreza() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -630,14 +630,14 @@ function consultarIndVictim() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Ha sido victima </th>';
             html += '<th>No ha sido victima</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
                 // '<td>' + porcentaje.toPrecision(4) + '%' + '</td>' +
@@ -689,7 +689,7 @@ function consultarDatosSegSector() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th></th>';
@@ -700,7 +700,7 @@ function consultarDatosSegSector() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -756,7 +756,7 @@ function consultarDatosSegDia() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th></th>';
@@ -767,7 +767,7 @@ function consultarDatosSegDia() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -824,7 +824,7 @@ function consultarDatosSegNoche() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th></th>';
@@ -835,7 +835,7 @@ function consultarDatosSegNoche() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -891,7 +891,7 @@ function consultarDatosTrabPolicia() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Calificaión</th>';
@@ -901,7 +901,7 @@ function consultarDatosTrabPolicia() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -955,7 +955,7 @@ function consultarDatosProfPolicia() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Calificación</th>';
@@ -965,7 +965,7 @@ function consultarDatosProfPolicia() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -1019,7 +1019,7 @@ function consultarDatosFrecSituaciones() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Situación</th>';
@@ -1031,7 +1031,7 @@ function consultarDatosFrecSituaciones() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -1090,7 +1090,7 @@ function consultarDatosTransporte() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Transporte</th>';
@@ -1101,7 +1101,7 @@ function consultarDatosTransporte() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -1154,14 +1154,14 @@ function consultarDatosProResidencia() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Problema</th>';
             html += '<th>Porcentaje</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -1214,14 +1214,14 @@ function consultarDatosProMunicipio() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Problema</th>';
             html += '<th>Porcentaje</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -1275,14 +1275,14 @@ function consultarDatosPais() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Problema</th>';
             html += '<th>Porcentaje</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -1335,14 +1335,14 @@ function consultarDatosObras() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Problema</th>';
             html += '<th>Porcentaje</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -1395,14 +1395,14 @@ function consultarDatoGMunicipio() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Gusta</th>';
             html += '<th>Porcentaje</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -1454,14 +1454,14 @@ function consultarDatoNGMunicipio() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>No Gusta</th>';
             html += '<th>Porcentaje</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -1513,14 +1513,14 @@ function consultarDatoGResidencia() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Gusta</th>';
             html += '<th>Porcentaje</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -1573,14 +1573,14 @@ function consultarDatoNGResidencia() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>No Gusta</th>';
             html += '<th>Porcentaje</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -1632,14 +1632,14 @@ function consultarDatoCondVida() {
             var html = '';
             var i;
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Agenda</th>';
             html += '<th>Porcentaje</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -1692,14 +1692,14 @@ function consultarDatoSugDestino() {
             var html = '';
             var i;
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Agenda</th>';
             html += '<th>Porcentaje</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -1751,14 +1751,14 @@ function consultarDatoSSimpatia() {
             var html = '';
             var i;
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Simpatía</th>';
             html += '<th>Porcentaje</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -1810,7 +1810,7 @@ function consultarDatosExpectativa() {
             var html = '';
             var i;
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += ' <th>Oportunidad</th>';
@@ -1819,7 +1819,7 @@ function consultarDatosExpectativa() {
             html += ' <th>Ninguno</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -1876,14 +1876,14 @@ function consultarDatoIntencion() {
             var html = '';
             var i;
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Intención</th>';
             html += '<th>Porcentaje</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -1944,7 +1944,7 @@ function consultarDatoPisoTecho() {
             var i;
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>P Techo</th>';
@@ -1954,7 +1954,7 @@ function consultarDatoPisoTecho() {
             html += '<th>TECHO Según LCM</th>';
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -2017,7 +2017,7 @@ function consultarDatoSector() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Sector</th>';
@@ -2025,7 +2025,7 @@ function consultarDatoSector() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -2080,7 +2080,7 @@ function consultarDatoSoporteH() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Respuesta</th>';
@@ -2088,7 +2088,7 @@ function consultarDatoSoporteH() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -2142,7 +2142,7 @@ function consultarDatoParentescoSop() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Parentesco</th>';
@@ -2150,7 +2150,7 @@ function consultarDatoParentescoSop() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -2204,7 +2204,7 @@ function consultarDatoGenero() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Genero</th>';
@@ -2212,7 +2212,7 @@ function consultarDatoGenero() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -2267,7 +2267,7 @@ function consultarDaGrupoGen() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Grupo generacional</th>';
@@ -2275,7 +2275,7 @@ function consultarDaGrupoGen() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -2330,7 +2330,7 @@ function consultarDatoEstadoCiv() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Estado Civil</th>';
@@ -2338,7 +2338,7 @@ function consultarDatoEstadoCiv() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -2393,7 +2393,7 @@ function consultarDatoPareja() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Estado</th>';
@@ -2401,7 +2401,7 @@ function consultarDatoPareja() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -2455,7 +2455,7 @@ function consultarDatoNucleo() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Hogar</th>';
@@ -2463,7 +2463,7 @@ function consultarDatoNucleo() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -2518,7 +2518,7 @@ function consultarDatoEscolaridad() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Escolaridad</th>';
@@ -2526,7 +2526,7 @@ function consultarDatoEscolaridad() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -2581,7 +2581,7 @@ function consultarDatoGeneraIngreso() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Genera ingresos</th>';
@@ -2589,7 +2589,7 @@ function consultarDatoGeneraIngreso() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -2644,7 +2644,7 @@ function consultarDatoIngresoProv() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Trabajo</th>';
@@ -2654,7 +2654,7 @@ function consultarDatoIngresoProv() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -2713,7 +2713,7 @@ function consultarDatoRazonNogenraIng() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Razón</th>';
@@ -2722,7 +2722,7 @@ function consultarDatoRazonNogenraIng() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -2775,7 +2775,7 @@ function consultarDatoTrabajoRealiza() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Lugar</th>';
@@ -2784,7 +2784,7 @@ function consultarDatoTrabajoRealiza() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -2837,7 +2837,7 @@ function consultarDatoTrabajoCompos() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Tipo</th>';
@@ -2846,7 +2846,7 @@ function consultarDatoTrabajoCompos() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -2901,7 +2901,7 @@ function consultarDatoTipoIngreso() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Ingreso</th>';
@@ -2910,7 +2910,7 @@ function consultarDatoTipoIngreso() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -2964,7 +2964,7 @@ function consultarDatoTrabajoSector() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Sector Público</th>';
@@ -2973,7 +2973,7 @@ function consultarDatoTrabajoSector() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -3027,7 +3027,7 @@ function consultarDatoAfiliacionSeguro() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Esta Afiliado</th>';
@@ -3036,7 +3036,7 @@ function consultarDatoAfiliacionSeguro() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -3091,7 +3091,7 @@ function consultarDatoDescripcionEntrevistado() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Descripción</th>';
@@ -3100,7 +3100,7 @@ function consultarDatoDescripcionEntrevistado() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -3155,7 +3155,7 @@ function consultarDatoDescripcionNseAlto() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>NSE Medio tipicohacia alto</th>';
@@ -3166,7 +3166,7 @@ function consultarDatoDescripcionNseAlto() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -3226,7 +3226,7 @@ function consultarDatoDescripcionNseMedio() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Descripción</th>';
@@ -3235,7 +3235,7 @@ function consultarDatoDescripcionNseMedio() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -3293,7 +3293,7 @@ function consultarDatoDescripcionNsebajo() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Descripción</th>';
@@ -3302,7 +3302,7 @@ function consultarDatoDescripcionNsebajo() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -3361,7 +3361,7 @@ function consultarDatoGeneroPsh() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Genero</th>';
@@ -3369,7 +3369,7 @@ function consultarDatoGeneroPsh() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -3424,7 +3424,7 @@ function consultarDaGrupoGenPsh() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Grupo generacional</th>';
@@ -3432,7 +3432,7 @@ function consultarDaGrupoGenPsh() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -3487,7 +3487,7 @@ function consultarDatoEstadoCivPsh() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Estado Civil</th>';
@@ -3495,7 +3495,7 @@ function consultarDatoEstadoCivPsh() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -3549,7 +3549,7 @@ function consultarDatoParejaPsh() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Estado</th>';
@@ -3557,7 +3557,7 @@ function consultarDatoParejaPsh() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -3612,7 +3612,7 @@ function consultarDatoEscolaridadPsh() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Escolaridad</th>';
@@ -3620,7 +3620,7 @@ function consultarDatoEscolaridadPsh() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -3675,7 +3675,7 @@ function consultarDatoTrabajoComposPsh() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Tipo</th>';
@@ -3684,7 +3684,7 @@ function consultarDatoTrabajoComposPsh() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -3739,7 +3739,7 @@ function consultarDatoAfiliacionSeguroPsh() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Esta Afiliado</th>';
@@ -3748,7 +3748,7 @@ function consultarDatoAfiliacionSeguroPsh() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -3804,7 +3804,7 @@ function consultarDatoTipoIngresoPsh() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Ingreso</th>';
@@ -3813,7 +3813,7 @@ function consultarDatoTipoIngresoPsh() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -3866,7 +3866,7 @@ function consultarDatoTrabajoSectorPsh() {
 
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Sector Público</th>';
@@ -3875,7 +3875,7 @@ function consultarDatoTrabajoSectorPsh() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -3928,7 +3928,7 @@ function consultarDatoDescripcionPsh() {
             var html = '';
             var i;
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Descripción</th>';
@@ -3937,7 +3937,7 @@ function consultarDatoDescripcionPsh() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -3990,7 +3990,7 @@ function consultarDatoIngresoProvPsh() {
             var i;
 
 
-            html += ' <thead class="text-center">';
+            html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
             html += '<th>Trabajo</th>';
@@ -4000,7 +4000,7 @@ function consultarDatoIngresoProvPsh() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
             for (i = 0; i < mydata.length; i++) {
 
@@ -4057,7 +4057,7 @@ function consultarDatoAlcalde() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Alcalde</th>';
@@ -4066,7 +4066,7 @@ function consultarDatoAlcalde() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
 
             for (i = 0; i < mydata.length; i++) {
@@ -4119,7 +4119,7 @@ function consultarDatoViceAlcalde() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Vice Alcalde</th>';
@@ -4128,7 +4128,7 @@ function consultarDatoViceAlcalde() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
 
             for (i = 0; i < mydata.length; i++) {
@@ -4181,7 +4181,7 @@ function consultarDatoSecretaria() {
             var html = '';
             var i;
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Secretaría</th>';
@@ -4190,7 +4190,7 @@ function consultarDatoSecretaria() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
 
             for (i = 0; i < mydata.length; i++) {
@@ -4245,7 +4245,7 @@ function consultarDatoAdAlcalde() {
             var i;
 
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Alcalde</th>';
@@ -4254,7 +4254,7 @@ function consultarDatoAdAlcalde() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
 
             for (i = 0; i < mydata.length; i++) {
@@ -4309,7 +4309,7 @@ function consultarDatoAdViceAlcalde() {
             var i;
 
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Vice Alcalde</th>';
@@ -4318,7 +4318,7 @@ function consultarDatoAdViceAlcalde() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
 
             for (i = 0; i < mydata.length; i++) {
@@ -4372,7 +4372,7 @@ function consultarDatoAdSecretaria() {
             var i;
 
 
-            html += ' <thead>';
+            html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
             html += '<th>Secretario</th>';
@@ -4381,7 +4381,7 @@ function consultarDatoAdSecretaria() {
 
 
             html += '</tr>';
-            html += '</thead>';
+            html += '</thead class="customtable text-white">';
 
 
             for (i = 0; i < mydata.length; i++) {
@@ -4414,7 +4414,7 @@ $(document).ready(function() {
 
 
         var current = $(e.target).parent().find('button').text().trim();
-
+        $(this).parent().addClass('active');
         $("#municipio").change(function(event) {
 
 
@@ -4478,6 +4478,7 @@ $(document).ready(function() {
 
             $('.collapse').on('hidden.bs.collapse', function() {
                 current = "";
+                $(this).parent().removeClass('active');
             });
 
 
@@ -4549,6 +4550,7 @@ $(document).ready(function() {
 
             $('.collapse').on('hidden.bs.collapse', function() {
                 current = "";
+                $(this).parent().removeClass('active');
             });
 
 
@@ -4574,6 +4576,7 @@ $(document).ready(function() {
         consultarDatoParentescoSop();
         $('.collapse').on('hidden.bs.collapse', function() {
             current = "";
+            $(this).parent().removeClass('active');
         });
 
     });
@@ -4588,6 +4591,7 @@ $(document).ready(function() {
         consultarDatoEscolaridad();
         $('.collapse').on('hidden.bs.collapse', function() {
             current = "";
+            $(this).parent().removeClass('active');
         });
 
 
