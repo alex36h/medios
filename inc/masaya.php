@@ -6,8 +6,8 @@
             <label for="municipio">Municipio</label>
             <select id="municipio" class="form-control">
 
-                <option value="0" selected="selected">Seleccione</option>
-                <option value="1">Managua</option>
+               
+                <option value="20">Managua</option>
       
 
 
@@ -37,7 +37,8 @@
             <select id="corrida" class="form-control">
 
                 <option value="0" selected="selected">Seleccione</option>
-                <option value="1">Enero - Febrero 2020</option>
+                <option value="1">Corrida #1</option>
+                <option value="2">Corrida #2</option>
 
 
             </select>
