@@ -39,6 +39,8 @@
                 <option value="0" selected="selected">Seleccione</option>
                 <option value="1">Corrida #1</option>
                 <option value="2">Corrida #2</option>
+                <option value="3">Corrida #3</option>
+                <option value="4">Corrida #4</option>
 
 
             </select>
