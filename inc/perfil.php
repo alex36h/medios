@@ -1,4 +1,4 @@
-<h1 class="text-center"><span><?php echo $varAcceso['nombre'] ;?></span></h1>
+<h3 class="text-center"><span><?php echo $varAcceso['nombre'] ;?></span></h3>
 <hr>
 
 

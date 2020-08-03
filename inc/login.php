@@ -49,7 +49,7 @@
 
     <!-- Remind Passowrd -->
     <div id="formFooter">
-      <a class="underlineHover" href="#">Olvido su Contraseña?</a>
+      <h6 class="underlineHover" >Licencia Ciudadana Municipal</h6>
     </div>
 
   </div>

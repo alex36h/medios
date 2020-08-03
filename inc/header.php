@@ -53,7 +53,7 @@
     <link href="img/system/favicon.ico?v=<?php echo $parametro['webversion']; ?>" rel="icon" type="image/x-icon"/>
     <link href="css/system.css?v=<?php echo $pagina; ?>" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <title><?php echo  $varAcceso['nombre']; ?> | M&R Consultores</title>
+    <title><?php echo  $varAcceso['nombre']; ?> | Licencia Ciudadana Municipal</title>
 </head>
 <body>
 

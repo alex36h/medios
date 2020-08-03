@@ -48,11 +48,11 @@
 
         </div>
         <div class="col-sm">
-            <label for="corrida" class="text-center">Corrida</label>
-            <select id="corrida" class="form-control">
+            <label for="corrida" class="text-center" style="visibility:hidden">Corrida</label>
+            <select id="corrida" class="form-control" style="visibility:hidden">
 
-                <option value="0" selected="selected">Seleccione</option>
-                <option value="1">Enero - Febrero 2020</option>
+                <option value="1" selected="selected">Corrida #1</option>
+               
 
 
             </select>
