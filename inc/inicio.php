@@ -62,16 +62,25 @@
     </div>
 
 <br>
+     
+<div class="row">
+  <div class="col"><h6 id="muestracuadrante"></h6></div>
+  <div class="col"><h6 id="fecha"></h6></div>
+  <div class="col"></div>
+ 
+</div>
 
+<div class="row">
+  <div class="col"><h6 id="orientacion1"></h6> 
+  <h6 id="orientacion2"></h6>
+  </div>
 
-        <div class="col-md-11">
-            <input type="text" id="muestra" class="form-control" disabled />
-        </div>
+ 
+</div>
 
-        <div class="col-md-11">
-            <input type="text" id="muestracuadrante" class="form-control" disabled />
-        </div>
-
+        
+    
+     
 
      
      

@@ -4406,7 +4406,7 @@ function consultarDatoAdSecretaria() {
 }
 
 
-function consultarDatoCuarante() {
+function consultarDatoCuadrante() {
 
     var municipio = $("#municipio option:selected").val();
     var cuadrante = $("#cuadrante option:selected").val();
@@ -4423,23 +4423,13 @@ function consultarDatoCuarante() {
 
         },
         dataType: 'json',
-        /*beforeSend: function() {
-            $("#myTabContent").hide();
-            $("#myTab").hide();
-            $("#cargando").html('<img src="img/system/loading.gif" height="70" width="70">');
-
-
-        },*/
+ 
         error: function(request, status, error) {
             alert(request.responseText);
         },
         success: function(respuesta) {
 
 
-            /*
-            $("#cargando").html('');
-            $("#myTabContent").show();
-            $("#myTab").show();*/
 
 
             var mydata = respuesta.data;
@@ -4447,12 +4437,22 @@ function consultarDatoCuarante() {
 
         
             for (i = 0; i < mydata.length; i++) {
-            $("#muestra").val(mydata[i]['muestra']);
-            $("#muestracuadrante").val(mydata[i]['muestracuadrante']);
+           // $("#muestra").val(mydata[i]['muestra']);
+                
+       
+                $("#muestracuadrante").text('Tamaño Muestra:' + " " +mydata[i]['muestracuadrante']);
+                 $("#fecha").text('Fecha:' + mydata[i]['fecha']);
+                 $("#orientacion1").text('De este a oeste: ' + mydata[i]['orientacion1']);
+                 $("#orientacion2").text('De norte a sur: ' + mydata[i]['orientacion2']);
+
+            
+                    
+         
+      
          
         }
 
-//$("#tablaReligion").html(html);
+
 
         },
         complete: function() {
@@ -4771,7 +4771,7 @@ $(document).ready(function() {
 
         var active = $(".tab-pane.active").attr("id");
 
-
+        consultarDatoCuadrante();
 
         switch (active) {
 
@@ -4868,7 +4868,7 @@ $(document).ready(function() {
 
 
         var active = $(".tab-pane.active").attr("id");
-        consultarDatoCuarante();
+        consultarDatoCuadrante();
 
 
 
@@ -5119,32 +5119,7 @@ $(document).ready(function() {
     });
 
 
-    var datos = [
-        {
-        id:1,
-        corrida:1,
-        departamento: 'Jinotega',
-        muestra:'Muestra Municipal: 1,600 ',
-        levantamiento:'04 al 09 Julio 2020',
-        limites:'El Municipio ha sido dividido en 4 cuadrantes (Sector Noroeste. Suroeste, noreste, sureste',
-        global:'De este a oeste: De  Cementerio Municipal hacia Gasolinera puma Chagüite sobre calle central De norte a sur: De Comedor Malibu hacia empalme la cruz sobre NIC-43.',
-        cuadrante1:'De este a oeste: Gasolinera Puma Chagüite hacia finca los papales. De norte a sur: Empalme la cruz hacia Gasolinera puma Chagüite sobre calle central.',
-        cuadrante2:'De este a oeste:  Cementerio Municipal hacia gasolinera Puma Chagüite sobre calle principal.  De norte a sur: Empalme la cruz hacia Gasolinera puma Chagüite sobre calle central. ',
-        cuadrante3:'De este a oeste:  Cementerio Municipal hacia gasolinera Puma Chagüite sobre calle principal.  De norte a sur:  Gasolinera Puma Chagüite hacia comedor Malibu sobre Nic-43. ',
-        cuadrante4:'De este a oeste: Gasolinera Puma Chagüite hacia finca los papales.    De norte a sur : Gasolinera Puma Chagüite hacia comedor Malibu sobre Nic-43.'
-     
-      },
 
-      {
-        id:2,
-        departamento: 'Juigalpa'
-      }
-    
-    ];
-
-    let departmen = datos.filter(dato => dato.cuadrante1 == 1);
-    console.log(departmen);
-   
 
 
 });
