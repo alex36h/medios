@@ -1,0 +1,5 @@
+2020-08-12 22:46:06 >>> Error de conexión: ( 1045 ) Access denied for user 'root'@'localhost' (using password: YES)
+2020-08-12 22:46:20 >>> Error de conexión: ( 1049 ) Unknown database 'pedidos'
+2020-08-12 22:48:16 >>> Error de conexión: ( 1049 ) Unknown database 'pedidos'
+2020-08-12 22:48:21 >>> Error de conexión: ( 1049 ) Unknown database 'pedidos'
+2020-08-12 22:48:28 >>> Error de conexión: ( 1049 ) Unknown database 'pedidos'

@@ -61,6 +61,22 @@
 
     </div>
 
+<br>
+
+
+        <div class="col-md-11">
+            <input type="text" id="muestra" class="form-control" disabled />
+        </div>
+
+        <div class="col-md-11">
+            <input type="text" id="muestracuadrante" class="form-control" disabled />
+        </div>
+
+
+     
+     
+
+
 
     <hr>
 
