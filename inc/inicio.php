@@ -26,6 +26,8 @@
                 <option value="17">León</option>
                 <option value="18">Jinotega</option>
                 <option value="19">Ocotal</option>
+                <option value="21">Somoto</option>
+                <option value="22">Esteli</option>
 
 
 
@@ -2305,8 +2307,7 @@
                             <div class="row">
 
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h5 class="text-center customtitle">Profesionalismo en las actuaciones de la policia nacional
-                                    </h5>
+                                
                                     <div class="table-responsive ">
 
                                         <table id="tablaFrecSitua"

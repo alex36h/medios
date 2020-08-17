@@ -1949,8 +1949,6 @@ function consultarDatoPisoTecho() {
 
             html += '<th>P Techo</th>';
             html += '<th>PISO Caja negra</th>';
-            html += '<th>Probabilidad de voto atendiendo a simpatía</th>';
-            html += '<th>Gobierno: Con quien le iría mejor</th>';
             html += '<th>TECHO Según LCM</th>';
 
             html += '</tr>';
@@ -1967,8 +1965,7 @@ function consultarDatoPisoTecho() {
                 html += '<tr>' +
                     '<td>' + mydata[i].opcion + '</td>' +
                     '<td>' + escenario1.toFixed(1) + '%' + '</td>' +
-                    '<td>' + escenario2.toFixed(1) + '%' + '</td>' +
-                    '<td>' + escenario3.toFixed(1) + '%' + '</td>' +
+            
                     '<td>' + escenario4.toFixed(1) + '%' + '</td>' +
 
 
