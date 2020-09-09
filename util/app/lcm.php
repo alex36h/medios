@@ -25,7 +25,8 @@ try{
 
 
     $resultado = $conexion->ejecutarConsulta("
-        SELECT * FROM  tbl_lcm WHERE id_cuadrante='".$cuadrante."'
+        SELECT * FROM  tbl_lcm WHERE licencia IN ('Apropiacion','Aprobacion','Aceptación','Rechazo')
+        AND id_cuadrante='".$cuadrante."'
         AND id_municipio ='".$municipio."'
         AND id_corrida ='".$corrida."'
         ORDER BY FIELD (licencia,'Apropiacion','Aprobacion','Aceptación','Rechazo')

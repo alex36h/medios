@@ -1,4 +1,3 @@
-
 <hr>
 <form role="form" id="">
     <div class="row">
@@ -54,7 +53,7 @@
             <select id="corrida" class="form-control" style="visibility:hidden">
 
                 <option value="1" selected="selected">Corrida #1</option>
-               
+
 
 
             </select>
@@ -63,29 +62,34 @@
 
     </div>
 
-<br>
-     
-<div class="row">
-  <div class="col"><h6 id="muestracuadrante"></h6></div>
-  <div class="col"><h6 id="fecha"></h6></div>
-  <div class="col"></div>
- 
-</div>
+    <br>
 
-<div class="row">
-  <div class="col"><h6 id="orientacion1"></h6> 
-  <h6 id="orientacion2"></h6>
-  </div>
+    <div class="row">
+        <div class="col">
+            <h6 id="muestracuadrante"></h6>
+        </div>
+        <div class="col">
+            <h6 id="fecha"></h6>
+        </div>
+        <div class="col"></div>
 
- 
-</div>
+    </div>
 
-        
-    
-     
+    <div class="row">
+        <div class="col">
+            <h6 id="orientacion1"></h6>
+            <h6 id="orientacion2"></h6>
+        </div>
 
-     
-     
+
+    </div>
+
+
+
+
+
+
+
 
 
 
@@ -175,7 +179,9 @@
 
                     <div class="card text">
                         <div class="card-header text-center custom  font-weight-bold">
-                            <h5 class="text-white"> <stron>Caracterización del Municipio</strong></h5>
+                            <h5 class="text-white">
+                                <stron>Caracterización del Municipio</strong>
+                            </h5>
                         </div>
                         <div class="card-body">
 
@@ -183,7 +189,7 @@
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
                                         <h5 class="mb-0">
-                                            <button type="button" id="one" class="btn btn-link" data-toggle="collapse" 
+                                            <button type="button" id="one" class="btn btn-link" data-toggle="collapse"
                                                 data-target="#collapseOne" aria-expanded="false"
                                                 aria-controls="collapseOne">
                                                 Caracterización
@@ -221,7 +227,8 @@
                                                 </div>
 
                                                 <div class="col-md-12" id="cntTablaRel">
-                                                    <h5 class="text-center customtitle"> ¿Es usted el Principal Soporte del Hogar?
+                                                    <h5 class="text-center customtitle"> ¿Es usted el Principal Soporte
+                                                        del Hogar?
                                                     </h5>
 
                                                     <div class="table-responsive ">
@@ -252,7 +259,8 @@
 
                                             <div class="row">
                                                 <div class="col-md-12" id="cntTablaRel">
-                                                    <h5 class="text-center customtitle">¿Cuál es su parentesco o relación que tiene,
+                                                    <h5 class="text-center customtitle">¿Cuál es su parentesco o
+                                                        relación que tiene,
                                                         con el
                                                         principal soporte del hogar?</h5>
 
@@ -281,8 +289,8 @@
                                 <div class="card">
                                     <div class="card-header" id="headingTwo">
                                         <h5 class="mb-0">
-                                            <button type="button" id="two" class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapseTwo" aria-expanded="false"
+                                            <button type="button" id="two" class="btn btn-link collapsed"
+                                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                                                 aria-controls="collapseTwo">
                                                 Descripción sociodemográfica del entrevistado
                                             </button>
@@ -321,7 +329,8 @@
                                             <div class="row">
 
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h5 class="text-center customtitle">Grupo generacional del entrevistado</h5>
+                                                    <h5 class="text-center customtitle">Grupo generacional del
+                                                        entrevistado</h5>
 
                                                     <div class="table-responsive ">
 
@@ -343,7 +352,8 @@
                                                 </div>
 
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h5 class="text-center customtitle">Estado civil del entrevistado</h5>
+                                                    <h5 class="text-center customtitle">Estado civil del entrevistado
+                                                    </h5>
 
                                                     <div class="table-responsive ">
 
@@ -372,7 +382,8 @@
                                                 <div class="row">
 
                                                     <div class="col-md-4" id="cntTablaRel">
-                                                        <h5 class="text-center customtitle">Actualmente tiene pareja con la que
+                                                        <h5 class="text-center customtitle">Actualmente tiene pareja con
+                                                            la que
                                                             convive aquí en su hogar
                                                         </h5>
 
@@ -418,7 +429,8 @@
                                                     </div>
 
                                                     <div class="col-md-4" id="cntTablaRel">
-                                                        <h5 class="text-center customtitle">Nivel de escolaridad del entrevistado
+                                                        <h5 class="text-center customtitle">Nivel de escolaridad del
+                                                            entrevistado
                                                         </h5>
 
                                                         <div class="table-responsive ">
@@ -452,9 +464,9 @@
                                 <div class="card">
                                     <div class="card-header" id="headingThree">
                                         <h5 class="mb-0">
-                                            <button type="button" id="three" class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapseThree" aria-expanded="false"
-                                                aria-controls="collapseThree">
+                                            <button type="button" id="three" class="btn btn-link collapsed"
+                                                data-toggle="collapse" data-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
                                                 Descripción socioeconómica del entrevistado
                                             </button>
                                         </h5>
@@ -517,7 +529,8 @@
                                             <div class="row">
 
                                                 <div class="col-md-5" id="cntTablaRel">
-                                                    <h5 class="text-center customtitle">Razones por las que no genera </h5>
+                                                    <h5 class="text-center customtitle">Razones por las que no genera
+                                                    </h5>
 
                                                     <div class="table-responsive ">
 
@@ -564,7 +577,8 @@
 
 
                                                 <div class="col-md-4" id="cntTablaRel">
-                                                    <h5 class="text-center customtitle">Composicion según lugar de trabajo
+                                                    <h5 class="text-center customtitle">Composicion según lugar de
+                                                        trabajo
                                                     </h5>
 
                                                     <div class="table-responsive ">
@@ -649,24 +663,24 @@
                                                     <h class="text-center">Afiliación seguro social</h5>
 
 
-                                                    <div class="table-responsive ">
+                                                        <div class="table-responsive ">
 
-                                                        <table id="tablaAfiliadoSeguro"
-                                                            class="table-striped table-bordered table-hover table-sm"
-                                                            width="100%">
-                                                            <thead>
-                                                                <tr>
+                                                            <table id="tablaAfiliadoSeguro"
+                                                                class="table-striped table-bordered table-hover table-sm"
+                                                                width="100%">
+                                                                <thead>
+                                                                    <tr>
 
-                                                                    <th>Sector Público</th>
-                                                                    <th>Sector Privado</th>
+                                                                        <th>Sector Público</th>
+                                                                        <th>Sector Privado</th>
 
 
-                                                                </tr>
-                                                            </thead>
+                                                                    </tr>
+                                                                </thead>
 
-                                                        </table>
+                                                            </table>
 
-                                                    </div>
+                                                        </div>
                                                 </div>
 
                                             </div>
@@ -675,7 +689,8 @@
 
                                             <div class="row">
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h5 class="text-center customtitle">Descripción socioeconomica del entrevistado
+                                                    <h5 class="text-center customtitle">Descripción socioeconomica del
+                                                        entrevistado
                                                     </h5>
 
 
@@ -793,8 +808,8 @@
                                 <div class="card">
                                     <div class="card-header" id="headingFour">
                                         <h5 class="mb-0">
-                                            <button type="button" id="four" class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapseFour" aria-expanded="false"
+                                            <button type="button" id="four" class="btn btn-link collapsed"
+                                                data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
                                                 aria-controls="collapseFour">
                                                 Descripción del principal soporte del hogar
                                             </button>
@@ -827,7 +842,8 @@
                                                 </div>
 
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h5 class="text-center customtitle">Grupo generacional del entrevistado</h5>
+                                                    <h5 class="text-center customtitle">Grupo generacional del
+                                                        entrevistado</h5>
 
                                                     <div class="table-responsive ">
 
@@ -876,7 +892,8 @@
                                                 </div>
 
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h5 class="text-center customtitle">Actualmente tiene pareja con la que convive
+                                                    <h5 class="text-center customtitle">Actualmente tiene pareja con la
+                                                        que convive
                                                         aquí en su hogar
                                                     </h5>
 
@@ -905,7 +922,8 @@
                                             <div class="row">
 
                                                 <div class="col-md-12" id="cntTablaRel">
-                                                    <h5 class="text-center customtitle">Nivel de escolaridad del Psh </h5>
+                                                    <h5 class="text-center customtitle">Nivel de escolaridad del Psh
+                                                    </h5>
 
                                                     <div class="table-responsive ">
 
@@ -934,8 +952,8 @@
                                 <div class="card">
                                     <div class="card-header" id="headingFive">
                                         <h5 class="mb-0">
-                                            <button type="button" id="five" class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapseFive" aria-expanded="false"
+                                            <button type="button" id="five" class="btn btn-link collapsed"
+                                                data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
                                                 aria-controls="collapseFive">
                                                 Descripción económica del principal soporte económico del hogar
                                             </button>
@@ -978,7 +996,8 @@
                                             <div class="row">
 
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h5 class="text-center customtitle">Composicion según lugar de trabajo Psh
+                                                    <h5 class="text-center customtitle">Composicion según lugar de
+                                                        trabajo Psh
                                                     </h5>
 
                                                     <div class="table-responsive ">
@@ -1003,7 +1022,8 @@
 
 
                                                 <div class="col-md-4" id="cntTablaRel">
-                                                    <h5 class="text-center customtitle">Afiliación seguro social Psh</h5>
+                                                    <h5 class="text-center customtitle">Afiliación seguro social Psh
+                                                    </h5>
 
 
                                                     <div class="table-responsive ">
@@ -1082,7 +1102,8 @@
                                                 </div>
 
                                                 <div class="col-md-4" id="cntTablaRel">
-                                                    <h5 class="text-center customtitle">Descripción socioeconomica del entrevistado
+                                                    <h5 class="text-center customtitle">Descripción socioeconomica del
+                                                        entrevistado
                                                     </h5>
 
 
@@ -1116,10 +1137,10 @@
 
 
 
-                      
 
 
-            
+
+
 
 
                         </div>
@@ -1236,13 +1257,15 @@
 
                     <div class="card text">
                         <div class="card-header text-center custom font-weight-bold">
-                            <h5 class="text-white"><stron>Licencia ciudadana Municipal</strong></h5>
+                            <h5 class="text-white">
+                                <stron>Licencia ciudadana Municipal</strong>
+                            </h5>
                         </div>
                         <div class="card-body">
                             <div class="row">
 
-                                <div class="col-md-12" id="cntTablaRel">
-                                    <h5 class="text-center customtitle">Licencia</h5>
+                                <div class="col-md-6 padding-0" id="cntTablaRel">
+                                    <h5 class="text-center customtitle">Licencia Categoria</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaLicencia"
@@ -1250,7 +1273,7 @@
                                             <thead>
                                                 <tr>
 
-                                                    <th>Licencia</th>
+                                                    <th>Licencia Categoría</th>
                                                     <th>Porcentaje</th>
 
                                                 </tr>
@@ -1259,13 +1282,19 @@
                                         </table>
 
                                     </div>
+
+                                </div>
+
+                                <div class="col-md-6 padding-0" >
+                                <h5 class="text-center customtitle">Licencia Sub Categoria</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaLicencia2"
                                             class="table-striped table-bordered table-hover table-sm" width="100%">
                                             <thead>
                                                 <tr>
-
+                                                <th>Licencia Sub Categoría</th>
+                                                    <th>Porcentaje</th>
 
 
                                                 </tr>
@@ -1345,11 +1374,33 @@
 
                             <br>
 
+                            <h5 class="text-center customtitle">Índice Capacidad de Gestión </h5>
 
                             <div class="row">
 
+                            <div class="col-md-3 bg-danger text-white">
+                            <h7><strong>6.0 a 7.50  Reprobado</strong></h7>
+                            </div>
+
+                            <div class="col-md-3  bg-warning text-black">
+                            <h7><strong>7.51 a 8.35 Mínima</strong></h7>
+                            </div>
+
+                            <div class="col-md-3 bg-info text-white">
+                            <h7><strong>8.36 a 9.15 Adecuada</strong></h7>
+                            </div>
+
+                            <div class="col-md-3 bg-success text-white">
+                            <h7><strong>9.16 a 10 Óptima </strong></h7>
+                            </div>
+                            
+                            </div>
+
+                            <br>
+                            <div class="row">
+
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h5 class="text-center customtitle"> Capacidad de Gestión </h5>
+                               
 
                                     <div class="table-responsive ">
 
@@ -1372,13 +1423,16 @@
 
                                 </div>
 
+                             
+
                             </div>
 
                             <br>
 
                             <div class="row">
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h5 class="text-center customtitle">Calificación al trabajo realizado por las autoridades
+                                    <h5 class="text-center customtitle">Calificación al trabajo realizado por las
+                                        autoridades
                                         municipales </h5>
 
                                     <div class="table-responsive ">
@@ -1752,7 +1806,8 @@
                             <br>
                             <div class="row">
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h5 class="text-center customtitle">Calificación al trabajo que realiza la policia nacional</h5>
+                                    <h5 class="text-center customtitle">Calificación al trabajo que realiza la policia
+                                        nacional</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaTrabPolicia"
@@ -1772,7 +1827,8 @@
                                 </div>
 
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h5 class="text-center customtitle">Profesionalismo en las actuaciones de la policia nacional
+                                    <h5 class="text-center customtitle">Profesionalismo en las actuaciones de la policia
+                                        nacional
                                     </h5>
                                     <div class="table-responsive ">
 
@@ -1854,12 +1910,14 @@
 
                     <div class="card text">
                         <div class="card-header text-center custom font-weight-bold">
-                            <h5 class="text-white"><strong>Problemas del sector de residencia, municipio, país top 10</strong> </h5>
+                            <h5 class="text-white"><strong>Problemas del sector de residencia, municipio, país top
+                                    10</strong> </h5>
                         </div>
                         <div class="card-body">
 
                             <div class="row">
-                                <h5 class="text-center customtitle">Principales problemas en el Sector de residencia</h5>
+                                <h5 class="text-center customtitle">Principales problemas en el Sector de residencia
+                                </h5>
                                 <div class="col-md-12" id="cntTablaRel">
                                     <div class="table-responsive ">
 
@@ -1944,7 +2002,8 @@
 
                     <div class="card text">
                         <div class="card-header text-center custom font-weight-bold">
-                            <h5 class="text-white"><strong>Reconocimiento de obras realizadas en el municipio</strong> </h5>
+                            <h5 class="text-white"><strong>Reconocimiento de obras realizadas en el municipio</strong>
+                            </h5>
                         </div>
                         <div class="card-body">
                             <div class="row">
@@ -1990,7 +2049,8 @@
 
                     <div class="card text">
                         <div class="card-header text-center custom font-weight-bold">
-                            <h5 class="text-white">Lo que más gusta y menos gusta del sector de residencia y del municipio</h5>
+                            <h5 class="text-white">Lo que más gusta y menos gusta del sector de residencia y del
+                                municipio</h5>
                         </div>
                         <div class="card-body">
 
@@ -2211,7 +2271,8 @@
                             <br>
                             <div class="row">
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h5 class="text-center customtitle">Pensando en Futuras Elecciones, Diría que Personas Como
+                                    <h5 class="text-center customtitle">Pensando en Futuras Elecciones, Diría que
+                                        Personas Como
                                         Usted </h5>
                                     <div class="table-responsive ">
 
@@ -2300,14 +2361,15 @@
 
                     <div class="card text">
                         <div class="card-header text-center custom font-weight-bold">
-                            <h5 class="text-white"><strong>Frecuencia que ocurren las siguientes situaciones</strong></h5>
+                            <h5 class="text-white"><strong>Frecuencia que ocurren las siguientes situaciones</strong>
+                            </h5>
                         </div>
                         <div class="card-body">
 
                             <div class="row">
 
                                 <div class="col-md-12" id="cntTablaRel">
-                                
+
                                     <div class="table-responsive ">
 
                                         <table id="tablaFrecSitua"

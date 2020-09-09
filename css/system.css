@@ -134,3 +134,8 @@ footer {
     color: #2f1b41 !important;
     font-weight: bolder !important;
 }
+
+.padding-0 {
+    padding-right: 0;
+    padding-left: 0;
+}

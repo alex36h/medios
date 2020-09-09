@@ -15,7 +15,7 @@ class Conexion{
 
     public function __construct( $logs )
     {
-        $this->baseDatos = 'lcm';
+        $this->baseDatos = 'pedidos';
         $this->usuario = 'root';
         $this->clave = '';
         $this->servidor = '127.0.0.1';

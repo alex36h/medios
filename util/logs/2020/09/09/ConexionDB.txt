@@ -1,0 +1,1 @@
+2020-09-09 16:32:02 >>> Error de conexión: ( 1049 ) Unknown database 'lcm'

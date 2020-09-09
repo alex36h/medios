@@ -101,7 +101,7 @@ function consultarDatosLicMun() {
             html += ' <thead class="customtable text-white" class="customtable text-white">';
             html += '<tr>';
 
-            html += '<th>Licencia </th>';
+            html += '<th>Licencia  Categoría</th>';
             html += '<th>Porcentaje</th>';
 
             html += '</tr>';
@@ -117,6 +117,64 @@ function consultarDatosLicMun() {
                     '</tr>';
             }
             $("#tablaLicencia").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+function consultarDatosLicMun2() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "GET",
+        url: "util/app/lcm2.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+
+            var html = '';
+            var i;
+
+            html += ' <thead class="customtable text-white" class="customtable text-white">';
+            html += '<tr>';
+
+            html += '<th>Licencia Sub Categoría </th>';
+            html += '<th>Porcentaje</th>';
+
+            html += '</tr>';
+            html += '</thead class="customtable text-white">';
+
+            for (i = 0; i < mydata.length; i++) {
+                // '<td>' + porcentaje.toPrecision(4) + '%' + '</td>' +
+                var porcentaje = mydata[i].porcentaje * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].licencia + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaLicencia2").html(html);
         },
         complete: function() {
 
@@ -434,7 +492,7 @@ function consultarDatosCapGestion() {
             html += '<tr>';
 
             html += '<th>Gestión</th>';
-            html += '<th>Porcentaje</th>';
+            html += '<th>Media</th>';
 
 
 
@@ -448,7 +506,7 @@ function consultarDatosCapGestion() {
 
                 html += '<tr>' +
                     '<td>' + mydata[i].gestion + '</td>' +
-                    '<td>' + porcentaje.toFixed(2) + '%' + '</td>' +
+                    '<td>' + porcentaje.toFixed(2) + '</td>' +
                     '</tr>';
             }
             $("#tablaCapGestion").html(html);
@@ -4419,7 +4477,7 @@ function consultarDatoCuadrante() {
 
         },
         dataType: 'json',
- 
+
         error: function(request, status, error) {
             alert(request.responseText);
         },
@@ -4431,22 +4489,22 @@ function consultarDatoCuadrante() {
             var mydata = respuesta.data;
             console.log(mydata);
 
-        
-            for (i = 0; i < mydata.length; i++) {
-           // $("#muestra").val(mydata[i]['muestra']);
-                
-       
-                $("#muestracuadrante").text('Tamaño Muestra:' + " " +mydata[i]['muestracuadrante']);
-                 $("#fecha").text('Fecha:' + mydata[i]['fecha']);
-                 $("#orientacion1").text('De este a oeste: ' + mydata[i]['orientacion1']);
-                 $("#orientacion2").text('De norte a sur: ' + mydata[i]['orientacion2']);
 
-            
-                    
-         
-      
-         
-        }
+            for (i = 0; i < mydata.length; i++) {
+                // $("#muestra").val(mydata[i]['muestra']);
+
+
+                $("#muestracuadrante").text('Tamaño Muestra:' + " " + mydata[i]['muestracuadrante']);
+                $("#fecha").text('Fecha:' + mydata[i]['fecha']);
+                $("#orientacion1").text('De este a oeste: ' + mydata[i]['orientacion1']);
+                $("#orientacion2").text('De norte a sur: ' + mydata[i]['orientacion2']);
+
+
+
+
+
+
+            }
 
 
 
@@ -4781,6 +4839,7 @@ $(document).ready(function() {
                 break;
             case ("contact"):
                 consultarDatosLicMun();
+                consultarDatosLicMun2();
                 consultarDatosServiciosMun();
                 consultarDatosServiciosNac();
                 consultarDatosCapGestion();
@@ -4880,6 +4939,7 @@ $(document).ready(function() {
                 break;
             case ("contact"):
                 consultarDatosLicMun();
+                consultarDatosLicMun2();
                 consultarDatosServiciosMun();
                 consultarDatosServiciosNac();
                 consultarDatosCapGestion();
@@ -4972,6 +5032,7 @@ $(document).ready(function() {
     $("#contact-tab").on("click", function(event) {
 
         consultarDatosLicMun();
+        consultarDatosLicMun2();
         consultarDatosServiciosMun();
         consultarDatosServiciosNac();
         consultarDatosCapGestion();

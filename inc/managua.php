@@ -536,15 +536,17 @@
                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 
 
-                    <div class="card text">
+                <div class="card text">
                         <div class="card-header text-center custom font-weight-bold">
-                            <h5 class="text-white"><stron>Licencia ciudadana Municipal</strong></h5>
+                            <h5 class="text-white">
+                                <stron>Licencia ciudadana Municipal</strong>
+                            </h5>
                         </div>
                         <div class="card-body">
                             <div class="row">
 
-                                <div class="col-md-12" id="cntTablaRel">
-                                    <h5 class="text-center customtitle">Licencia</h5>
+                                <div class="col-md-6 padding-0" id="cntTablaRel">
+                                    <h5 class="text-center customtitle">Licencia Categoria</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaLicencia"
@@ -552,7 +554,7 @@
                                             <thead>
                                                 <tr>
 
-                                                    <th>Licencia</th>
+                                                    <th>Licencia Categoría</th>
                                                     <th>Porcentaje</th>
 
                                                 </tr>
@@ -561,13 +563,19 @@
                                         </table>
 
                                     </div>
+
+                                </div>
+
+                                <div class="col-md-6 padding-0" >
+                                <h5 class="text-center customtitle">Licencia Sub Categoria</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaLicencia2"
                                             class="table-striped table-bordered table-hover table-sm" width="100%">
                                             <thead>
                                                 <tr>
-
+                                                <th>Licencia Sub Categoría</th>
+                                                    <th>Porcentaje</th>
 
 
                                                 </tr>
@@ -647,11 +655,33 @@
 
                             <br>
 
+                            <h5 class="text-center customtitle">Índice Capacidad de Gestión </h5>
 
                             <div class="row">
 
+                            <div class="col-md-3 bg-danger text-white">
+                            <h7><strong>6.0 a 7.50  Reprobado</strong></h7>
+                            </div>
+
+                            <div class="col-md-3  bg-warning text-black">
+                            <h7><strong>7.51 a 8.35 Mínima</strong></h7>
+                            </div>
+
+                            <div class="col-md-3 bg-info text-white">
+                            <h7><strong>8.36 a 9.15 Adecuada</strong></h7>
+                            </div>
+
+                            <div class="col-md-3 bg-success text-white">
+                            <h7><strong>9.16 a 10 Óptima </strong></h7>
+                            </div>
+                            
+                            </div>
+
+                            <br>
+                            <div class="row">
+
                                 <div class="col-md-12" id="cntTablaRel">
-                                    <h5 class="text-center customtitle"> Capacidad de Gestión </h5>
+                               
 
                                     <div class="table-responsive ">
 
@@ -674,13 +704,16 @@
 
                                 </div>
 
+                             
+
                             </div>
 
                             <br>
 
                             <div class="row">
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h5 class="text-center customtitle">Calificación al trabajo realizado por las autoridades
+                                    <h5 class="text-center customtitle">Calificación al trabajo realizado por las
+                                        autoridades
                                         municipales </h5>
 
                                     <div class="table-responsive ">

@@ -1,0 +1,9 @@
+2020-09-09 16:42:26 >>> Error en el query: ( You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id_cuadrante='1'
+        AND id_municipio ='1'
+        AND id_corrida ='' at line 2 ) 
+        SELECT * FROM  tbl_lcm WHERE licencia IN ('Apropiacion','Aprobacion','Aceptación','Rechazo')
+        AND WHERE id_cuadrante='1'
+        AND id_municipio ='1'
+        AND id_corrida ='1'
+        ORDER BY FIELD (licencia,'Apropiacion','Aprobacion','Aceptación','Rechazo')
+    

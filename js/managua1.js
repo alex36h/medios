@@ -127,6 +127,66 @@ function consultarDatosLicMun() {
 }
 
 
+function consultarDatosLicMun2() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "GET",
+        url: "util/app/lcm2.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+
+            var html = '';
+            var i;
+
+            html += ' <thead class="customtable text-white" class="customtable text-white">';
+            html += '<tr>';
+
+            html += '<th>Licencia Sub Categoría </th>';
+            html += '<th>Porcentaje</th>';
+
+            html += '</tr>';
+            html += '</thead class="customtable text-white">';
+
+            for (i = 0; i < mydata.length; i++) {
+                // '<td>' + porcentaje.toPrecision(4) + '%' + '</td>' +
+                var porcentaje = mydata[i].porcentaje * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].licencia + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
+                    '</tr>';
+            }
+            $("#tablaLicencia2").html(html);
+        },
+        complete: function() {
+
+        }
+    });
+
+
+}
+
+
+
 
 
 function consultarDatosServiciosNac() {
@@ -434,7 +494,7 @@ function consultarDatosCapGestion() {
             html += '<tr>';
 
             html += '<th>Gestión</th>';
-            html += '<th>Porcentaje</th>';
+            html += '<th>Media</th>';
 
 
 
@@ -448,7 +508,7 @@ function consultarDatosCapGestion() {
 
                 html += '<tr>' +
                     '<td>' + mydata[i].gestion + '</td>' +
-                    '<td>' + porcentaje.toFixed(2) + '%' + '</td>' +
+                    '<td>' + porcentaje.toFixed(2) + '</td>' +
                     '</tr>';
             }
             $("#tablaCapGestion").html(html);
@@ -1965,7 +2025,7 @@ function consultarDatoPisoTecho() {
                 html += '<tr>' +
                     '<td>' + mydata[i].opcion + '</td>' +
                     '<td>' + escenario1.toFixed(1) + '%' + '</td>' +
-            
+
                     '<td>' + escenario4.toFixed(1) + '%' + '</td>' +
 
 
@@ -4726,6 +4786,7 @@ $(document).ready(function() {
                 break;
             case ("contact"):
                 consultarDatosLicMun();
+                consultarDatosLicMun2();
                 consultarDatosServiciosMun();
                 consultarDatosServiciosNac();
                 consultarDatosCapGestion();
@@ -4824,6 +4885,7 @@ $(document).ready(function() {
                 break;
             case ("contact"):
                 consultarDatosLicMun();
+                consultarDatosLicMun2();
                 consultarDatosServiciosMun();
                 consultarDatosServiciosNac();
                 consultarDatosCapGestion();
@@ -4916,6 +4978,7 @@ $(document).ready(function() {
     $("#contact-tab").on("click", function(event) {
 
         consultarDatosLicMun();
+        consultarDatosLicMun2();
         consultarDatosServiciosMun();
         consultarDatosServiciosNac();
         consultarDatosCapGestion();
