@@ -535,7 +535,7 @@
 
                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 
-
+    
                 <div class="card text">
                         <div class="card-header text-center custom font-weight-bold">
                             <h5 class="text-white">
@@ -545,7 +545,7 @@
                         <div class="card-body">
                             <div class="row">
 
-                                <div class="col-md-6 padding-0" id="cntTablaRel">
+                                <div class="col-6 col-md-6 padding-0 "alt="Max-width 100%" id="cntTablaRel">
                                     <h5 class="text-center customtitle">Licencia Categoria</h5>
                                     <div class="table-responsive ">
 
@@ -566,7 +566,7 @@
 
                                 </div>
 
-                                <div class="col-md-6 padding-0" >
+                                <div class="col-6 col-md-6 padding-0 " alt="Max-width 100%">
                                 <h5 class="text-center customtitle">Licencia Sub Categoria</h5>
                                     <div class="table-responsive ">
 
@@ -659,22 +659,26 @@
 
                             <div class="row">
 
-                            <div class="col-md-3 bg-danger text-white">
+                  
+
+                            <div class="col-3 col-md-3 bg-danger text-white" alt="Max-width 100%">
                             <h7><strong>6.0 a 7.50  Reprobado</strong></h7>
                             </div>
 
-                            <div class="col-md-3  bg-warning text-black">
+                            <div class="col-3 col-md-3  bg-warning text-black" alt="Max-width 100%">
                             <h7><strong>7.51 a 8.35 Mínima</strong></h7>
                             </div>
 
-                            <div class="col-md-3 bg-info text-white">
+                            <div class="col-3 col-md-3 bg-info text-white" alt="Max-width 100%">
                             <h7><strong>8.36 a 9.15 Adecuada</strong></h7>
                             </div>
 
-                            <div class="col-md-3 bg-success text-white">
+                            <div class="col-3 col-md-3 bg-success text-white" alt="Max-width 100%">
                             <h7><strong>9.16 a 10 Óptima </strong></h7>
                             </div>
                             
+
+                         
                             </div>
 
                             <br>
@@ -691,7 +695,7 @@
                                                 <tr>
 
                                                     <th>Gestión</th>
-                                                    <th>Porcentaje</th>
+                                                    <th>Índice</th>
 
 
 
@@ -876,10 +880,8 @@
 
                         </div>
                     </div>
-
-
-                </div>
-
+             
+             </div>
                 <!--Fin Licencia ciudadana Municipal -->
 
 
@@ -1526,7 +1528,7 @@
                                     <h5 class="text-center customtitle">Modelo de predisposición</h5>
                                     <div class="table-responsive ">
 
-                                        <table id="" class="table-striped table-bordered table-hover table-sm"
+                                        <table id="tablaPredisp" class="table-striped table-bordered table-hover table-sm"
                                             width="100%">
                                             <thead class="text-center">
                                                 <tr>

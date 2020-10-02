@@ -24,9 +24,16 @@
                 <option value="16">Juigalpa</option>
                 <option value="17">León</option>
                 <option value="18">Jinotega</option>
-                <option value="19">Ocotal</option>
+                <option value="19">Ocotal</option>  
                 <option value="21">Somoto</option>
                 <option value="22">Esteli</option>
+                <option value="23">El Cuá</option>
+                <option value="24">San José de Bocay</option>
+                <option value="25">San Juan del Sur</option>
+                <option value="26">Puerto Cabezas</option>
+
+
+
 
 
 
@@ -66,10 +73,10 @@
 
     <div class="row">
         <div class="col">
-            <h6 id="muestracuadrante"></h6>
+           
         </div>
         <div class="col">
-            <h6 id="fecha"></h6>
+    
         </div>
         <div class="col"></div>
 
@@ -86,8 +93,36 @@
 
 
 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+  Ver Mapa
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="fecha"></h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <div class="row">
+      <h6 id="muestracuadrante"></h6>
+  <img id="maps" src="" class="Responsive image rounded float-right img-fluid max-width: 100%" alt="...">
+</div>
 
 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+    
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -1264,7 +1299,7 @@
                         <div class="card-body">
                             <div class="row">
 
-                                <div class="col-md-6 padding-0" id="cntTablaRel">
+                                <div class="col-6 col-md-6 padding-0 "alt="Max-width 100%" id="cntTablaRel">
                                     <h5 class="text-center customtitle">Licencia Categoria</h5>
                                     <div class="table-responsive ">
 
@@ -1285,7 +1320,7 @@
 
                                 </div>
 
-                                <div class="col-md-6 padding-0" >
+                                <div class="col-6 col-md-6 padding-0 " alt="Max-width 100%">
                                 <h5 class="text-center customtitle">Licencia Sub Categoria</h5>
                                     <div class="table-responsive ">
 
@@ -1378,22 +1413,26 @@
 
                             <div class="row">
 
-                            <div class="col-md-3 bg-danger text-white">
+                  
+
+                            <div class="col-3 col-md-3 bg-danger text-white" alt="Max-width 100%">
                             <h7><strong>6.0 a 7.50  Reprobado</strong></h7>
                             </div>
 
-                            <div class="col-md-3  bg-warning text-black">
+                            <div class="col-3 col-md-3  bg-warning text-black" alt="Max-width 100%">
                             <h7><strong>7.51 a 8.35 Mínima</strong></h7>
                             </div>
 
-                            <div class="col-md-3 bg-info text-white">
+                            <div class="col-3 col-md-3 bg-info text-white" alt="Max-width 100%">
                             <h7><strong>8.36 a 9.15 Adecuada</strong></h7>
                             </div>
 
-                            <div class="col-md-3 bg-success text-white">
+                            <div class="col-3 col-md-3 bg-success text-white" alt="Max-width 100%">
                             <h7><strong>9.16 a 10 Óptima </strong></h7>
                             </div>
                             
+
+                         
                             </div>
 
                             <br>
@@ -1410,7 +1449,7 @@
                                                 <tr>
 
                                                     <th>Gestión</th>
-                                                    <th>Porcentaje</th>
+                                                    <th>Índice</th>
 
 
 
@@ -1699,7 +1738,7 @@
                             <div class="row">
 
                                 <div class="col-md-5" id="cntTablaRel">
-                                    <h5 class="text-center customtitle">Indice de victimización</h5>
+                                    <h5 class="text-center customtitle">Índice de victimización</h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaIndVictim"
@@ -2251,7 +2290,7 @@
                                     <h5 class="text-center customtitle">Modelo de predisposición</h5>
                                     <div class="table-responsive ">
 
-                                        <table id="" class="table-striped table-bordered table-hover table-sm"
+                                        <table id="tablaPredisp" class="table-striped table-bordered table-hover table-sm"
                                             width="100%">
                                             <thead class="text-center">
                                                 <tr>

@@ -494,7 +494,7 @@ function consultarDatosCapGestion() {
             html += '<tr>';
 
             html += '<th>Gestión</th>';
-            html += '<th>Media</th>';
+            html += '<th>Índice</th>';
 
 
 
@@ -506,10 +506,43 @@ function consultarDatosCapGestion() {
                 var porcentaje = mydata[i].porcentaje * 100;
 
 
-                html += '<tr>' +
-                    '<td>' + mydata[i].gestion + '</td>' +
-                    '<td>' + porcentaje.toFixed(2) + '</td>' +
-                    '</tr>';
+                if (porcentaje >= 6.7 && porcentaje <= 7.5) {
+
+                    html += '<tr>' +
+                        '<td>' + mydata[i].gestion + '</td>' +
+                        '<td class="bg-danger text-white">' + porcentaje.toFixed(2) + '</td>' +
+                        '</tr>';
+                }
+
+
+                if (porcentaje >= 7.51 && porcentaje <= 8.35) {
+
+                    html += '<tr>' +
+                        '<td>' + mydata[i].gestion + '</td>' +
+                        '<td class="bg-warning text-black">' + porcentaje.toFixed(2) + '</td>' +
+                        '</tr>';
+
+                }
+
+                if (porcentaje >= 8.36 && porcentaje <= 9.15) {
+
+                    html += '<tr>' +
+                        '<td>' + mydata[i].gestion + '</td>' +
+                        '<td class="bg-info text-white">' + porcentaje.toFixed(2) + '</td>' +
+                        '</tr>';
+
+                }
+
+                if (porcentaje >= 9.16 && porcentaje <= 10) {
+
+                    html += '<tr>' +
+                        '<td>' + mydata[i].gestion + '</td>' +
+                        '<td class="bg-success text-white">' + porcentaje.toFixed(2) + '</td>' +
+                        '</tr>';
+
+                }
+
+
             }
             $("#tablaCapGestion").html(html);
 
@@ -1840,6 +1873,77 @@ function consultarDatoSSimpatia() {
 
 
 }
+
+
+
+function consultarDatoPredisp() {
+
+    var municipio = $("#municipio option:selected").val();
+    var cuadrante = $("#cuadrante option:selected").val();
+    var corrida = $("#corrida option:selected").val();
+
+    $.ajax({
+        async: false,
+        type: "GET",
+        url: "util/app/predisp.php",
+        data: {
+            municipio: municipio,
+            cuadrante: cuadrante,
+            corrida: corrida
+
+        },
+        dataType: 'json',
+        //beforeSend: function(){},
+        error: function(request, status, error) {
+            alert(request.responseText);
+        },
+        success: function(respuesta) {
+
+
+
+            var mydata = respuesta.data;
+            console.log(mydata);
+            var html = '';
+            var i;
+
+            html += ' <thead class="customtable text-white" class="text-center">';
+            html += '<tr>';
+
+            html += '<th> </th>';
+            html += '<th>FSLN</th>';
+            html += '<th> </th>';
+            html += '<th>Oposición</th>';
+
+            html += '</tr>';
+            html += '</thead class="customtable text-white">';
+
+
+            for (i = 0; i < mydata.length; i++) {
+
+
+                var itemtwo = mydata[i].item2 * 100;
+                var itemfour = mydata[i].item4 * 100;
+
+                html += '<tr>' +
+                    '<td>' + mydata[i].item1 + '</td>' +
+                    '<td>' + itemtwo.toFixed(1) + '%' + '</td>' +
+                    '<td>' + mydata[i].item3 + '</td>' +
+                    '<td>' + itemfour.toFixed(1) + '%' + '</td>' +
+
+                    '</tr>';
+            }
+            $("#tablaPredisp").html(html);
+        },
+        complete: function() {
+
+
+
+        }
+    });
+
+
+}
+
 
 function consultarDatosExpectativa() {
 
@@ -4133,7 +4237,7 @@ function consultarDatoAlcalde() {
 
                 html += '<tr>' +
                     '<td>' + mydata[i].calificacion + '</td>' +
-                    '<td>' + porcentaje.toFixed(2) + '%' + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
                     '</tr>';
             }
             $("#tablaAlcalde").html(html);
@@ -4195,7 +4299,7 @@ function consultarDatoViceAlcalde() {
 
                 html += '<tr>' +
                     '<td>' + mydata[i].calificacion + '</td>' +
-                    '<td>' + porcentaje.toFixed(2) + '%' + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
                     '</tr>';
             }
             $("#tablaVicAlcalde").html(html);
@@ -4257,7 +4361,7 @@ function consultarDatoSecretaria() {
 
                 html += '<tr>' +
                     '<td>' + mydata[i].calificacion + '</td>' +
-                    '<td>' + porcentaje.toFixed(2) + '%' + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
                     '</tr>';
             }
             $("#tablaSecretaria").html(html);
@@ -4321,7 +4425,7 @@ function consultarDatoAdAlcalde() {
 
                 html += '<tr>' +
                     '<td>' + mydata[i].calificacion + '</td>' +
-                    '<td>' + porcentaje.toFixed(2) + '%' + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
                     '</tr>';
             }
             $("#tablaAdAlcalde").html(html);
@@ -4385,7 +4489,7 @@ function consultarDatoAdViceAlcalde() {
 
                 html += '<tr>' +
                     '<td>' + mydata[i].calificacion + '</td>' +
-                    '<td>' + porcentaje.toFixed(2) + '%' + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
                     '</tr>';
             }
             $("#tablaAdViceAlcalde").html(html);
@@ -4432,7 +4536,7 @@ function consultarDatoAdSecretaria() {
             html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
-            html += '<th>Secretario</th>';
+            html += '<th>Secretaría</th>';
             html += '<th>Porcentaje</th>';
 
 
@@ -4448,7 +4552,7 @@ function consultarDatoAdSecretaria() {
 
                 html += '<tr>' +
                     '<td>' + mydata[i].calificacion + '</td>' +
-                    '<td>' + porcentaje.toFixed(2) + '%' + '</td>' +
+                    '<td>' + porcentaje.toFixed(1) + '%' + '</td>' +
                     '</tr>';
             }
             $("#tablaAdSecretaria").html(html);
@@ -4852,6 +4956,7 @@ $(document).ready(function() {
 
             case ("tematica"):
                 consultarDatoSSimpatia();
+                consultarDatoPredisp();
                 consultarDatosExpectativa();
                 consultarDatoIntencion();
                 consultarDatoPisoTecho();
@@ -4950,6 +5055,7 @@ $(document).ready(function() {
 
             case ("tematica"):
                 consultarDatoSSimpatia();
+                consultarDatoPredisp();
                 consultarDatosExpectativa();
                 consultarDatoIntencion();
                 consultarDatoPisoTecho();
@@ -5082,6 +5188,7 @@ $(document).ready(function() {
     $("#tematica-tab").on("click", function(event) {
 
         consultarDatoSSimpatia();
+        consultarDatoPredisp();
         consultarDatosExpectativa();
         consultarDatoIntencion();
         consultarDatoPisoTecho();
@@ -5101,6 +5208,7 @@ $(document).ready(function() {
 
 
             consultarDatoSSimpatia();
+            consultarDatoPredisp();
             consultarDatosExpectativa();
             consultarDatoIntencion();
             consultarDatoPisoTecho();
@@ -5112,6 +5220,7 @@ $(document).ready(function() {
 
 
             consultarDatoSSimpatia();
+            consultarDatoPredisp();
             consultarDatosExpectativa();
             consultarDatoIntencion();
             consultarDatoPisoTecho();
