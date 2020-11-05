@@ -723,8 +723,8 @@ function consultarIndVictim() {
             html += ' <thead class="customtable text-white">';
             html += '<tr>';
 
-            html += '<th>Ha sido victima </th>';
-            html += '<th>No ha sido victima</th>';
+            html += '<th>Ha sido víctima </th>';
+            html += '<th>No ha sido víctima</th>';
 
             html += '</tr>';
             html += '</thead class="customtable text-white">';
@@ -2630,7 +2630,7 @@ function consultarDatoNucleo() {
 
                 html += '<tr>' +
                     '<td>' + mydata[i].hogar + '</td>' +
-                    '<td>' + promedio.toFixed(1) + '%' + '</td>' +
+                    '<td>' + promedio.toFixed(1) + '</td>' +
                     '</tr>';
             }
             $("#tablaNucleo").html(html);
@@ -3186,8 +3186,8 @@ function consultarDatoAfiliacionSeguro() {
             html += ' <thead class="customtable text-white" class="text-center">';
             html += '<tr>';
 
-            html += '<th>Esta Afiliado</th>';
-            html += '<th>No esta Afiliado</th>';
+            html += '<th>Está Afiliado</th>';
+            html += '<th>No está Afiliado</th>';
 
 
 

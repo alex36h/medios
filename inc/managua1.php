@@ -1667,8 +1667,8 @@
                                     <thead>
                                         <tr>
 
-                                            <th>Ha sido victima</th>
-                                            <th>No ha sido victima</th>
+                                            <th>Ha sido víctima</th>
+                                            <th>No ha sido víctima</th>
 
                                         </tr>
                                     </thead>
@@ -2018,7 +2018,7 @@
 
 
                         <div class="col-md-6" id="cntTablaRel">
-                            <h5 class="text-center customtitle">Lo que mas gusta del municipio </h5>
+                            <h5 class="text-center customtitle">Lo que más gusta del municipio </h5>
                             <div class="table-responsive ">
 
                                 <table id="tablaGmunicipio"

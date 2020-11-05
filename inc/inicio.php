@@ -18,7 +18,7 @@
                 <option value="10">El Tuma la Dalia</option>
                 <option value="11">Nueva Guinea</option>
                 <option value="12">Jinotepe</option>
-                <option value="13">Blufields</option>
+                <option value="13">Bluefields</option>
                 <option value="14">Tipitapa</option>
                 <option value="15">Boaco</option>
                 <option value="16">Juigalpa</option>
@@ -79,25 +79,17 @@
     
         </div>
         <div class="col"></div>
-
     </div>
-
     <div class="row">
         <div class="col">
             <h6 id="orientacion1"></h6>
             <h6 id="orientacion2"></h6>
         </div>
-
-
     </div>
-
-
-
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
   Ver Mapa
 </button>
-
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -113,8 +105,6 @@
       <h6 id="muestracuadrante"></h6>
   <img id="maps" src="" class="Responsive image rounded float-right img-fluid max-width: 100%" alt="...">
 </div>
-
-
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -612,13 +602,13 @@
 
 
                                                 <div class="col-md-4" id="cntTablaRel">
-                                                    <h5 class="text-center customtitle">Composicion según lugar de
+                                                    <h5 class="text-center customtitle">Composición según lugar de
                                                         trabajo
                                                     </h5>
 
                                                     <div class="table-responsive ">
 
-                                                        <table id="tablaTrabajocomposicion"
+                                                        <table id="tablaTrabajoComposición"
                                                             class="table-striped table-bordered table-hover table-sm"
                                                             width="100%">
                                                             <thead>
@@ -1031,13 +1021,13 @@
                                             <div class="row">
 
                                                 <div class="col-md-6" id="cntTablaRel">
-                                                    <h5 class="text-center customtitle">Composicion según lugar de
+                                                    <h5 class="text-center customtitle">Composición según lugar de
                                                         trabajo Psh
                                                     </h5>
 
                                                     <div class="table-responsive ">
 
-                                                        <table id="tablaTrabajocomposicionPsh"
+                                                        <table id="tablaTrabajoComposiciónPsh"
                                                             class="table-striped table-bordered table-hover table-sm"
                                                             width="100%">
                                                             <thead>
@@ -1746,8 +1736,8 @@
                                             <thead>
                                                 <tr>
 
-                                                    <th>Ha sido victima</th>
-                                                    <th>No ha sido victima</th>
+                                                    <th>Ha sido víctima</th>
+                                                    <th>No ha sido víctima</th>
 
                                                 </tr>
                                             </thead>
@@ -1845,7 +1835,7 @@
                             <br>
                             <div class="row">
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h5 class="text-center customtitle">Calificación al trabajo que realiza la policia
+                                    <h5 class="text-center customtitle">Calificación al trabajo que realiza la Policía
                                         nacional</h5>
                                     <div class="table-responsive ">
 
@@ -1866,7 +1856,7 @@
                                 </div>
 
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h5 class="text-center customtitle">Profesionalismo en las actuaciones de la policia
+                                    <h5 class="text-center customtitle">Profesionalismo en las actuaciones de la Policía
                                         nacional
                                     </h5>
                                     <div class="table-responsive ">
@@ -2097,7 +2087,7 @@
 
 
                                 <div class="col-md-6" id="cntTablaRel">
-                                    <h5 class="text-center customtitle">Lo que mas gusta del municipio </h5>
+                                    <h5 class="text-center customtitle">Lo que más gusta del municipio </h5>
                                     <div class="table-responsive ">
 
                                         <table id="tablaGmunicipio"
